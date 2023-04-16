@@ -1,0 +1,44 @@
+{
+    "ClientDatabase" : {
+        "TestClient": {
+            "Name" : "Chris Chapnel",
+            "Chat": ["Test", "testB"],
+            "ChatAccept": ["Test", "TestB"],
+            "ChatDecline": ["Test", "TestB"],
+            "ChatHaggle": ["Test", "TestB"],
+            "HaggleLimit": {
+                "money" : "50",
+                "Time" : "50"
+            },
+            "Offer": {
+                "money" : "50",
+                "Time" : "50"
+    
+            },
+            "Request": {
+                "money" : "50",
+                "Time" : "50"
+            }
+        },
+        "TestClientB": {
+            "Name" : "Chris Chapnel",
+            "Chat": ["Test", "testB"],
+            "ChatAccept": ["Test", "TestB"],
+            "ChatDecline": ["Test", "TestB"],
+            "ChatHaggle": ["Test", "TestB"],
+            "HaggleLimit": {
+                "money" : "50",
+                "Time" : "50"
+            },
+            "Offer": {
+                "money" : "50",
+                "Time" : "50"
+    
+            },
+            "Request": {
+                "money" : "50",
+                "Time" : "50"
+            }
+        }
+    }
+}

@@ -124,13 +124,419 @@
         "name": "assets\\MJMCWAI-BK.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "disablePreload": false,
+        "file": "assets/Welcome.json",
+        "kind": "json",
+        "metadata": "{\"extension\":\".json\"}",
+        "name": "Welcome",
+        "userAdded": true
+      },
+      {
+        "disablePreload": false,
+        "file": "assets/Welcome.json",
+        "kind": "json",
+        "metadata": "",
+        "name": "assets\\Welcome.json",
+        "userAdded": true
+      },
+      {
+        "disablePreload": false,
+        "file": "assets/assets_GameDialogueDatabase.json.json",
+        "kind": "json",
+        "metadata": "",
+        "name": "assets\\assets_GameDialogueDatabase.json.json",
+        "userAdded": false
+      },
+      {
+        "disablePreload": false,
+        "file": "assets/ClientDataTest.json",
+        "kind": "json",
+        "metadata": "",
+        "name": "assets\\ClientDataTest.json",
+        "userAdded": false
+      },
+      {
+        "disablePreload": false,
+        "file": "game.json",
+        "kind": "json",
+        "metadata": "",
+        "name": "game.json",
+        "userAdded": false
+      },
+      {
+        "disablePreload": false,
+        "file": "assets/ClientDatabase.json",
+        "kind": "json",
+        "metadata": "",
+        "name": "assets\\ClientDatabase.json",
+        "userAdded": true
       }
     ],
     "resourceFolders": []
   },
   "objects": [],
   "objectsGroups": [],
-  "variables": [],
+  "variables": [
+    {
+      "folded": true,
+      "name": "JsonFileStorage",
+      "type": "array",
+      "children": [
+        {
+          "folded": true,
+          "type": "string",
+          "value": "assets/ClientDataTest.json"
+        },
+        {
+          "folded": true,
+          "type": "string",
+          "value": "assets/ClientDataTest.json"
+        }
+      ]
+    },
+    {
+      "name": "ClientDatabase",
+      "type": "structure",
+      "children": [
+        {
+          "folded": true,
+          "name": "TestClient",
+          "type": "structure",
+          "children": [
+            {
+              "folded": true,
+              "name": "Chat",
+              "type": "array",
+              "children": [
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "0"
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "ChatAccept",
+              "type": "array",
+              "children": [
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "0"
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "ChatDecline",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "0"
+                }
+              ]
+            },
+            {
+              "name": "ChatHaggle",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "0"
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "HaggleLimit",
+              "type": "structure",
+              "children": [
+                {
+                  "folded": true,
+                  "name": "Money",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "Name",
+              "type": "string",
+              "value": "Jason"
+            },
+            {
+              "name": "Offer",
+              "type": "structure",
+              "children": [
+                {
+                  "folded": true,
+                  "name": "Money",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "name": "Time",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "name": "Request",
+              "type": "structure",
+              "children": [
+                {
+                  "folded": true,
+                  "name": "Money",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "name": "Time",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ClientDatabaseV2",
+      "type": "array",
+      "children": [
+        {
+          "folded": true,
+          "type": "structure",
+          "children": [
+            {
+              "folded": true,
+              "name": "Chat",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "0"
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "ChatAccept",
+              "type": "array",
+              "children": [
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "0"
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "ChatDecline",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "0"
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "ChatHaggle",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "0"
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "HaggleLimit",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "name": "Name",
+              "type": "string",
+              "value": "Alberty"
+            },
+            {
+              "name": "Offer",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "Request",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "structure",
+          "children": [
+            {
+              "folded": true,
+              "name": "Chat",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "0"
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "ChatAccept",
+              "type": "array",
+              "children": [
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "0"
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "ChatDecline",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "0"
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "ChatHaggle",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "0"
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "HaggleLimit",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "name": "Name",
+              "type": "string",
+              "value": "Petta"
+            },
+            {
+              "name": "Offer",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "Request",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "layouts": [
     {
       "b": 209,
@@ -152,7 +558,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.6455105703311479,
+        "zoomFactor": 0.5843784410740929,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -391,9 +797,10 @@
           "conditions": [
             {
               "type": {
-                "value": "DepartScene"
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
               },
               "parameters": [
+                "StartgameBtn",
                 ""
               ]
             }
@@ -401,10 +808,12 @@
           "actions": [
             {
               "type": {
-                "value": "PlayerAuthentication::DisplayAuthenticationBanner"
+                "value": "Scene"
               },
               "parameters": [
-                ""
+                "",
+                "\"Introduction\"",
+                "yes"
               ]
             }
           ]
@@ -446,12 +855,274 @@
       "stopSoundsOnStartup": true,
       "title": "",
       "v": 209,
-      "uiSettings": {},
+      "uiSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.546875,
+        "windowMask": true
+      },
       "objectsGroups": [],
       "variables": [],
-      "instances": [],
-      "objects": [],
-      "events": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "SkipBtn",
+          "persistentUuid": "1b82336e-8ab5-4361-a470-516616f5f405",
+          "width": 0,
+          "x": 541,
+          "y": 640,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 109,
+          "layer": "",
+          "name": "DialogueTxt",
+          "persistentUuid": "65dab443-49b3-4035-89ac-f2df7d449505",
+          "width": 849,
+          "x": 217,
+          "y": 369,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "assetStoreId": "f23eb31ad33dd63f1937c8745105316ca530c28513c64b68a665975503c852a6",
+          "name": "SkipBtn",
+          "tags": "",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 6,
+            "BottomPadding": 24,
+            "TopPadding": 20,
+            "HoveredFadeOutDuration": 0.25
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 22,
+              "height": 64,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "White Square Decorated Button_Hovered.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            },
+            "Idle": {
+              "bottomMargin": 22,
+              "height": 64,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "White Square Decorated Button_Idle.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "Skip",
+              "font": "mononoki-Regular.ttf",
+              "textAlignment": "center",
+              "characterSize": 20,
+              "color": {
+                "b": 0,
+                "g": 0,
+                "r": 0
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 16,
+              "height": 64,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "White Square Decorated Button_Pressed.png",
+              "tiled": true,
+              "topMargin": 22,
+              "width": 192
+            }
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "DialogueTxt",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Text_AutoTyping",
+              "type": "AutoTyping::Text_AutoTyping",
+              "Interval": 0.05,
+              "CharacterJustAdded": false,
+              "CurrentCharacter": ""
+            }
+          ],
+          "string": "[Dialogue]",
+          "font": "mononoki-Regular.ttf",
+          "textAlignment": "center",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "DialogueTree::LoadDialogueFromJsonFile"
+              },
+              "parameters": [
+                "",
+                "assets\\Welcome.json"
+              ]
+            },
+            {
+              "type": {
+                "value": "DialogueTree::StartDialogueFromBranch"
+              },
+              "parameters": [
+                "\"Start\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "DialogueTxt",
+                "=",
+                "DialogueTree::LineText()"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"DialogueTimer\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DialogueTree::IsDialogueLineType"
+              },
+              "parameters": [
+                "\"text\""
+              ]
+            },
+            {
+              "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "",
+                "\"DialogueTimer\"",
+                ">=",
+                "5"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "DialogueTree::GoToNextLine"
+              },
+              "parameters": []
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "DialogueTxt",
+                "=",
+                "DialogueTree::LineText()"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"DialogueTimer\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
+        }
+      ],
       "layers": [
         {
           "ambientLightColorB": 9327872,
@@ -476,7 +1147,12 @@
           "effects": []
         }
       ],
-      "behaviorsSharedData": []
+      "behaviorsSharedData": [
+        {
+          "name": "Text_AutoTyping",
+          "type": "AutoTyping::Text_AutoTyping"
+        }
+      ]
     },
     {
       "b": 209,
@@ -498,10 +1174,15 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.7370816317994028,
+        "zoomFactor": 0.5653158055126307,
         "windowMask": false
       },
-      "objectsGroups": [],
+      "objectsGroups": [
+        {
+          "name": "OfferSection",
+          "objects": []
+        }
+      ],
       "variables": [
         {
           "folded": true,
@@ -518,6 +1199,113 @@
         {
           "folded": true,
           "name": "CustomerCounter",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "folded": true,
+          "name": "ClientInteracting",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "folded": true,
+          "name": "ClientData",
+          "type": "structure",
+          "children": [
+            {
+              "name": "Chat",
+              "type": "array",
+              "children": []
+            },
+            {
+              "folded": true,
+              "name": "ChatAccept",
+              "type": "array",
+              "children": []
+            },
+            {
+              "folded": true,
+              "name": "ChatDecline",
+              "type": "array",
+              "children": []
+            },
+            {
+              "folded": true,
+              "name": "ChatHaggle",
+              "type": "array",
+              "children": []
+            },
+            {
+              "folded": true,
+              "name": "HaggleLimit",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "name": "Name",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "folded": true,
+              "name": "Offer",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "Request",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "folded": true,
+          "name": "RawClientData",
+          "type": "string",
+          "value": ""
+        },
+        {
+          "folded": true,
+          "name": "SelectedClientID",
           "type": "number",
           "value": 0
         }
@@ -582,6 +1370,96 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "ClientNameTxt",
+          "persistentUuid": "8eb5b227-061d-41ac-b26b-fb6a74147136",
+          "width": 0,
+          "x": 410,
+          "y": 39,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "ClientTimeLeftTxt",
+          "persistentUuid": "582c3e7d-dc5b-4b5c-9abe-bf0a646b4e96",
+          "width": 0,
+          "x": 409,
+          "y": 75,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Offertxt",
+          "persistentUuid": "4c8d852a-5b9d-471b-a054-8a3207d444ff",
+          "width": 0,
+          "x": 414,
+          "y": 555,
+          "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Messagetxt",
+          "persistentUuid": "bce2f286-a3a4-4cfb-ac00-900423034429",
+          "width": 0,
+          "x": 409,
+          "y": 118,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "HaggleBtn",
+          "persistentUuid": "52e4c13e-565f-4c86-9a8d-12a54837f7f9",
+          "width": 388,
+          "x": 9,
+          "y": 643,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Client",
+          "persistentUuid": "88e37a97-feb3-47b9-88f4-bed279928715",
+          "width": 0,
+          "x": 1288,
+          "y": -48,
+          "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -637,37 +1515,113 @@
           "updateIfNotVisible": false,
           "variables": [
             {
-              "name": "Request",
+              "folded": true,
+              "name": "ClientData",
               "type": "structure",
               "children": [
                 {
-                  "folded": true,
-                  "name": "Money",
-                  "type": "number",
-                  "value": 0
+                  "name": "Chat",
+                  "type": "array",
+                  "children": []
                 },
                 {
-                  "name": "Time",
-                  "type": "number",
-                  "value": 0
+                  "folded": true,
+                  "name": "ChatAccept",
+                  "type": "array",
+                  "children": []
+                },
+                {
+                  "folded": true,
+                  "name": "ChatDecline",
+                  "type": "array",
+                  "children": []
+                },
+                {
+                  "folded": true,
+                  "name": "ChatHaggle",
+                  "type": "array",
+                  "children": []
+                },
+                {
+                  "folded": true,
+                  "name": "HaggleLimit",
+                  "type": "structure",
+                  "children": [
+                    {
+                      "name": "Money",
+                      "type": "number",
+                      "value": 0
+                    },
+                    {
+                      "folded": true,
+                      "name": "Time",
+                      "type": "number",
+                      "value": 0
+                    }
+                  ]
+                },
+                {
+                  "name": "Name",
+                  "type": "string",
+                  "value": ""
+                },
+                {
+                  "folded": true,
+                  "name": "Offer",
+                  "type": "structure",
+                  "children": [
+                    {
+                      "name": "Money",
+                      "type": "number",
+                      "value": 0
+                    },
+                    {
+                      "folded": true,
+                      "name": "Time",
+                      "type": "number",
+                      "value": 0
+                    }
+                  ]
+                },
+                {
+                  "folded": true,
+                  "name": "Request",
+                  "type": "structure",
+                  "children": [
+                    {
+                      "name": "Money",
+                      "type": "number",
+                      "value": 0
+                    },
+                    {
+                      "folded": true,
+                      "name": "Time",
+                      "type": "number",
+                      "value": 0
+                    }
+                  ]
+                },
+                {
+                  "folded": true,
+                  "name": "Variable",
+                  "type": "string",
+                  "value": ""
                 }
               ]
             },
             {
-              "name": "Offer",
-              "type": "structure",
+              "name": "JsonFileStorage",
+              "type": "array",
               "children": [
                 {
                   "folded": true,
-                  "name": "Money",
-                  "type": "number",
-                  "value": 0
+                  "type": "string",
+                  "value": "assets\\ClientDataTest.json"
                 },
                 {
                   "folded": true,
-                  "name": "Time",
                   "type": "string",
-                  "value": "0"
+                  "value": "assets\\ClientDataTest.json"
                 }
               ]
             }
@@ -803,6 +1757,158 @@
               "width": 192
             }
           }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "ClientNameTxt",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Name: [name]",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "ClientTimeLeftTxt",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Client Time Left: 00:00:00",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "Offertxt",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Offer: [Offer text]",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "Messagetxt",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Message: [Text]",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "assetStoreId": "f23eb31ad33dd63f1937c8745105316ca530c28513c64b68a665975503c852a6",
+          "name": "HaggleBtn",
+          "tags": "",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 6,
+            "BottomPadding": 24,
+            "TopPadding": 20,
+            "HoveredFadeOutDuration": 0.25
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 22,
+              "height": 64,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "White Square Decorated Button_Hovered.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            },
+            "Idle": {
+              "bottomMargin": 22,
+              "height": 64,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "White Square Decorated Button_Idle.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "Haggle",
+              "font": "mononoki-Regular.ttf",
+              "textAlignment": "center",
+              "characterSize": 20,
+              "color": {
+                "b": 0,
+                "g": 0,
+                "r": 0
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 16,
+              "height": 64,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "White Square Decorated Button_Pressed.png",
+              "tiled": true,
+              "topMargin": 22,
+              "width": 192
+            }
+          }
         }
       ],
       "events": [
@@ -910,6 +2016,194 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Loads the Next client files and activates it",
+          "comment2": ""
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SceneVariableAsBoolean"
+              },
+              "parameters": [
+                "ClientInteracting",
+                "False"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "SelectedClientID",
+                "=",
+                "RandomInRange(0, GlobalVariableChildCount(ClientDatabaseV2) - 1)"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "Random(5)"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "ClientNameTxt",
+                "=",
+                "\"Name: \" + GlobalVariableString(ClientDatabaseV2[Variable(SelectedClientID)].Name)"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "Offertxt",
+                "=",
+                "\"Offer: \" + TimeFormatter::SecondsToHHMMSS(GlobalVariable(ClientDatabaseV2[Variable(SelectedClientID)].Offer.Time)) + \" and \" + ToString(GlobalVariable(ClientDatabaseV2[Variable(SelectedClientID)].Offer.Money)) + \"Gold\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "ClientInteracting",
+                "True"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "AcceptBtn",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "Timer",
+                "+",
+                "Client.Variable(ClientData.Offer.Time)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "Timer",
+                "-",
+                "Client.Variable(ClientData.Request.Time)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "Money",
+                "+",
+                "Client.Variable(ClientData.Offer.Money)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "Money",
+                "-",
+                "Client.Variable(ClientData.Offer.Money)"
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "AcceptBtn",
+                "no",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "DeclineBtn",
+                "no",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "DeclineBtn",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "DeclineBtn",
+                "no",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "AcceptBtn",
+                "no",
+                ""
+              ]
+            }
+          ]
         }
       ],
       "layers": [
@@ -941,6 +2235,848 @@
   ],
   "externalEvents": [],
   "eventsFunctionsExtensions": [
+    {
+      "author": "",
+      "category": "General",
+      "extensionNamespace": "",
+      "fullName": "JSON Resource Loading",
+      "helpPath": "",
+      "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0ibWRpLWZpbGUtY29kZS1vdXRsaW5lIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTE0IDJINkM0Ljg5IDIgNCAyLjkgNCA0VjIwQzQgMjEuMTEgNC44OSAyMiA2IDIySDE4QzE5LjExIDIyIDIwIDIxLjExIDIwIDIwVjhMMTQgMk0xOCAyMEg2VjRIMTNWOUgxOFYyME05LjU0IDE1LjY1TDExLjYzIDE3Ljc0TDEwLjM1IDE5TDcgMTUuNjVMMTAuMzUgMTIuM0wxMS42MyAxMy41Nkw5LjU0IDE1LjY1TTE3IDE1LjY1TDEzLjY1IDE5TDEyLjM4IDE3Ljc0TDE0LjQ3IDE1LjY1TDEyLjM4IDEzLjU2TDEzLjY1IDEyLjNMMTcgMTUuNjVaIiAvPjwvc3ZnPg==",
+      "name": "JSONResourceLoader",
+      "previewIconUrl": "https://resources.gdevelop-app.com/assets/Icons/file-code-outline.svg",
+      "shortDescription": "Loads a JSON resource into a variable.",
+      "version": "1.0.0",
+      "description": [
+        "Loads a (static) JSON resource from your project files into a global, scene, or object variable.",
+        "",
+        "NEVER use this to load your game.json into a variable - this would increase your game size by a lot and make your whole project file available for anyone to open!"
+      ],
+      "origin": {
+        "identifier": "JSONResourceLoader",
+        "name": "gdevelop-extension-store"
+      },
+      "tags": [
+        "json",
+        "resource",
+        "load",
+        "open",
+        "file",
+        "data",
+        "static",
+        "file"
+      ],
+      "authorIds": [
+        "ZgrsWuRTAkXgeuPV9bo0zuEcA2w1"
+      ],
+      "dependencies": [],
+      "eventsFunctions": [
+        {
+          "description": "Loads a JSON resource into a scene structure variable.",
+          "fullName": "Load a JSON resource in a scene variable",
+          "functionType": "Action",
+          "name": "LoadJSONToScene",
+          "sentence": "Load _PARAM1_ into scene variable _PARAM2_",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "eventsFunctionContext",
+                "    .getArgument(\"Variable\")",
+                "    .fromJSObject(",
+                "        runtimeScene",
+                "            .getGame()",
+                "            .getJsonManager()",
+                "            .getLoadedJson(eventsFunctionContext.getArgument(\"Resource\"))",
+                "    );",
+                ""
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": false
+            }
+          ],
+          "parameters": [
+            {
+              "description": "The resource to load the JSON from",
+              "name": "Resource",
+              "type": "jsonResource"
+            },
+            {
+              "description": "The scene variable to load the JSON to",
+              "name": "Variable",
+              "type": "scenevar"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Loads a JSON resource into a global structure variable.",
+          "fullName": "Load a JSON resource in a global variable",
+          "functionType": "Action",
+          "name": "LoadJSONToGlobal",
+          "sentence": "Load _PARAM1_ into global variable _PARAM2_",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "eventsFunctionContext",
+                "    .getArgument(\"Variable\")",
+                "    .fromJSObject(",
+                "        runtimeScene",
+                "            .getGame()",
+                "            .getJsonManager()",
+                "            .getLoadedJson(eventsFunctionContext.getArgument(\"Resource\"))",
+                "    );",
+                ""
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": false
+            }
+          ],
+          "parameters": [
+            {
+              "description": "The resource to load the JSON from",
+              "name": "Resource",
+              "type": "jsonResource"
+            },
+            {
+              "description": "The global variable to load the JSON to",
+              "name": "Variable",
+              "type": "globalvar"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Loads a JSON resource into an object structure variable.",
+          "fullName": "Load a JSON resource in an object variable",
+          "functionType": "Action",
+          "name": "LoadJSONToObject",
+          "sentence": "Load _PARAM1_ into object variable _PARAM3_ of object _PARAM2_",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "eventsFunctionContext",
+                "    .getArgument(\"Variable\")",
+                "    .fromJSObject(",
+                "        runtimeScene",
+                "            .getGame()",
+                "            .getJsonManager()",
+                "            .getLoadedJson(eventsFunctionContext.getArgument(\"Resource\"))",
+                "    );",
+                ""
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": false
+            }
+          ],
+          "parameters": [
+            {
+              "description": "The resource to load the JSON from",
+              "name": "Resource",
+              "type": "jsonResource"
+            },
+            {
+              "description": "The object where to find the variable",
+              "name": "Object",
+              "type": "objectList"
+            },
+            {
+              "description": "The object variable to load the JSON to",
+              "name": "Variable",
+              "type": "objectvar"
+            }
+          ],
+          "objectGroups": []
+        }
+      ],
+      "eventsBasedBehaviors": [],
+      "eventsBasedObjects": []
+    },
+    {
+      "author": "",
+      "category": "General",
+      "extensionNamespace": "",
+      "fullName": "ChatBubble",
+      "helpPath": "",
+      "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0ibWRpLWNoYXQtb3V0bGluZSIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGQ9Ik0xMiwzQzYuNSwzIDIsNi41OCAyLDExQzIuMDUsMTMuMTUgMy4wNiwxNS4xNyA0Ljc1LDE2LjVDNC43NSwxNy4xIDQuMzMsMTguNjcgMiwyMUM0LjM3LDIwLjg5IDYuNjQsMjAgOC40NywxOC41QzkuNjEsMTguODMgMTAuODEsMTkgMTIsMTlDMTcuNSwxOSAyMiwxNS40MiAyMiwxMUMyMiw2LjU4IDE3LjUsMyAxMiwzTTEyLDE3QzcuNTgsMTcgNCwxNC4zMSA0LDExQzQsNy42OSA3LjU4LDUgMTIsNUMxNi40Miw1IDIwLDcuNjkgMjAsMTFDMjAsMTQuMzEgMTYuNDIsMTcgMTIsMTdaIiAvPjwvc3ZnPg==",
+      "name": "ChatBubble",
+      "previewIconUrl": "https://resources.gdevelop-app.com/assets/Icons/chat-outline.svg",
+      "shortDescription": "Create chat bubbles dynamically. ",
+      "version": "1.6.2",
+      "description": [
+        "Create chat bubbles dynamically",
+        "",
+        "currently support:",
+        "- auto adjustments for text width",
+        "- auto adjustments for text height",
+        "- chat bubble colors",
+        "- name tags",
+        "",
+        "future support:",
+        "- different positions for the chat bubble tail",
+        "- adjustable paddings.",
+        "",
+        "[Example link](https://gdevelop.io/game-example/chat-bubble)"
+      ],
+      "origin": {
+        "identifier": "ChatBubble",
+        "name": "gdevelop-extension-store"
+      },
+      "tags": [
+        "bubble",
+        "chat",
+        "ui"
+      ],
+      "authorIds": [
+        "rotBq28wITdtfsrE7McHQri4k2w2"
+      ],
+      "dependencies": [],
+      "eventsFunctions": [],
+      "eventsBasedBehaviors": [
+        {
+          "description": "Draws a chat bubble into a text object.",
+          "fullName": "Chat Bubble Behavior",
+          "name": "ChatBubble",
+          "objectType": "PrimitiveDrawing::Drawer",
+          "eventsFunctions": [
+            {
+              "fullName": "",
+              "functionType": "Action",
+              "name": "onCreated",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PrimitiveDrawing::ClearBetweenFrames"
+                      },
+                      "parameters": [
+                        "Object",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChatBubble::ChatBubble::SetPropertyDefaultColor"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "ToString(Object.FillColorRed()) + \";\" +\nToString(Object.FillColorGreen()) + \";\" +\nToString(Object.FillColorBlue())"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChatBubble::ChatBubble::SetPropertyDefaultOutlineColor"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "ToString(Object.OutlineColorRed()) + \";\" +\nToString(Object.OutlineColorGreen()) + \";\" +\nToString(Object.OutlineColorBlue())"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "supplementaryInformation": "PrimitiveDrawing::Drawer",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "ChatBubble::ChatBubble",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Draw a chat bubble.",
+              "fullName": "Draw a chat bubble",
+              "functionType": "Action",
+              "group": "ChatBubbleExtension",
+              "name": "DrawChatBubble",
+              "sentence": "Draw a chat bubble at point _PARAM2_, _PARAM3_ using text object _PARAM4_, shape painter _PARAM0_, layer: _PARAM5_",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "SceneInstancesCount"
+                      },
+                      "parameters": [
+                        "",
+                        "ChatBubbleText",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "ChatBubbleText",
+                        "0",
+                        "0",
+                        "GetArgumentAsString(\"Layer\")"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "Object",
+                        "__ChatBubble.DrawWidth",
+                        "=",
+                        "ChatBubbleText.Width()"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "Object",
+                        "__ChatBubble.DrawHeight",
+                        "=",
+                        "ChatBubbleText.Height()"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangePlan"
+                      },
+                      "parameters": [
+                        "ChatBubbleText",
+                        "+",
+                        "ChatBubbleText.ZOrder()"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Calculate positions",
+                  "comment2": ""
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PrimitiveDrawing::OutlineColor"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Object.Behavior::PropertyDefaultOutlineColor()"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PrimitiveDrawing::FillColor"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Object.Behavior::PropertyDefaultColor()"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "__ChatBubble.DrawChatX",
+                        "=",
+                        "GetArgumentAsNumber(\"PointX\")-32"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "__ChatBubble.DrawChatY",
+                        "=",
+                        "GetArgumentAsNumber(\"PointY\")-18-24-18"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "MettreXY"
+                      },
+                      "parameters": [
+                        "ChatBubbleText",
+                        "=",
+                        "Variable(__ChatBubble.DrawChatX)+24",
+                        "=",
+                        "Variable(__ChatBubble.DrawChatY)+18-ChatBubbleText.Height()"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "Object",
+                        "__ChatBubble.DrawWidth",
+                        "=",
+                        "lerp(Object.Variable(__ChatBubble.DrawWidth),ChatBubbleText.Width(),0.08)"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "Object",
+                        "__ChatBubble.DrawHeight",
+                        "=",
+                        "lerp(Object.Variable(__ChatBubble.DrawHeight),ChatBubbleText.Height(),0.08)"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "ChatBubbleText"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::CompareNumbers"
+                      },
+                      "parameters": [
+                        "Object.Variable(__ChatBubble.DrawWidth)",
+                        ">=",
+                        "ChatBubbleText.Width()-24"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::CompareNumbers"
+                      },
+                      "parameters": [
+                        "Object.Variable(__ChatBubble.DrawHeight)",
+                        ">=",
+                        "ChatBubbleText.Height()-24"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Montre"
+                      },
+                      "parameters": [
+                        "ChatBubbleText",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Draw ChatBubble",
+                  "comment2": ""
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PrimitiveDrawing::RoundedRectangle"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Variable(__ChatBubble.DrawChatX)",
+                        "Variable(__ChatBubble.DrawChatY)-Object.Variable(__ChatBubble.DrawHeight)",
+                        "Variable(__ChatBubble.DrawChatX)+24+max(40,Object.Variable(__ChatBubble.DrawWidth))+24",
+                        "Variable(__ChatBubble.DrawChatY)+18+18",
+                        "40"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PrimitiveDrawing::BeginFillPath"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Variable(__ChatBubble.DrawChatX)+32",
+                        "Variable(__ChatBubble.DrawChatY)+18+18"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PrimitiveDrawing::PathLineTo"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Variable(__ChatBubble.DrawChatX)+32",
+                        "Variable(__ChatBubble.DrawChatY)+18+24+18"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PrimitiveDrawing::PathLineTo"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Variable(__ChatBubble.DrawChatX)+32+24",
+                        "Variable(__ChatBubble.DrawChatY)+18+18"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PrimitiveDrawing::closePath"
+                      },
+                      "parameters": [
+                        "Object"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "supplementaryInformation": "PrimitiveDrawing::Drawer",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "ChatBubble::ChatBubble",
+                  "type": "behavior"
+                },
+                {
+                  "description": "X position",
+                  "name": "PointX",
+                  "type": "expression"
+                },
+                {
+                  "description": "Y position",
+                  "name": "PointY",
+                  "type": "expression"
+                },
+                {
+                  "description": "Chat bubble text object",
+                  "name": "ChatBubbleText",
+                  "supplementaryInformation": "TextObject::Text",
+                  "type": "objectList"
+                },
+                {
+                  "description": "Layer",
+                  "name": "Layer",
+                  "type": "layer"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Draw a chat bubble with name tag.",
+              "fullName": "Draw a chat bubble with name tag",
+              "functionType": "Action",
+              "group": "ChatBubbleExtension",
+              "name": "DrawChatBubbleWithNameTag",
+              "sentence": "Draw a chat bubble at point _PARAM2_, _PARAM3_ using text object _PARAM4_, shape painter _PARAM0_, name tag text object: _PARAM6_, layer: _PARAM5_",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Draw Chat Bubble",
+                  "comment2": ""
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ChatBubble::ChatBubble::DrawChatBubble"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "GetArgumentAsNumber(\"PointX\")",
+                        "GetArgumentAsNumber(\"PointY\")",
+                        "ChatBubbleText",
+                        "\"\"",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Draw Nametag",
+                  "comment2": ""
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "SceneInstancesCount"
+                      },
+                      "parameters": [
+                        "",
+                        "NameTagText",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "NameTagText",
+                        "0",
+                        "0",
+                        "GetArgumentAsString(\"Layer\")"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangePlan"
+                      },
+                      "parameters": [
+                        "NameTagText",
+                        "+",
+                        "ChatBubbleText.ZOrder()"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "MettreXY"
+                      },
+                      "parameters": [
+                        "NameTagText",
+                        "=",
+                        "Variable(__ChatBubble.DrawChatX)-18+17+5",
+                        "=",
+                        "Variable(__ChatBubble.DrawChatY)-Object.Variable(__ChatBubble.DrawHeight)-18+3+9"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PrimitiveDrawing::OutlineColor"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Object.Behavior::PropertyNameTagBackgroundColor()"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PrimitiveDrawing::FillColor"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Object.Behavior::PropertyNameTagBackgroundColor()"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PrimitiveDrawing::RoundedRectangle"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Variable(__ChatBubble.DrawChatX)-18+15",
+                        "Variable(__ChatBubble.DrawChatY)-Object.Variable(__ChatBubble.DrawHeight)-9",
+                        "Variable(__ChatBubble.DrawChatX)+NameTagText.Width()+5+5",
+                        "Variable(__ChatBubble.DrawChatY)-Object.Variable(__ChatBubble.DrawHeight)-18+24+7",
+                        "10"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "supplementaryInformation": "PrimitiveDrawing::Drawer",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "ChatBubble::ChatBubble",
+                  "type": "behavior"
+                },
+                {
+                  "description": "X position",
+                  "name": "PointX",
+                  "type": "expression"
+                },
+                {
+                  "description": "Y position",
+                  "name": "PointY",
+                  "type": "expression"
+                },
+                {
+                  "description": "Chat bubble text object",
+                  "name": "ChatBubbleText",
+                  "supplementaryInformation": "TextObject::Text",
+                  "type": "objectList"
+                },
+                {
+                  "description": "Layer",
+                  "name": "Layer",
+                  "type": "layer"
+                },
+                {
+                  "description": "Name tag text object (optional)",
+                  "name": "NameTagText",
+                  "supplementaryInformation": "TextObject::Text",
+                  "type": "objectList"
+                }
+              ],
+              "objectGroups": []
+            }
+          ],
+          "propertyDescriptors": [
+            {
+              "value": "155;155;155",
+              "type": "Color",
+              "label": "Name Tag Background Color (if you only call draw with name tag)",
+              "description": "",
+              "group": "Name Tag Properties",
+              "extraInformation": [],
+              "hidden": false,
+              "name": "NameTagBackgroundColor"
+            },
+            {
+              "value": "",
+              "type": "Color",
+              "label": "",
+              "description": "",
+              "group": "Chat Bubble Properties",
+              "extraInformation": [],
+              "hidden": true,
+              "name": "DefaultColor"
+            },
+            {
+              "value": "",
+              "type": "Color",
+              "label": "",
+              "description": "",
+              "group": "Chat Bubble Properties",
+              "extraInformation": [],
+              "hidden": true,
+              "name": "DefaultOutlineColor"
+            },
+            {
+              "value": "",
+              "type": "Number",
+              "label": "Draw Chat Width",
+              "description": "",
+              "group": "Chat Bubble Properties",
+              "extraInformation": [],
+              "hidden": true,
+              "name": "DrawChatWidth"
+            },
+            {
+              "value": "",
+              "type": "Number",
+              "label": "Draw Chat Height",
+              "description": "",
+              "group": "Chat Bubble Properties",
+              "extraInformation": [],
+              "hidden": true,
+              "name": "DrawChatHeight"
+            }
+          ],
+          "sharedPropertyDescriptors": []
+        }
+      ],
+      "eventsBasedObjects": []
+    },
     {
       "author": "UlisesFreitas",
       "category": "Advanced",
