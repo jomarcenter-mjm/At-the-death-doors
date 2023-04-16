@@ -1,6 +1,6 @@
 {
-    "ClientDatabase" : {
-        "TestClient": {
+    "ClientDatabase" : [
+        {
             "Name" : "Chris Chapnel",
             "Chat": ["Test", "testB"],
             "ChatAccept": ["Test", "TestB"],
@@ -20,8 +20,8 @@
                 "Time" : "50"
             }
         },
-        "TestClientB": {
-            "Name" : "Chris Chapnel",
+        {
+            "Name" : "Petta Louis",
             "Chat": ["Test", "testB"],
             "ChatAccept": ["Test", "TestB"],
             "ChatDecline": ["Test", "TestB"],
@@ -40,5 +40,6 @@
                 "Time" : "50"
             }
         }
-    }
+    ]
+
 }

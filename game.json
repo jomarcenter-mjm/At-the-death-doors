@@ -318,7 +318,6 @@
       "type": "array",
       "children": [
         {
-          "folded": true,
           "type": "structure",
           "children": [
             {
@@ -385,11 +384,18 @@
               ]
             },
             {
+              "folded": true,
+              "name": "Message",
+              "type": "string",
+              "value": "Testy"
+            },
+            {
               "name": "Name",
               "type": "string",
               "value": "Alberty"
             },
             {
+              "folded": true,
               "name": "Offer",
               "type": "structure",
               "children": [
@@ -491,6 +497,12 @@
                   "value": 0
                 }
               ]
+            },
+            {
+              "folded": true,
+              "name": "Message",
+              "type": "string",
+              "value": "Hello"
             },
             {
               "name": "Name",
@@ -2059,7 +2071,7 @@
                 "value": "Wait"
               },
               "parameters": [
-                "Random(5)"
+                "Random(20)"
               ]
             },
             {
@@ -2080,6 +2092,36 @@
                 "Offertxt",
                 "=",
                 "\"Offer: \" + TimeFormatter::SecondsToHHMMSS(GlobalVariable(ClientDatabaseV2[Variable(SelectedClientID)].Offer.Time)) + \" and \" + ToString(GlobalVariable(ClientDatabaseV2[Variable(SelectedClientID)].Offer.Money)) + \"Gold\""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "Messagetxt",
+                "=",
+                "\"Message: \" + GlobalVariableString(ClientDatabaseV2[Variable(SelectedClientID)].Message)"
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "AcceptBtn",
+                "yes",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "DeclineBtn",
+                "yes",
+                ""
               ]
             },
             {
@@ -2166,6 +2208,15 @@
                 "no",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "ClientInteracting",
+                "False"
+              ]
             }
           ]
         },
@@ -2201,6 +2252,15 @@
                 "AcceptBtn",
                 "no",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "ClientInteracting",
+                "False"
               ]
             }
           ]
