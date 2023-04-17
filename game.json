@@ -11,7 +11,7 @@
     "folderProject": false,
     "orientation": "landscape",
     "packageName": "com.MJMCreativeWorksandideas.WaitingDeath",
-    "pixelsRounding": false,
+    "pixelsRounding": true,
     "projectUuid": "3b4df94d-bc97-4d26-a050-69865b93274c",
     "scaleMode": "linear",
     "sizeOnStartupMode": "adaptWidth",
@@ -23,7 +23,7 @@
     "author": "MJM Creative Works and Ideas",
     "windowWidth": 1280,
     "windowHeight": 720,
-    "latestCompilationDirectory": "",
+    "latestCompilationDirectory": "C:\\Users\\jomarcenter-mjm\\Documents\\GDevelop projects\\Build\\TimeGame",
     "maxFPS": 60,
     "minFPS": 20,
     "verticalSync": false,
@@ -172,6 +172,64 @@
         "metadata": "",
         "name": "assets\\ClientDatabase.json",
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/InformationWindow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\InformationWindow.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "DeathTimer2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "DeathTimer2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "CreditIcon.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "CreditIcon.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "MIcrophone.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "MIcrophone.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Kenney Blocks.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "b6fd0cb2a1206afe3882f0187839aac780734a091c5e6c57ee25c84acdc1a499_Kenney Blocks.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Kenney Font Pack/b6fd0cb2a1206afe3882f0187839aac780734a091c5e6c57ee25c84acdc1a499_Kenney Blocks.ttf",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/Kenney Pixel.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "490034af0b44b2d8e88911e4b30bf82a51e9fd67c1688a44a9c36e10ea360cd8_Kenney Pixel.ttf",
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Kenney Font Pack/490034af0b44b2d8e88911e4b30bf82a51e9fd67c1688a44a9c36e10ea360cd8_Kenney Pixel.ttf",
+          "name": "gdevelop-asset-store"
+        }
       }
     ],
     "resourceFolders": []
@@ -180,7 +238,6 @@
   "objectsGroups": [],
   "variables": [
     {
-      "folded": true,
       "name": "JsonFileStorage",
       "type": "array",
       "children": [
@@ -219,29 +276,39 @@
                 {
                   "type": "string",
                   "value": "That is all!"
+                },
+                {
+                  "type": "string",
+                  "value": "<<endofchat>>"
                 }
               ]
             },
             {
-              "folded": true,
               "name": "ChatAccept",
               "type": "array",
               "children": [
                 {
                   "folded": true,
                   "type": "string",
-                  "value": "0"
+                  "value": "Thank you very, It been pleasure working with you."
+                },
+                {
+                  "type": "string",
+                  "value": "<<endofchat>>"
                 }
               ]
             },
             {
-              "folded": true,
               "name": "ChatDecline",
               "type": "array",
               "children": [
                 {
                   "type": "string",
-                  "value": "0"
+                  "value": "I understand, Have a nice day."
+                },
+                {
+                  "type": "string",
+                  "value": "<<endofchat>>"
                 }
               ]
             },
@@ -276,6 +343,12 @@
             },
             {
               "folded": true,
+              "name": "ItemOffer",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "folded": true,
               "name": "Message",
               "type": "string",
               "value": "Testy"
@@ -286,10 +359,14 @@
               "value": "Alberty"
             },
             {
-              "folded": true,
               "name": "Offer",
               "type": "structure",
               "children": [
+                {
+                  "name": "ItemName",
+                  "type": "string",
+                  "value": "0"
+                },
                 {
                   "name": "Money",
                   "type": "number",
@@ -329,7 +406,6 @@
           ]
         },
         {
-          "folded": true,
           "type": "structure",
           "children": [
             {
@@ -346,30 +422,43 @@
                 },
                 {
                   "type": "string",
-                  "value": "I need to play some Loan"
+                  "value": "I need to pay some Loan"
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "<<endofchat>>"
                 }
               ]
             },
             {
-              "folded": true,
               "name": "ChatAccept",
               "type": "array",
               "children": [
                 {
                   "folded": true,
                   "type": "string",
-                  "value": "0"
+                  "value": "Thank you very much."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "<<endofchat>>"
                 }
               ]
             },
             {
-              "folded": true,
               "name": "ChatDecline",
               "type": "array",
               "children": [
                 {
                   "type": "string",
-                  "value": "0"
+                  "value": "I see. I will find another shop."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "<<endofchat>>"
                 }
               ]
             },
@@ -404,6 +493,12 @@
             },
             {
               "folded": true,
+              "name": "ItemOffer",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "folded": true,
               "name": "Message",
               "type": "string",
               "value": "Hello"
@@ -417,6 +512,11 @@
               "name": "Offer",
               "type": "structure",
               "children": [
+                {
+                  "name": "ItemName",
+                  "type": "string",
+                  "value": "0"
+                },
                 {
                   "name": "Money",
                   "type": "number",
@@ -466,12 +566,60 @@
           "type": "structure",
           "children": [
             {
+              "folded": true,
               "name": "Chat",
               "type": "array",
               "children": [
                 {
                   "type": "string",
-                  "value": "0"
+                  "value": "*Whistles*"
+                },
+                {
+                  "type": "string",
+                  "value": "Being immortal."
+                },
+                {
+                  "type": "string",
+                  "value": "Laughting at the face of death."
+                },
+                {
+                  "type": "string",
+                  "value": "Do you really think you can get away from me. haha"
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "I know you can hear me."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "Let's be honest, They told you to ignore me and Decline my request."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "Such fools."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "I will give you once last chance human."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "Don't be a coward."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "Accept your faith in the face of death."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "<<endofchat>>"
                 }
               ]
             },
@@ -483,7 +631,26 @@
                 {
                   "folded": true,
                   "type": "string",
-                  "value": "0"
+                  "value": "I know you had it in ya."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "Your the first person who will die in the face of me."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "Now the world will see what death truely is."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "See you in the afterlife."
+                },
+                {
+                  "type": "string",
+                  "value": "<<endofchat>>"
                 }
               ]
             },
@@ -494,7 +661,35 @@
               "children": [
                 {
                   "type": "string",
-                  "value": "0"
+                  "value": "*Laughting*"
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "Haha.. Letting yourself immortal for the sake of what?"
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "You can't answer that either."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "Let's be honest, once everyone is immortal I will fade out of existancing."
+                },
+                {
+                  "type": "string",
+                  "value": "But you will never hear me again. But mark my words."
+                },
+                {
+                  "type": "string",
+                  "value": "Even in immortalty, everyone will suffer."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "<<endofchat>>"
                 }
               ]
             },
@@ -529,20 +724,30 @@
             },
             {
               "folded": true,
+              "name": "ItemOffer",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "folded": true,
               "name": "Message",
               "type": "string",
-              "value": "You humans are always going to end up metting me, "
+              "value": "Accept your fate and lets death rules again."
             },
             {
               "name": "Name",
               "type": "string",
-              "value": "Death?"
+              "value": "Death"
             },
             {
-              "folded": true,
               "name": "Offer",
               "type": "structure",
               "children": [
+                {
+                  "name": "ItemName",
+                  "type": "string",
+                  "value": "Mortality"
+                },
                 {
                   "name": "Money",
                   "type": "number",
@@ -557,13 +762,6 @@
               ]
             },
             {
-              "folded": true,
-              "name": "OfferString",
-              "type": "string",
-              "value": "Your dignified death"
-            },
-            {
-              "folded": true,
               "name": "Request",
               "type": "structure",
               "children": [
@@ -583,11 +781,51 @@
             {
               "name": "SpecialID",
               "type": "number",
-              "value": 1
+              "value": 0
             }
           ]
         }
       ]
+    },
+    {
+      "name": "ItemDatabase",
+      "type": "array",
+      "children": [
+        {
+          "type": "structure",
+          "children": [
+            {
+              "folded": true,
+              "name": "ItemDescription",
+              "type": "string",
+              "value": "A Unauthorized object. Make someone immortal."
+            },
+            {
+              "folded": true,
+              "name": "ItemName",
+              "type": "string",
+              "value": "Immortalizer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "folded": true,
+      "name": "RandomName",
+      "type": "array",
+      "children": [
+        {
+          "type": "string",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "folded": true,
+      "name": "GameOverID",
+      "type": "number",
+      "value": 0
     }
   ],
   "layouts": [
@@ -611,7 +849,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.5843784410740929,
+        "zoomFactor": 0.7130377630690399,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -670,9 +908,24 @@
           "name": "OpenSourceBtn",
           "persistentUuid": "feca70b8-8994-4277-b955-f9c99b882c66",
           "width": 0,
-          "x": 526,
-          "y": 522,
+          "x": 527,
+          "y": 523,
           "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 104,
+          "layer": "",
+          "name": "DeathDoorTxtLogo",
+          "persistentUuid": "957d4746-f3ba-4619-bc74-1c3fb5bb6ffc",
+          "width": 610,
+          "x": 327,
+          "y": 153,
+          "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -841,6 +1094,28 @@
             "fontFamily": "Arial",
             "align": "left",
             "wordWrap": true
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "DeathDoorTxtLogo",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "When the death door open",
+          "font": "490034af0b44b2d8e88911e4b30bf82a51e9fd67c1688a44a9c36e10ea360cd8_Kenney Pixel.ttf",
+          "textAlignment": "center",
+          "characterSize": 80,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
           }
         }
       ],
@@ -1172,8 +1447,29 @@
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "SkipBtn",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"GameProper\"",
+                "yes"
+              ]
+            }
+          ]
         }
       ],
       "layers": [
@@ -1227,7 +1523,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.6672773998329974,
+        "zoomFactor": 0.8141881203709929,
         "windowMask": false
       },
       "objectsGroups": [
@@ -1241,13 +1537,13 @@
           "folded": true,
           "name": "Timer",
           "type": "number",
-          "value": 600
+          "value": 300
         },
         {
           "folded": true,
           "name": "Money",
           "type": "number",
-          "value": 3000
+          "value": 500
         },
         {
           "folded": true,
@@ -1373,6 +1669,47 @@
           "name": "StartNewChatline",
           "type": "boolean",
           "value": true
+        },
+        {
+          "folded": true,
+          "name": "PlayerInventory",
+          "type": "array",
+          "children": [
+            {
+              "type": "structure",
+              "children": [
+                {
+                  "folded": true,
+                  "name": "AmountOwned",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "name": "ItemID",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "folded": true,
+          "name": "TotalClientHandling",
+          "type": "number",
+          "value": 20
+        },
+        {
+          "folded": true,
+          "name": "ClientStatus",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "folded": true,
+          "name": "EndofChat",
+          "type": "boolean",
+          "value": false
         }
       ],
       "instances": [
@@ -1384,8 +1721,8 @@
           "name": "TimerText",
           "persistentUuid": "71f27e90-b4c2-43ea-b269-9115c68219b1",
           "width": 0,
-          "x": 19,
-          "y": 17,
+          "x": 50,
+          "y": 9,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -1399,8 +1736,8 @@
           "name": "MoneyText",
           "persistentUuid": "ea8af795-a9a2-4f2c-9b16-37df68414d60",
           "width": 0,
-          "x": 22,
-          "y": 61,
+          "x": 50,
+          "y": 66,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -1414,7 +1751,7 @@
           "name": "AcceptBtn",
           "persistentUuid": "49d7e437-78d0-406a-bf51-492475a4ff2a",
           "width": 0,
-          "x": 414,
+          "x": 390,
           "y": 643,
           "zOrder": 3,
           "numberProperties": [],
@@ -1429,7 +1766,7 @@
           "name": "DeclineBtn",
           "persistentUuid": "4b9342d0-1e4d-41b6-8733-9176ef1fb1c7",
           "width": 0,
-          "x": 618,
+          "x": 632,
           "y": 643,
           "zOrder": 4,
           "numberProperties": [],
@@ -1444,8 +1781,8 @@
           "name": "ClientNameTxt",
           "persistentUuid": "8eb5b227-061d-41ac-b26b-fb6a74147136",
           "width": 0,
-          "x": 410,
-          "y": 39,
+          "x": 580,
+          "y": 74,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -1459,8 +1796,8 @@
           "name": "ClientTimeLeftTxt",
           "persistentUuid": "582c3e7d-dc5b-4b5c-9abe-bf0a646b4e96",
           "width": 0,
-          "x": 409,
-          "y": 75,
+          "x": 580,
+          "y": 106,
           "zOrder": 6,
           "numberProperties": [],
           "stringProperties": [],
@@ -1468,13 +1805,13 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 51,
           "layer": "",
           "name": "Offertxt",
           "persistentUuid": "4c8d852a-5b9d-471b-a054-8a3207d444ff",
-          "width": 0,
-          "x": 414,
+          "width": 406,
+          "x": 407,
           "y": 555,
           "zOrder": 7,
           "numberProperties": [],
@@ -1489,8 +1826,8 @@
           "name": "Messagetxt",
           "persistentUuid": "bce2f286-a3a4-4cfb-ac00-900423034429",
           "width": 0,
-          "x": 409,
-          "y": 118,
+          "x": 401,
+          "y": 240,
           "zOrder": 8,
           "numberProperties": [],
           "stringProperties": [],
@@ -1514,14 +1851,104 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 527,
+          "height": 453,
           "layer": "",
           "name": "ChatText",
           "persistentUuid": "5c2e13ab-d3fd-447b-888b-e1d2c3d182e1",
-          "width": 370,
-          "x": 17,
-          "y": 105,
+          "width": 366,
+          "x": 7,
+          "y": 180,
           "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 625,
+          "layer": "Background",
+          "name": "InformationBG",
+          "persistentUuid": "051be741-7341-4a30-9972-36683e8c57a1",
+          "width": 462,
+          "x": 378,
+          "y": 9,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "CollectionInfoText",
+          "persistentUuid": "e8c4e40a-d5fe-400c-9c57-ac75727417df",
+          "width": 0,
+          "x": 847,
+          "y": 424,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 36,
+          "layer": "",
+          "name": "DeathTimer",
+          "persistentUuid": "1981b832-6dbf-49e4-87b7-e2c5ee85fba8",
+          "width": 34,
+          "x": 7,
+          "y": 14,
+          "zOrder": 14,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "CreditIcon",
+          "persistentUuid": "75edeaf8-8597-43e3-a5cd-ba44bec1d1ba",
+          "width": 0,
+          "x": 12,
+          "y": 62,
+          "zOrder": 15,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 42,
+          "layer": "",
+          "name": "Microphone",
+          "persistentUuid": "8a693f48-c1d5-479f-8670-0febd5e06da3",
+          "width": 24,
+          "x": 10,
+          "y": 123,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "ChatInfoTxt",
+          "persistentUuid": "2eef4c12-8de6-4a7a-9e3a-1cb2dbdcbdc6",
+          "width": 0,
+          "x": 41,
+          "y": 142,
+          "zOrder": 17,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1996,6 +2423,190 @@
             "g": 0,
             "r": 0
           }
+        },
+        {
+          "assetStoreId": "",
+          "bottomMargin": 24,
+          "height": 48,
+          "leftMargin": 24,
+          "name": "InformationBG",
+          "rightMargin": 24,
+          "tags": "",
+          "texture": "assets\\InformationWindow.png",
+          "tiled": true,
+          "topMargin": 24,
+          "type": "PanelSpriteObject::PanelSprite",
+          "width": 48,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "CollectionInfoText",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Your Collections:",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "assetStoreId": "",
+          "name": "DeathTimer",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "DeathTimer2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "CreditIcon",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "CreditIcon.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "Microphone",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "MIcrophone.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "ChatInfoTxt",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Communication",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
         }
       ],
       "events": [
@@ -2044,6 +2655,19 @@
           ]
         },
         {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Trigger Gameover - Even if \"Immortal\"",
+          "comment2": ""
+        },
+        {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -2056,9 +2680,28 @@
                 ">=",
                 "Variable(Timer)"
               ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
             }
           ],
           "actions": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Continue countdown - Unless \"Immortal\"",
+          "comment2": ""
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -2088,6 +2731,17 @@
                     "Variable(Timer)"
                   ]
                 }
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "Inventory::IsEquipped"
+              },
+              "parameters": [
+                "",
+                "\"PlayerInventory\"",
+                "GlobalVariableString(ItemDatabase[0].ItemName)"
               ]
             }
           ],
@@ -2172,9 +2826,28 @@
                 "value": "ModVarScene"
               },
               "parameters": [
+                "ClientStatus",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
                 "CurrentChatPosition",
                 "=",
                 "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "EndofChat",
+                "False"
               ]
             },
             {
@@ -2184,7 +2857,7 @@
               "parameters": [
                 "Offertxt",
                 "=",
-                "\"Offer: \" + TimeFormatter::SecondsToHHMMSS(GlobalVariable(ClientDatabaseV2[Variable(SelectedClientID)].Offer.Time)) + \" and \" + ToString(GlobalVariable(ClientDatabaseV2[Variable(SelectedClientID)].Offer.Money)) + \" Gold. For your: \" + TimeFormatter::SecondsToHHMMSS(GlobalVariable(ClientDatabaseV2[Variable(SelectedClientID)].Request.Time)) + \" and \" + ToString(GlobalVariable(ClientDatabaseV2[Variable(SelectedClientID)].Request.Money))"
+                "\"Offer: \" + TimeFormatter::SecondsToHHMMSS(GlobalVariable(ClientDatabaseV2[Variable(SelectedClientID)].Offer.Time)) + \" and \" + ToString(GlobalVariable(ClientDatabaseV2[Variable(SelectedClientID)].Offer.Money)) + \" Gold. For your: \" + TimeFormatter::SecondsToHHMMSS(GlobalVariable(ClientDatabaseV2[Variable(SelectedClientID)].Request.Time)) + \" and \" + ToString(GlobalVariable(ClientDatabaseV2[Variable(SelectedClientID)].Request.Money)) + \"Gold\""
               ]
             },
             {
@@ -2195,26 +2868,6 @@
                 "Messagetxt",
                 "=",
                 "\"Message: \" + GlobalVariableString(ClientDatabaseV2[Variable(SelectedClientID)].Message)"
-              ]
-            },
-            {
-              "type": {
-                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
-              },
-              "parameters": [
-                "AcceptBtn",
-                "yes",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
-              },
-              "parameters": [
-                "DeclineBtn",
-                "yes",
-                ""
               ]
             },
             {
@@ -2258,7 +2911,7 @@
                 "value": "GlobalVariableChildCount"
               },
               "parameters": [
-                "ClientDatabaseV2[1].Chat",
+                "ClientDatabaseV2[Variable(SelectedClientID)].Chat",
                 ">",
                 "Variable(CurrentChatPosition)"
               ]
@@ -2270,6 +2923,25 @@
               "parameters": [
                 "StartNewChatline",
                 "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "ClientStatus",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "SceneVariableAsBoolean"
+              },
+              "parameters": [
+                "EndofChat",
+                "False"
               ]
             },
             {
@@ -2326,7 +2998,414 @@
                 "True"
               ]
             }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarGlobalTxt"
+                  },
+                  "parameters": [
+                    "ClientDatabaseV2[Variable(SelectedClientID)].Chat[Variable(CurrentChatPosition)]",
+                    "=",
+                    "\"<<endofchat>>\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+                  },
+                  "parameters": [
+                    "AcceptBtn",
+                    "yes",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+                  },
+                  "parameters": [
+                    "DeclineBtn",
+                    "yes",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetSceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "EndofChat",
+                    "True"
+                  ]
+                }
+              ]
+            }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Accept Chat",
+          "comment2": ""
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SceneVariableAsBoolean"
+              },
+              "parameters": [
+                "ClientInteracting",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "GlobalVariableChildCount"
+              },
+              "parameters": [
+                "ClientDatabaseV2[Variable(SelectedClientID)].ChatAccept",
+                ">",
+                "Variable(CurrentChatPosition)"
+              ]
+            },
+            {
+              "type": {
+                "value": "SceneVariableAsBoolean"
+              },
+              "parameters": [
+                "StartNewChatline",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "ClientStatus",
+                "=",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SceneVariableAsBoolean"
+              },
+              "parameters": [
+                "EndofChat",
+                "False"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "StartNewChatline",
+                "False"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "ChatText",
+                "+",
+                "GlobalVariableString(ClientDatabaseV2[Variable(SelectedClientID)].ChatAccept[Variable(CurrentChatPosition)]) + NewLine()"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "CurrentChatPosition",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "StartNewChatline",
+                "True"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarGlobalTxt"
+                  },
+                  "parameters": [
+                    "ClientDatabaseV2[Variable(SelectedClientID)].ChatDecline[Variable(CurrentChatPosition)]",
+                    "=",
+                    "\"<<endofchat>>\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetSceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "EndofChat",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "Random(20)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetSceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "ClientInteracting",
+                    "False"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Decline Chat",
+          "comment2": ""
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SceneVariableAsBoolean"
+              },
+              "parameters": [
+                "ClientInteracting",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "GlobalVariableChildCount"
+              },
+              "parameters": [
+                "ClientDatabaseV2[1].ChatDecline",
+                ">",
+                "Variable(CurrentChatPosition)"
+              ]
+            },
+            {
+              "type": {
+                "value": "SceneVariableAsBoolean"
+              },
+              "parameters": [
+                "StartNewChatline",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "ClientStatus",
+                "=",
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "SceneVariableAsBoolean"
+              },
+              "parameters": [
+                "EndofChat",
+                "False"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "StartNewChatline",
+                "False"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "ChatText",
+                "+",
+                "GlobalVariableString(ClientDatabaseV2[Variable(SelectedClientID)].ChatDecline[Variable(CurrentChatPosition)]) + NewLine()"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "CurrentChatPosition",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "StartNewChatline",
+                "True"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarGlobalTxt"
+                  },
+                  "parameters": [
+                    "ClientDatabaseV2[Variable(SelectedClientID)].ChatDecline[Variable(CurrentChatPosition)]",
+                    "=",
+                    "\"<<endofchat>>\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetSceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "EndofChat",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "Random(20)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetSceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "ClientInteracting",
+                    "False"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Accept and Decline Events",
+          "comment2": ""
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -2342,6 +3421,26 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "ClientStatus",
+                "=",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "CurrentChatPosition",
+                "=",
+                "0"
+              ]
+            },
             {
               "type": {
                 "value": "ModVarScene"
@@ -2404,6 +3503,15 @@
             },
             {
               "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "EndofChat",
+                "False"
+              ]
+            },
+            {
+              "type": {
                 "value": "ModVarScene"
               },
               "parameters": [
@@ -2424,19 +3532,57 @@
             },
             {
               "type": {
-                "value": "Wait"
+                "value": "TextObject::String"
               },
               "parameters": [
-                "Random(20)"
+                "MoneyText",
+                "=",
+                "ToString(Variable(Money))"
               ]
-            },
+            }
+          ],
+          "events": [
             {
-              "type": {
-                "value": "SetSceneVariableAsBoolean"
-              },
-              "parameters": [
-                "ClientInteracting",
-                "False"
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+                  },
+                  "parameters": [
+                    "AcceptBtn",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::And"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "GlobalVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "ClientDatabaseV2[Variable(SelectedClientID)].ItemOffer",
+                        "True"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Inventory::Add"
+                  },
+                  "parameters": [
+                    "",
+                    "\"PlayerInventory\"",
+                    "GlobalVariableString(ClientDatabaseV2[0].Offer.ItemName)"
+                  ]
+                }
               ]
             }
           ]
@@ -2455,6 +3601,26 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "ClientStatus",
+                "=",
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "CurrentChatPosition",
+                "=",
+                "0"
+              ]
+            },
             {
               "type": {
                 "value": "PanelSpriteButton::PanelSpriteButton::Activate"
@@ -2477,25 +3643,83 @@
             },
             {
               "type": {
-                "value": "Wait"
+                "value": "SetSceneVariableAsBoolean"
               },
               "parameters": [
-                "Random(20)"
+                "EndofChat",
+                "False"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Inventory::Has"
+              },
+              "parameters": [
+                "",
+                "\"PlayerInventory\"",
+                "GlobalVariableString(ItemDatabase[0].ItemName)"
               ]
             },
             {
               "type": {
-                "value": "SetSceneVariableAsBoolean"
+                "inverted": true,
+                "value": "Inventory::IsEquipped"
               },
               "parameters": [
-                "ClientInteracting",
-                "False"
+                "",
+                "\"PlayerInventory\"",
+                "GlobalVariableString(ItemDatabase[0].ItemName)"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Inventory::Equip"
+              },
+              "parameters": [
+                "",
+                "\"PlayerInventory\"",
+                "GlobalVariableString(ItemDatabase[0].ItemName)",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "TimerText",
+                "=",
+                "\"YOU ARE IMMORTAL\""
               ]
             }
           ]
         }
       ],
       "layers": [
+        {
+          "ambientLightColorB": 14406312,
+          "ambientLightColorG": 6069792,
+          "ambientLightColorR": 12079504,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "name": "Background",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        },
         {
           "ambientLightColorB": 0,
           "ambientLightColorG": 8509584,
