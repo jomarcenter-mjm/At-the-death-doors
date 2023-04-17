@@ -293,6 +293,118 @@
         "name": "PawnShopBackdrop2.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "disablePreload": false,
+        "file": "assets/Gameover.json",
+        "kind": "json",
+        "metadata": "{\"extension\":\".json\",\"localFilePath\":\"assets/Gameover.json\"}",
+        "name": "Gameover",
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "DeathPerson.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "DeathPerson.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "DeathtimerDevice-Error.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "DeathtimerDevice-Error.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "DeathtimerDevice-Offline.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "DeathtimerDevice-Offline.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ImmortalDoor.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ImmortalDoor.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "PoliceBadge.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "PoliceBadge.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "TrialBackdrop.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "TrialBackdrop.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/White Decorated Button_Hovered.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "White Decorated Button_Hovered.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/aac119ea43bd2b8fdb1f04a469420d61103b5199ddb715aa4904d093816d65dc_White Decorated Button_Hovered.png",
+          "name": "White Decorated Button_Hovered.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/White Decorated Button_Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "White Decorated Button_Idle.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/d2c7cafab0f5538ed6e2d9352ea2d138330c26408736202425d978e72fbb3904_White Decorated Button_Idle.png",
+          "name": "White Decorated Button_Idle.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/White Decorated Button_Pressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "White Decorated Button_Pressed.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/3d78d9f253b7ba4f1af9cd54ebcc27ce44d761cfdb2854ea6179fb449e290d64_White Decorated Button_Pressed.png",
+          "name": "White Decorated Button_Pressed.png"
+        }
+      },
+      {
+        "file": "assets/ArchitectsDaughter.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "ArchitectsDaughter.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/ab812c7d15ad3474b6e55761235713b68f34374f3f064d1b8685ed46720df2f8_ArchitectsDaughter.ttf",
+          "name": "ArchitectsDaughter.ttf"
+        }
       }
     ],
     "resourceFolders": []
@@ -318,11 +430,11 @@
       ]
     },
     {
-      "folded": true,
       "name": "ClientDatabaseV2",
       "type": "array",
       "children": [
         {
+          "folded": true,
           "type": "structure",
           "children": [
             {
@@ -775,10 +887,237 @@
       ]
     },
     {
-      "folded": true,
       "name": "SpecialClientDatabase",
       "type": "array",
       "children": [
+        {
+          "folded": true,
+          "type": "structure",
+          "children": [
+            {
+              "folded": true,
+              "name": "Chat",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "*Whistles*"
+                },
+                {
+                  "type": "string",
+                  "value": "Being immortal."
+                },
+                {
+                  "type": "string",
+                  "value": "Laughting at the face of death."
+                },
+                {
+                  "type": "string",
+                  "value": "Do you really think you can get away from me. haha"
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "I know you can hear me."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "Let's be honest, They told you to ignore me and Decline my request."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "Such fools."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "I will give you once last chance human."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "Don't be a coward."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "Accept your faith in the face of death."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "<<endofchat>>"
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "ChatAccept",
+              "type": "array",
+              "children": [
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "I know you had it in ya."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "Your the first person who will die in the face of me."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "Now the world will see what death truely is."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "See you in the afterlife."
+                },
+                {
+                  "type": "string",
+                  "value": "<<endofchat>>"
+                }
+              ]
+            },
+            {
+              "name": "ChatDecline",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "*Laughting*"
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "Haha.. Letting yourself immortal for the sake of what?"
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "You can't answer that either."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "Let's be honest, Who is death now?"
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "It is you? hahaha."
+                },
+                {
+                  "type": "string",
+                  "value": "You will never hear me again. But mark my words."
+                },
+                {
+                  "type": "string",
+                  "value": "Even in immortalty, everyone will suffer."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "<<endofchat>>"
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "ChatHaggle",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "0"
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "HaggleLimit",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "ItemOffer",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "folded": true,
+              "name": "Message",
+              "type": "string",
+              "value": "Accept your fate and lets death rules again."
+            },
+            {
+              "name": "Name",
+              "type": "string",
+              "value": "Death"
+            },
+            {
+              "name": "Offer",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "ItemName",
+                  "type": "string",
+                  "value": "Mortality"
+                },
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "name": "Request",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "name": "SpecialID",
+              "type": "number",
+              "value": 0
+            }
+          ]
+        },
         {
           "type": "structure",
           "children": [
@@ -1029,11 +1368,68 @@
               "value": "Immortalizer"
             }
           ]
+        },
+        {
+          "type": "structure",
+          "children": [
+            {
+              "folded": true,
+              "name": "ItemDescription",
+              "type": "string",
+              "value": "Death do us part"
+            },
+            {
+              "folded": true,
+              "name": "ItemName",
+              "type": "string",
+              "value": "Death"
+            }
+          ]
         }
       ]
     },
     {
+      "folded": true,
       "name": "HighScore",
+      "type": "structure",
+      "children": [
+        {
+          "name": "TotalClientHandled",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "folded": true,
+          "name": "TotalMoneyGiven",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "folded": true,
+          "name": "TotalMoneyRecieved",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "TotalTimeGiven",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "TotalTimerecieved",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "TotalitemRecieved",
+          "type": "number",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "folded": true,
+      "name": "CurrentBest",
       "type": "structure",
       "children": [
         {
@@ -2175,7 +2571,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.841642812537312,
+        "zoomFactor": 0.7370816317994044,
         "windowMask": false
       },
       "objectsGroups": [
@@ -3665,6 +4061,17 @@
                             "\"PlayerInventory\"",
                             "GlobalVariableString(ItemDatabase[0].ItemName)"
                           ]
+                        },
+                        {
+                          "type": {
+                            "inverted": true,
+                            "value": "Inventory::Has"
+                          },
+                          "parameters": [
+                            "",
+                            "\"PlayerInventory\"",
+                            "GlobalVariableString(ItemDatabase[1].ItemName)"
+                          ]
                         }
                       ]
                     }
@@ -3739,6 +4146,137 @@
                       ]
                     }
                   ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "Inventory::Has"
+                      },
+                      "parameters": [
+                        "",
+                        "\"PlayerInventory\"",
+                        "GlobalVariableString(ItemDatabase[1].ItemName)"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarGlobal"
+                      },
+                      "parameters": [
+                        "GameOverID",
+                        "=",
+                        "3"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetSceneVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "StartGameOver",
+                        "True"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Begin Game over action - Storer data to High Score Section",
+              "comment2": ""
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "StartGameOver",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "HighScore.TotalClientHandled",
+                    "=",
+                    "Variable(PlayerStatics.TotalClientHandled)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "HighScore.TotalMoneyGiven",
+                    "=",
+                    "Variable(PlayerStatics.TotalMoneyGiven)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "HighScore.TotalMoneyRecieved",
+                    "=",
+                    "Variable(PlayerStatics.TotalMoneyRecieved)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "HighScore.TotalTimeGiven",
+                    "=",
+                    "Variable(PlayerStatics.TotalTimeGiven)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "HighScore.TotalTimerecieved",
+                    "=",
+                    "Variable(PlayerStatics.TotalTimerecieved)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"GameOver\"",
+                    "yes"
+                  ]
                 }
               ]
             }
@@ -3750,6 +4288,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Special character RNG",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -3838,7 +4377,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Character Handling",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -6010,7 +6548,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Item Handling",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -6079,6 +6616,64 @@
                     "TimerText",
                     "=",
                     "\"YOU ARE IMMORTAL\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Death Recieved",
+              "comment2": ""
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Inventory::Has"
+                  },
+                  "parameters": [
+                    "",
+                    "\"PlayerInventory\"",
+                    "GlobalVariableString(ItemDatabase[1].ItemName)"
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Inventory::IsEquipped"
+                  },
+                  "parameters": [
+                    "",
+                    "\"PlayerInventory\"",
+                    "GlobalVariableString(ItemDatabase[1].ItemName)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Inventory::Equip"
+                  },
+                  "parameters": [
+                    "",
+                    "\"PlayerInventory\"",
+                    "GlobalVariableString(ItemDatabase[1].ItemName)",
+                    "yes"
                   ]
                 }
               ]
@@ -6343,6 +6938,750 @@
           "ambientLightColorB": 12103040,
           "ambientLightColorG": 150995054,
           "ambientLightColorR": 1869182049,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "name": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": []
+        }
+      ],
+      "behaviorsSharedData": []
+    },
+    {
+      "b": 209,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "GameOver",
+      "name": "GameOver",
+      "r": 209,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 209,
+      "uiSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.5653158055126306,
+        "windowMask": false
+      },
+      "objectsGroups": [],
+      "variables": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "SkipButton",
+          "persistentUuid": "c22cb703-86bb-4dd0-a27b-889613046783",
+          "width": 0,
+          "x": 512,
+          "y": 618,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "EndingImage",
+          "persistentUuid": "140ff8b3-fdb6-49fa-a7a8-f76386e8c7a2",
+          "width": 0,
+          "x": 497,
+          "y": 38,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "EndingDialogue",
+          "persistentUuid": "6dae69e9-7183-40ed-a2c1-62e29be347df",
+          "width": 0,
+          "x": 543,
+          "y": 428,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "assetStoreId": "",
+          "name": "EndingImage",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "PawnShop",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "PawnShopBackdrop2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Death",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "DeathPerson.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "ErrorDevice",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "DeathtimerDevice-Error.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "OffDevice",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "DeathtimerDevice-Offline.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "ImmortalDoor",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "ImmortalDoor.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "ArrestBadge",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "PoliceBadge.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "TrialCourt",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "TrialBackdrop.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "EndingDialogue",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Text_AutoTyping",
+              "type": "AutoTyping::Text_AutoTyping",
+              "Interval": 0.05,
+              "CharacterJustAdded": false,
+              "CurrentCharacter": ""
+            }
+          ],
+          "string": "[Dialogue]",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 30,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "assetStoreId": "f23eb31ad33dd63f1937c8745105316ca530c28513c64b68a665975503c852a6",
+          "name": "SkipButton",
+          "tags": "",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 6,
+            "BottomPadding": 24,
+            "TopPadding": 20,
+            "HoveredFadeOutDuration": 0.25
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 22,
+              "height": 64,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "White Square Decorated Button_Hovered.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            },
+            "Idle": {
+              "bottomMargin": 22,
+              "height": 64,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "White Square Decorated Button_Idle.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "Skip/See Score",
+              "font": "mononoki-Regular.ttf",
+              "textAlignment": "center",
+              "characterSize": 20,
+              "color": {
+                "b": 0,
+                "g": 0,
+                "r": 0
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 16,
+              "height": 64,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "White Square Decorated Button_Pressed.png",
+              "tiled": true,
+              "topMargin": 22,
+              "width": 192
+            }
+          }
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "DialogueTree::LoadDialogueFromJsonFile"
+              },
+              "parameters": [
+                "",
+                "Gameover"
+              ]
+            }
+          ]
+        },
+        {
+          "disabled": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Dialogue_System::Dialogue_Done_Running"
+              },
+              "parameters": [
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Score Result\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "SkipButton",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Score Result\"",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "layers": [
+        {
+          "ambientLightColorB": 1,
+          "ambientLightColorG": 134217728,
+          "ambientLightColorR": 1597066561,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "name": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": []
+        }
+      ],
+      "behaviorsSharedData": [
+        {
+          "name": "Text_AutoTyping",
+          "type": "AutoTyping::Text_AutoTyping"
+        }
+      ]
+    },
+    {
+      "b": 209,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "Score_32Result",
+      "name": "Score Result",
+      "r": 209,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 209,
+      "uiSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.6040838749988868,
+        "windowMask": false
+      },
+      "objectsGroups": [],
+      "variables": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "ReturnToMenu",
+          "persistentUuid": "c927ff52-f5ad-4189-a19a-0c225ee483bb",
+          "width": 0,
+          "x": 387,
+          "y": 616,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "SubmitScore",
+          "persistentUuid": "5e84735b-2422-429e-8d3c-091ca1992c4c",
+          "width": 0,
+          "x": 614,
+          "y": 616,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "StaticsInfoTxt",
+          "persistentUuid": "56b42b92-6e9e-423e-a630-59444a118fe0",
+          "width": 0,
+          "x": 391,
+          "y": 43,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "assetStoreId": "f23eb31ad33dd63f1937c8745105316ca530c28513c64b68a665975503c852a6",
+          "name": "ReturnToMenu",
+          "tags": "",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 6,
+            "BottomPadding": 24,
+            "TopPadding": 20,
+            "HoveredFadeOutDuration": 0.25
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 22,
+              "height": 64,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "White Square Decorated Button_Hovered.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            },
+            "Idle": {
+              "bottomMargin": 22,
+              "height": 64,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "White Square Decorated Button_Idle.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "Return To Menu",
+              "font": "mononoki-Regular.ttf",
+              "textAlignment": "center",
+              "characterSize": 20,
+              "color": {
+                "b": 0,
+                "g": 0,
+                "r": 0
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 16,
+              "height": 64,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "White Square Decorated Button_Pressed.png",
+              "tiled": true,
+              "topMargin": 22,
+              "width": 192
+            }
+          }
+        },
+        {
+          "assetStoreId": "f23eb31ad33dd63f1937c8745105316ca530c28513c64b68a665975503c852a6",
+          "name": "SubmitScore",
+          "tags": "",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 6,
+            "BottomPadding": 24,
+            "TopPadding": 20,
+            "HoveredFadeOutDuration": 0.25
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 22,
+              "height": 64,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "White Square Decorated Button_Hovered.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            },
+            "Idle": {
+              "bottomMargin": 22,
+              "height": 64,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "White Square Decorated Button_Idle.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "Submit Score",
+              "font": "mononoki-Regular.ttf",
+              "textAlignment": "center",
+              "characterSize": 20,
+              "color": {
+                "b": 0,
+                "g": 0,
+                "r": 0
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 16,
+              "height": 64,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "White Square Decorated Button_Pressed.png",
+              "tiled": true,
+              "topMargin": 22,
+              "width": 192
+            }
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "StaticsInfoTxt",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "YOUR STATICS",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 60,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        }
+      ],
+      "events": [],
+      "layers": [
+        {
+          "ambientLightColorB": 3,
+          "ambientLightColorG": 134217728,
+          "ambientLightColorR": 1597197633,
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
           "name": "",

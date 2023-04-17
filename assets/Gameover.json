@@ -1,0 +1,42 @@
+[
+	{
+		"title": "DeathEnding",
+		"tags": "",
+		"body": "In the end you decided to accept death.\nAnd in return every devices have slowly glitch out.\neven those who were immortal.\nPanic and chaos ensure as everyone cannot tell when they will die.\nIn the end death return to the mortal and immortal plane.\nThe End\nEnding: Death returns.",
+		"position": {
+			"x": 394,
+			"y": 63
+		},
+		"colorID": 0
+	},
+	{
+		"title": "FakeImmortality",
+		"tags": "",
+		"body": "A few client later.\nThe secret police arrived and questions you.\n\"Have you seen this guy\"\nYou seen his face from the request form. But you decided to stay quiet.\n\"We know you had a deal with him\"\nThe police is aware and immediately took your decide.\n\"That what I tough, Your hear by under arrest for purchasing and holding illegal life extension device\"\nThe police handcuff you and put you in prison.\nDays later the trials begin. You pleaded not Guilty.\nBut that doest matter as you were found Guilty.\nAnd sentence to death.\nThe end\nEnding: False Immortality",
+		"position": {
+			"x": 155,
+			"y": -94
+		},
+		"colorID": 0
+	},
+	{
+		"title": "TimeUpEnding",
+		"tags": "",
+		"body": "So many bad client, so little time.\nYou ran out of time. You fainted on the spot.\nAs the medic team arrived. You were declared dead.\nThe end\nEnding: Time has ran out.",
+		"position": {
+			"x": -109,
+			"y": 66
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Immortal",
+		"tags": "",
+		"body": "Congratulation, Your prove yourself worth of becoming immortal.\nYour device deactivated as you no longer needed one.\nyou were sent to the upper Escalon of the land of the immortal.\nLeaving the lower immortal world.\nBut.. Something is a missed.\nThis isn't right this isn't what you were hoped for.\nThe whole thing was a lie. You were never supposed to be with them.\nNow you were just some clown performing entertainment to the true immortals.\nFor the rest of your life.\nThe end\nEnding: \"True\" Immortality",
+		"position": {
+			"x": 755,
+			"y": -28
+		},
+		"colorID": 0
+	}
+]
