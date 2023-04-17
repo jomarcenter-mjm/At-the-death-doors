@@ -1602,6 +1602,32 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "CreditsBtn",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Credits\"",
+                ""
+              ]
+            }
+          ]
         }
       ],
       "layers": [
@@ -2305,6 +2331,18 @@
           "name": "StartGameOver",
           "type": "boolean",
           "value": false
+        },
+        {
+          "folded": true,
+          "name": "SpecialCharacterMode",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "folded": true,
+          "name": "SpecialCharacterRNG",
+          "type": "number",
+          "value": 0
         }
       ],
       "instances": [
@@ -3484,6 +3522,81 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
+          "name": "Timer Handling",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Continue countdown - Unless \"Immortal\"",
+              "comment2": ""
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Always"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "CompareTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"CountDownTimer\"",
+                    ">=",
+                    "Variable(Timer)"
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Inventory::IsEquipped"
+                  },
+                  "parameters": [
+                    "",
+                    "\"PlayerInventory\"",
+                    "GlobalVariableString(ItemDatabase[0].ItemName)"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "TimerText",
+                    "=",
+                    "TimeFormatter::SecondsToHHMMSS(abs(TimerElapsedTime(\"CountDownTimer\")-Variable(Timer)))"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "folded": true,
           "name": "Game Over Handling",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -3637,8 +3750,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
-          "name": "Timer Handling",
+          "name": "Special character RNG",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
@@ -3652,7 +3764,7 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "Continue countdown - Unless \"Immortal\"",
+              "comment": "This hadles activation of special character",
               "comment2": ""
             },
             {
@@ -3660,45 +3772,60 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "BuiltinCommonInstructions::Always"
+                    "value": "SceneVariableAsBoolean"
                   },
                   "parameters": [
-                    ""
+                    "SpecialCharacterMode",
+                    "False"
                   ]
                 },
                 {
                   "type": {
-                    "inverted": true,
-                    "value": "CompareTimer"
+                    "value": "SceneVariableAsBoolean"
                   },
                   "parameters": [
-                    "",
-                    "\"CountDownTimer\"",
-                    ">=",
-                    "Variable(Timer)"
-                  ]
-                },
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "Inventory::IsEquipped"
-                  },
-                  "parameters": [
-                    "",
-                    "\"PlayerInventory\"",
-                    "GlobalVariableString(ItemDatabase[0].ItemName)"
+                    "ClientInteracting",
+                    "False"
                   ]
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "value": "TextObject::String"
+                    "value": "ModVarScene"
                   },
                   "parameters": [
-                    "TimerText",
+                    "SpecialCharacterRNG",
                     "=",
-                    "TimeFormatter::SecondsToHHMMSS(abs(TimerElapsedTime(\"CountDownTimer\")-Variable(Timer)))"
+                    "RandomInRange(0,100)"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "SpecialCharacterRNG",
+                        ">=",
+                        "80"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetSceneVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "SpecialCharacterMode",
+                        "True"
+                      ]
+                    }
                   ]
                 }
               ]
@@ -3707,152 +3834,326 @@
           "parameters": []
         },
         {
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "Loads the Next client files and activates it",
-          "comment2": ""
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "folded": true,
+          "name": "Character Handling",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
             {
-              "type": {
-                "value": "SceneVariableAsBoolean"
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
               },
-              "parameters": [
-                "ClientInteracting",
-                "False"
+              "comment": "Loads the Next client files and activates it",
+              "comment2": ""
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "ClientInteracting",
+                    "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "SpecialCharacterMode",
+                    "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "OfferSection",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "SelectedClientID",
+                    "=",
+                    "RandomInRange(0, GlobalVariableChildCount(ClientDatabaseV2) - 1)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "ClientNameTxt",
+                    "=",
+                    "\"Name: \" + GlobalVariableString(ClientDatabaseV2[Variable(SelectedClientID)].Name)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "ChatText",
+                    "=",
+                    "\"\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "ClientStatus",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "CurrentChatPosition",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "TotalClientHandling",
+                    "+",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetSceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "EndofChat",
+                    "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "Offertxt",
+                    "=",
+                    "\"Offer: \" + TimeFormatter::SecondsToHHMMSS(GlobalVariable(ClientDatabaseV2[Variable(SelectedClientID)].Offer.Time)) + \" and \" + ToString(GlobalVariable(ClientDatabaseV2[Variable(SelectedClientID)].Offer.Money)) + \" Gold. For your: \" + TimeFormatter::SecondsToHHMMSS(GlobalVariable(ClientDatabaseV2[Variable(SelectedClientID)].Request.Time)) + \" and \" + ToString(GlobalVariable(ClientDatabaseV2[Variable(SelectedClientID)].Request.Money)) + \"Gold\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "Messagetxt",
+                    "=",
+                    "\"Message: \" + GlobalVariableString(ClientDatabaseV2[Variable(SelectedClientID)].Message)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetSceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "ClientInteracting",
+                    "True"
+                  ]
+                }
               ]
             },
             {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
               },
-              "parameters": []
+              "comment": "This handles special Characters",
+              "comment2": ""
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "ClientInteracting",
+                    "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "SpecialCharacterMode",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "OfferSection",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "SelectedClientID",
+                    "=",
+                    "RandomInRange(0, GlobalVariableChildCount(SpecialClientDatabase) - 1)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "ClientNameTxt",
+                    "=",
+                    "\"Name: \" + GlobalVariableString(SpecialClientDatabase[Variable(SelectedClientID)].Name)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "ChatText",
+                    "=",
+                    "\"\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "ClientStatus",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "CurrentChatPosition",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "TotalClientHandling",
+                    "+",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetSceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "EndofChat",
+                    "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "Offertxt",
+                    "=",
+                    "\"Offer: \" + TimeFormatter::SecondsToHHMMSS(GlobalVariable(SpecialClientDatabase[Variable(SelectedClientID)].Offer.Time)) + \" and \" + ToString(GlobalVariable(SpecialClientDatabase[Variable(SelectedClientID)].Offer.Money)) + \" Gold. For your: \" + TimeFormatter::SecondsToHHMMSS(GlobalVariable(SpecialClientDatabase[Variable(SelectedClientID)].Request.Time)) + \" and \" + ToString(GlobalVariable(SpecialClientDatabase[Variable(SelectedClientID)].Request.Money)) + \"Gold\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "Messagetxt",
+                    "=",
+                    "\"Message: \" + GlobalVariableString(SpecialClientDatabase[Variable(SelectedClientID)].Message)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetSceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "ClientInteracting",
+                    "True"
+                  ]
+                }
+              ]
             }
           ],
-          "actions": [
-            {
-              "type": {
-                "value": "Montre"
-              },
-              "parameters": [
-                "OfferSection",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ModVarScene"
-              },
-              "parameters": [
-                "SelectedClientID",
-                "=",
-                "RandomInRange(0, GlobalVariableChildCount(ClientDatabaseV2) - 1)"
-              ]
-            },
-            {
-              "type": {
-                "value": "TextObject::String"
-              },
-              "parameters": [
-                "ClientNameTxt",
-                "=",
-                "\"Name: \" + GlobalVariableString(ClientDatabaseV2[Variable(SelectedClientID)].Name)"
-              ]
-            },
-            {
-              "type": {
-                "value": "TextObject::String"
-              },
-              "parameters": [
-                "ChatText",
-                "=",
-                "\"\""
-              ]
-            },
-            {
-              "type": {
-                "value": "ModVarScene"
-              },
-              "parameters": [
-                "ClientStatus",
-                "=",
-                "0"
-              ]
-            },
-            {
-              "type": {
-                "value": "ModVarScene"
-              },
-              "parameters": [
-                "CurrentChatPosition",
-                "=",
-                "0"
-              ]
-            },
-            {
-              "type": {
-                "value": "ModVarScene"
-              },
-              "parameters": [
-                "TotalClientHandling",
-                "+",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetSceneVariableAsBoolean"
-              },
-              "parameters": [
-                "EndofChat",
-                "False"
-              ]
-            },
-            {
-              "type": {
-                "value": "TextObject::String"
-              },
-              "parameters": [
-                "Offertxt",
-                "=",
-                "\"Offer: \" + TimeFormatter::SecondsToHHMMSS(GlobalVariable(ClientDatabaseV2[Variable(SelectedClientID)].Offer.Time)) + \" and \" + ToString(GlobalVariable(ClientDatabaseV2[Variable(SelectedClientID)].Offer.Money)) + \" Gold. For your: \" + TimeFormatter::SecondsToHHMMSS(GlobalVariable(ClientDatabaseV2[Variable(SelectedClientID)].Request.Time)) + \" and \" + ToString(GlobalVariable(ClientDatabaseV2[Variable(SelectedClientID)].Request.Money)) + \"Gold\""
-              ]
-            },
-            {
-              "type": {
-                "value": "TextObject::String"
-              },
-              "parameters": [
-                "Messagetxt",
-                "=",
-                "\"Message: \" + GlobalVariableString(ClientDatabaseV2[Variable(SelectedClientID)].Message)"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetSceneVariableAsBoolean"
-              },
-              "parameters": [
-                "ClientInteracting",
-                "True"
-              ]
-            }
-          ]
+          "parameters": []
         },
         {
           "colorB": 228,
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Chat Function",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -3918,6 +4219,15 @@
                   },
                   "parameters": [
                     "EndofChat",
+                    "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "SpecialCharacterMode",
                     "False"
                   ]
                 },
@@ -4097,6 +4407,15 @@
                 },
                 {
                   "type": {
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "SpecialCharacterMode",
+                    "False"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "BuiltinCommonInstructions::Once"
                   },
                   "parameters": []
@@ -4268,6 +4587,15 @@
                 },
                 {
                   "type": {
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "SpecialCharacterMode",
+                    "False"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "BuiltinCommonInstructions::Once"
                   },
                   "parameters": []
@@ -4381,6 +4709,563 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
+          "name": "Special Chat Function",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Enable Chatting",
+              "comment2": ""
+            },
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "ClientInteracting",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "GlobalVariableChildCount"
+                  },
+                  "parameters": [
+                    "ClientDatabaseV2[Variable(SelectedClientID)].Chat",
+                    ">",
+                    "Variable(CurrentChatPosition)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "StartNewChatline",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "ClientStatus",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "EndofChat",
+                    "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "SpecialCharacterMode",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetSceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "StartNewChatline",
+                    "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "ChatText",
+                    "+",
+                    "GlobalVariableString(SpecialClientDatabase[Variable(SelectedClientID)].Chat[Variable(CurrentChatPosition)]) + NewLine()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "CurrentChatPosition",
+                    "+",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetSceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "StartNewChatline",
+                    "True"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarGlobalTxt"
+                      },
+                      "parameters": [
+                        "ClientDatabaseV2[Variable(SelectedClientID)].Chat[Variable(CurrentChatPosition)]",
+                        "=",
+                        "\"<<endofchat>>\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+                      },
+                      "parameters": [
+                        "AcceptBtn",
+                        "yes",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+                      },
+                      "parameters": [
+                        "DeclineBtn",
+                        "yes",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetSceneVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "EndofChat",
+                        "True"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Accept Chat",
+              "comment2": ""
+            },
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "ClientInteracting",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "GlobalVariableChildCount"
+                  },
+                  "parameters": [
+                    "ClientDatabaseV2[1].ChatAccept",
+                    ">",
+                    "Variable(CurrentChatPosition)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "StartNewChatline",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "ClientStatus",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "EndofChat",
+                    "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "SpecialCharacterMode",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetSceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "StartNewChatline",
+                    "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "ChatText",
+                    "+",
+                    "GlobalVariableString(SpecialClientDatabase[Variable(SelectedClientID)].ChatAccept[Variable(CurrentChatPosition)]) + NewLine()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "CurrentChatPosition",
+                    "+",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetSceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "StartNewChatline",
+                    "True"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarGlobalTxt"
+                      },
+                      "parameters": [
+                        "ClientDatabaseV2[Variable(SelectedClientID)].ChatAccept[Variable(CurrentChatPosition)]",
+                        "=",
+                        "\"<<endofchat>>\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetSceneVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "EndofChat",
+                        "True"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "Random(20)"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetSceneVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "ClientInteracting",
+                        "False"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Decline Chat",
+              "comment2": ""
+            },
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "ClientInteracting",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "GlobalVariableChildCount"
+                  },
+                  "parameters": [
+                    "ClientDatabaseV2[1].ChatDecline",
+                    ">",
+                    "Variable(CurrentChatPosition)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "StartNewChatline",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "ClientStatus",
+                    "=",
+                    "2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "EndofChat",
+                    "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "SpecialCharacterMode",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetSceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "StartNewChatline",
+                    "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "ChatText",
+                    "+",
+                    "GlobalVariableString(SpecialClientDatabase[Variable(SelectedClientID)].ChatDecline[Variable(CurrentChatPosition)]) + NewLine()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "CurrentChatPosition",
+                    "+",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetSceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "StartNewChatline",
+                    "True"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarGlobalTxt"
+                      },
+                      "parameters": [
+                        "ClientDatabaseV2[Variable(SelectedClientID)].ChatDecline[Variable(CurrentChatPosition)]",
+                        "=",
+                        "\"<<endofchat>>\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetSceneVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "EndofChat",
+                        "True"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "Random(20)"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetSceneVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "ClientInteracting",
+                        "False"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "folded": true,
           "name": "Agreements Function (Accept and Decline)",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -4709,6 +5594,401 @@
                     "AcceptBtn",
                     "no",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetSceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "EndofChat",
+                    "False"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "folded": true,
+          "name": "Special Agreements Function (Accept and Decline)",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Accept and Decline Events",
+              "comment2": ""
+            },
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+                  },
+                  "parameters": [
+                    "AcceptBtn",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::And"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "Money",
+                        ">=",
+                        "GlobalVariable(SpecialClientDatabase[Variable(SelectedClientID)].Request.Money)"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "Timer",
+                        ">=",
+                        "GlobalVariable(SpecialClientDatabase[Variable(SelectedClientID)].Request.Time)"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "SpecialCharacterMode",
+                    "True"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "OfferSection"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "ClientStatus",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "CurrentChatPosition",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "Timer",
+                    "+",
+                    "GlobalVariable(SpecialClientDatabase[Variable(SelectedClientID)].Offer.Time)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "Timer",
+                    "-",
+                    "GlobalVariable(SpecialClientDatabase[Variable(SelectedClientID)].Request.Time)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "Money",
+                    "+",
+                    "GlobalVariable(SpecialClientDatabase[Variable(SelectedClientID)].Offer.Money)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "Money",
+                    "-",
+                    "GlobalVariable(SpecialClientDatabase[Variable(SelectedClientID)].Request.Money)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "MoneyText",
+                    "=",
+                    "ToString(Variable(Money))"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+                  },
+                  "parameters": [
+                    "AcceptBtn",
+                    "no",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+                  },
+                  "parameters": [
+                    "DeclineBtn",
+                    "no",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetSceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "SpecialCharacterMode",
+                    "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetSceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "EndofChat",
+                    "False"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+                      },
+                      "parameters": [
+                        "AcceptBtn",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::And"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "GlobalVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "ClientDatabaseV2[Variable(SelectedClientID)].ItemOffer",
+                            "True"
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Inventory::Add"
+                      },
+                      "parameters": [
+                        "",
+                        "\"PlayerInventory\"",
+                        "GlobalVariableString(ClientDatabaseV2[0].Offer.ItemName)"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+                  },
+                  "parameters": [
+                    "AcceptBtn",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Or"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "Money",
+                        "<",
+                        "GlobalVariable(SpecialClientDatabase[Variable(SelectedClientID)].Request.Money)"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "Timer",
+                        "<",
+                        "GlobalVariable(SpecialClientDatabase[Variable(SelectedClientID)].Request.Time)"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "SpecialCharacterMode",
+                    "True"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "ChatText",
+                    "+",
+                    "\"(You don't have enought supplies for this transaction)\" + NewLine()"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+                  },
+                  "parameters": [
+                    "DeclineBtn",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "SpecialCharacterMode",
+                    "True"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "OfferSection"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "ClientStatus",
+                    "=",
+                    "2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "CurrentChatPosition",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+                  },
+                  "parameters": [
+                    "DeclineBtn",
+                    "no",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+                  },
+                  "parameters": [
+                    "AcceptBtn",
+                    "no",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetSceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "SpecialCharacterMode",
+                    "False"
                   ]
                 },
                 {
