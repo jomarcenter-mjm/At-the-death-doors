@@ -8193,6 +8193,21 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "StatisticsInformation",
+          "persistentUuid": "f00138ab-6e7f-4a0e-9888-c9919fe1b7ae",
+          "width": 0,
+          "x": 500,
+          "y": 175,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -8344,6 +8359,25 @@
             "b": 0,
             "g": 0,
             "r": 0
+          }
+        },
+        {
+          "assetStoreId": "",
+          "name": "StatisticsInformation",
+          "tags": "",
+          "type": "BBText::BBText",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "text": "(INFORMATION)",
+            "opacity": 255,
+            "fontSize": 20,
+            "visible": true,
+            "color": "0;0;0",
+            "fontFamily": "Arial",
+            "align": "left",
+            "wordWrap": true
           }
         }
       ],
