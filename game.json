@@ -1693,6 +1693,12 @@
       "name": "GameOverID",
       "type": "number",
       "value": 0
+    },
+    {
+      "folded": true,
+      "name": "MaxmumWaitingTime",
+      "type": "number",
+      "value": 10
     }
   ],
   "layouts": [
@@ -2953,6 +2959,12 @@
           "name": "SpecialCharacterRNG",
           "type": "number",
           "value": 0
+        },
+        {
+          "folded": true,
+          "name": "NameRNG",
+          "type": "number",
+          "value": 0
         }
       ],
       "instances": [
@@ -4209,6 +4221,26 @@
                 "",
                 "\"CountDownTimer\""
               ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "AcceptBtn",
+                "no",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "DeclineBtn",
+                "",
+                ""
+              ]
             }
           ]
         },
@@ -4217,7 +4249,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Timer Handling",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -4267,6 +4298,17 @@
                     "",
                     "\"PlayerInventory\"",
                     "GlobalVariableString(ItemDatabase[0].ItemName)"
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Inventory::IsEquipped"
+                  },
+                  "parameters": [
+                    "",
+                    "\"PlayerInventory\"",
+                    "GlobalVariableString(ItemDatabase[1].ItemName)"
                   ]
                 }
               ],
@@ -4587,7 +4629,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Special character RNG",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -4624,6 +4665,16 @@
                   "parameters": [
                     "ClientInteracting",
                     "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "CustomerCounter",
+                    ">=",
+                    "10"
                   ]
                 }
               ],
@@ -4743,12 +4794,22 @@
                 },
                 {
                   "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "NameRNG",
+                    "=",
+                    "RandomFloatInRange(1,GlobalVariableChildCount(RandomName) - 1)"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "TextObject::String"
                   },
                   "parameters": [
                     "ClientNameTxt",
                     "=",
-                    "\"Name: \" + GlobalVariableString(ClientDatabaseV2[Variable(SelectedClientID)].Name)"
+                    "\"Name: \" + GlobalVariableString(RandomName[Variable(NameRNG)])"
                   ]
                 },
                 {
@@ -4836,6 +4897,16 @@
                   "parameters": [
                     "ClientInteracting",
                     "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "CustomerCounter",
+                    "+",
+                    "1"
                   ]
                 }
               ]
@@ -4997,6 +5068,16 @@
                     "ClientInteracting",
                     "True"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "CustomerCounter",
+                    "+",
+                    "1"
+                  ]
                 }
               ]
             }
@@ -5026,7 +5107,6 @@
               "comment2": ""
             },
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -5209,7 +5289,6 @@
               "comment2": ""
             },
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -5356,10 +5435,19 @@
                     },
                     {
                       "type": {
+                        "value": "SetAnimationName"
+                      },
+                      "parameters": [
+                        "PawnBackdrop",
+                        "\"PawnShopBackdrop-Nopeople\""
+                      ]
+                    },
+                    {
+                      "type": {
                         "value": "Wait"
                       },
                       "parameters": [
-                        "Random(20)"
+                        "Random(GlobalVariable(MaxmumWaitingTime))"
                       ]
                     },
                     {
@@ -5389,7 +5477,6 @@
               "comment2": ""
             },
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -5536,10 +5623,19 @@
                     },
                     {
                       "type": {
+                        "value": "SetAnimationName"
+                      },
+                      "parameters": [
+                        "PawnBackdrop",
+                        "\"PawnShopBackdrop-Nopeople\""
+                      ]
+                    },
+                    {
+                      "type": {
                         "value": "Wait"
                       },
                       "parameters": [
-                        "Random(20)"
+                        "Random(GlobalVariable(MaxmumWaitingTime))"
                       ]
                     },
                     {
@@ -5569,6 +5665,7 @@
               "comment2": ""
             },
             {
+              "disabled": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -5634,6 +5731,12 @@
                       ]
                     }
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ],
               "actions": [
@@ -5674,7 +5777,6 @@
               "comment2": ""
             },
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -5691,8 +5793,8 @@
                     "value": "GlobalVariableChildCount"
                   },
                   "parameters": [
-                    "ClientDatabaseV2[Variable(SelectedClientID)].Chat",
-                    "=",
+                    "SpecialClientDatabase[Variable(SelectedClientID)].Chat",
+                    ">",
                     "Variable(CurrentChatPosition)"
                   ]
                 },
@@ -5797,7 +5899,7 @@
                         "value": "VarGlobalTxt"
                       },
                       "parameters": [
-                        "ClientDatabaseV2[Variable(SelectedClientID)].Chat[Variable(CurrentChatPosition)]",
+                        "SpecialClientDatabase[Variable(SelectedClientID)].Chat[Variable(CurrentChatPosition)]",
                         "=",
                         "\"<<endofchat>>\""
                       ]
@@ -5857,7 +5959,6 @@
               "comment2": ""
             },
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -5980,7 +6081,7 @@
                         "value": "VarGlobalTxt"
                       },
                       "parameters": [
-                        "ClientDatabaseV2[Variable(SelectedClientID)].ChatAccept[Variable(CurrentChatPosition)]",
+                        "SpecialClientDatabase[Variable(SelectedClientID)].ChatAccept[Variable(CurrentChatPosition)]",
                         "=",
                         "\"<<endofchat>>\""
                       ]
@@ -6007,7 +6108,7 @@
                         "value": "Wait"
                       },
                       "parameters": [
-                        "Random(20)"
+                        "Random(GlobalVariable(MaxmumWaitingTime))"
                       ]
                     },
                     {
@@ -6017,6 +6118,15 @@
                       "parameters": [
                         "ClientInteracting",
                         "False"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetAnimationName"
+                      },
+                      "parameters": [
+                        "PawnBackdrop",
+                        "\"PawnShopBackdrop-Nopeople\""
                       ]
                     }
                   ]
@@ -6037,7 +6147,6 @@
               "comment2": ""
             },
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -6160,7 +6269,7 @@
                         "value": "VarGlobalTxt"
                       },
                       "parameters": [
-                        "ClientDatabaseV2[Variable(SelectedClientID)].ChatDecline[Variable(CurrentChatPosition)]",
+                        "SpecialClientDatabase[Variable(SelectedClientID)].ChatDecline[Variable(CurrentChatPosition)]",
                         "=",
                         "\"<<endofchat>>\""
                       ]
@@ -6187,7 +6296,7 @@
                         "value": "Wait"
                       },
                       "parameters": [
-                        "Random(20)"
+                        "Random(GlobalVariable(MaxmumWaitingTime))"
                       ]
                     },
                     {
@@ -6198,87 +6307,16 @@
                         "ClientInteracting",
                         "False"
                       ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Or"
-                  },
-                  "parameters": [],
-                  "subInstructions": [
-                    {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::And"
-                      },
-                      "parameters": [],
-                      "subInstructions": [
-                        {
-                          "type": {
-                            "value": "GlobalVariableChildCount"
-                          },
-                          "parameters": [
-                            "SpecialClientDatabase[Variable(SelectedClientID)].ChatDecline",
-                            "=",
-                            "Variable(CurrentChatPosition) -1"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "VarScene"
-                          },
-                          "parameters": [
-                            "ClientStatus",
-                            "=",
-                            "2"
-                          ]
-                        }
-                      ]
                     },
                     {
                       "type": {
-                        "value": "BuiltinCommonInstructions::And"
+                        "value": "SetAnimationName"
                       },
-                      "parameters": [],
-                      "subInstructions": [
-                        {
-                          "type": {
-                            "value": "VarScene"
-                          },
-                          "parameters": [
-                            "ClientStatus",
-                            "=",
-                            "1"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "GlobalVariableChildCount"
-                          },
-                          "parameters": [
-                            "SpecialClientDatabase[Variable(SelectedClientID)].ChatAccept",
-                            "=",
-                            "Variable(CurrentChatPosition) -1"
-                          ]
-                        }
+                      "parameters": [
+                        "PawnBackdrop",
+                        "\"PawnShopBackdrop-Nopeople\""
                       ]
                     }
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetAnimationName"
-                  },
-                  "parameters": [
-                    "PawnBackdrop",
-                    "\"PawnShopBackdrop-Nopeople\""
                   ]
                 }
               ]
@@ -6328,7 +6366,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Agreements Function (Accept and Decline)",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -6455,6 +6492,56 @@
                     "Money",
                     "-",
                     "GlobalVariable(ClientDatabaseV2[Variable(SelectedClientID)].Request.Money)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "PlayerStatics.TotalMoneyRecieved",
+                    "+",
+                    "GlobalVariable(ClientDatabaseV2[Variable(SelectedClientID)].Offer.Money)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "PlayerStatics.TotalTimerecieved",
+                    "+",
+                    "GlobalVariable(ClientDatabaseV2[Variable(SelectedClientID)].Offer.Time)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "PlayerStatics.TotalTimeGiven",
+                    "+",
+                    "GlobalVariable(ClientDatabaseV2[Variable(SelectedClientID)].Request.Time)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "PlayerStatics.TotalMoneyGiven",
+                    "+",
+                    "GlobalVariable(ClientDatabaseV2[Variable(SelectedClientID)].Request.Money)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "PlayerStatics.TotalClientHandled",
+                    "+",
+                    "1"
                   ]
                 },
                 {
@@ -6696,7 +6783,6 @@
               "comment2": ""
             },
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -6823,6 +6909,56 @@
                     "MoneyText",
                     "=",
                     "ToString(Variable(Money))"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "PlayerStatics.TotalMoneyRecieved",
+                    "+",
+                    "GlobalVariable(SpecialClientDatabase[Variable(SelectedClientID)].Offer.Money)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "PlayerStatics.TotalTimerecieved",
+                    "+",
+                    "GlobalVariable(SpecialClientDatabase[Variable(SelectedClientID)].Offer.Time)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "PlayerStatics.TotalMoneyGiven",
+                    "+",
+                    "GlobalVariable(SpecialClientDatabase[Variable(SelectedClientID)].Request.Money)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "PlayerStatics.TotalTimeGiven",
+                    "+",
+                    "GlobalVariable(SpecialClientDatabase[Variable(SelectedClientID)].Request.Time)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "PlayerStatics.TotalClientHandled",
+                    "+",
+                    "1"
                   ]
                 },
                 {
@@ -7072,6 +7208,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Item Handling",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -7198,6 +7335,16 @@
                     "\"PlayerInventory\"",
                     "GlobalVariableString(ItemDatabase[1].ItemName)",
                     "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "TimerText",
+                    "=",
+                    "\"Everyone will die by DEATH!\""
                   ]
                 }
               ]
