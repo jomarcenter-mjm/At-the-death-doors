@@ -405,6 +405,24 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/ab812c7d15ad3474b6e55761235713b68f34374f3f064d1b8685ed46720df2f8_ArchitectsDaughter.ttf",
           "name": "ArchitectsDaughter.ttf"
         }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/PawnShopBackdrop3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "PawnShopBackdrop3",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/PawnShopBackdrop3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\PawnShopBackdrop3.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -887,6 +905,7 @@
       ]
     },
     {
+      "folded": true,
       "name": "SpecialClientDatabase",
       "type": "array",
       "children": [
@@ -1467,13 +1486,205 @@
       ]
     },
     {
-      "folded": true,
       "name": "RandomName",
       "type": "array",
       "children": [
         {
           "type": "string",
-          "value": "0"
+          "value": "Ford Chesley"
+        },
+        {
+          "type": "string",
+          "value": "Darcie Bethanie"
+        },
+        {
+          "folded": true,
+          "type": "string",
+          "value": "Ryuu Delia"
+        },
+        {
+          "folded": true,
+          "type": "string",
+          "value": "Miranda Nettie"
+        },
+        {
+          "folded": true,
+          "type": "string",
+          "value": "Gwen Madeline"
+        },
+        {
+          "folded": true,
+          "type": "string",
+          "value": " Stacie Lonny "
+        },
+        {
+          "folded": true,
+          "type": "string",
+          "value": " Hitomi July "
+        },
+        {
+          "folded": true,
+          "type": "string",
+          "value": " Hajime Trix "
+        },
+        {
+          "folded": true,
+          "type": "string",
+          "value": " Francene Ollie "
+        },
+        {
+          "folded": true,
+          "type": "string",
+          "value": " Bernice Kelleigh "
+        },
+        {
+          "folded": true,
+          "type": "string",
+          "value": " Hector Wesley "
+        },
+        {
+          "folded": true,
+          "type": "string",
+          "value": " Parris Shevaun "
+        },
+        {
+          "folded": true,
+          "type": "string",
+          "value": " Winifred Diann "
+        },
+        {
+          "folded": true,
+          "type": "string",
+          "value": " Ryley Les "
+        },
+        {
+          "folded": true,
+          "type": "string",
+          "value": " Goodwin Christy "
+        },
+        {
+          "folded": true,
+          "type": "string",
+          "value": " Raelynn Donelle "
+        },
+        {
+          "folded": true,
+          "type": "string",
+          "value": " Alyse Sage "
+        },
+        {
+          "type": "string",
+          "value": " Xander Cherice "
+        },
+        {
+          "folded": true,
+          "type": "string",
+          "value": " Jennie Joe "
+        },
+        {
+          "folded": true,
+          "type": "string",
+          "value": " Rollie Zackery "
+        },
+        {
+          "folded": true,
+          "type": "string",
+          "value": " Joslyn Shane "
+        },
+        {
+          "folded": true,
+          "type": "string",
+          "value": "Maleah Seong-Su "
+        },
+        {
+          "folded": true,
+          "type": "string",
+          "value": " Colson Jaycob "
+        },
+        {
+          "folded": true,
+          "type": "string",
+          "value": " Ryder Nathan "
+        },
+        {
+          "folded": true,
+          "type": "string",
+          "value": " Alethea Buster "
+        },
+        {
+          "folded": true,
+          "type": "string",
+          "value": " Jaycee Dariel "
+        },
+        {
+          "folded": true,
+          "type": "string",
+          "value": " Love Skylar "
+        },
+        {
+          "folded": true,
+          "type": "string",
+          "value": " Becca Sydnie "
+        },
+        {
+          "folded": true,
+          "type": "string",
+          "value": " Aubrie Quintin "
+        },
+        {
+          "folded": true,
+          "type": "string",
+          "value": " Jordon Allannah "
+        },
+        {
+          "folded": true,
+          "type": "string",
+          "value": " Wally Sylvester "
+        },
+        {
+          "folded": true,
+          "type": "string",
+          "value": " Mandi Xzavier "
+        },
+        {
+          "folded": true,
+          "type": "string",
+          "value": " Selina Peony "
+        },
+        {
+          "folded": true,
+          "type": "string",
+          "value": " Shannah Mat "
+        },
+        {
+          "folded": true,
+          "type": "string",
+          "value": " Conway Irvin "
+        },
+        {
+          "folded": true,
+          "type": "string",
+          "value": " Krystal Sheldon "
+        },
+        {
+          "folded": true,
+          "type": "string",
+          "value": " Alden Momoko "
+        },
+        {
+          "folded": true,
+          "type": "string",
+          "value": " Raeburn Remington "
+        },
+        {
+          "folded": true,
+          "type": "string",
+          "value": " Arn Warren "
+        },
+        {
+          "folded": true,
+          "type": "string",
+          "value": " Coleman Leila "
         }
       ]
     },
@@ -2595,6 +2806,9 @@
             },
             {
               "name": "PawnApplicationTxt"
+            },
+            {
+              "name": "PawnIcon"
             }
           ]
         }
@@ -2807,6 +3021,7 @@
           "customSize": false,
           "height": 0,
           "layer": "",
+          "locked": true,
           "name": "ClientNameTxt",
           "persistentUuid": "8eb5b227-061d-41ac-b26b-fb6a74147136",
           "width": 0,
@@ -2819,24 +3034,10 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "name": "ClientTimeLeftTxt",
-          "persistentUuid": "582c3e7d-dc5b-4b5c-9abe-bf0a646b4e96",
-          "width": 0,
-          "x": 580,
-          "y": 106,
-          "zOrder": 6,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
           "customSize": true,
           "height": 51,
           "layer": "",
+          "locked": true,
           "name": "Offertxt",
           "persistentUuid": "4c8d852a-5b9d-471b-a054-8a3207d444ff",
           "width": 406,
@@ -2852,6 +3053,7 @@
           "customSize": false,
           "height": 0,
           "layer": "",
+          "locked": true,
           "name": "Messagetxt",
           "persistentUuid": "bce2f286-a3a4-4cfb-ac00-900423034429",
           "width": 0,
@@ -2897,6 +3099,7 @@
           "customSize": true,
           "height": 625,
           "layer": "Background",
+          "locked": true,
           "name": "InformationBG",
           "persistentUuid": "051be741-7341-4a30-9972-36683e8c57a1",
           "width": 462,
@@ -2987,6 +3190,7 @@
           "customSize": false,
           "height": 0,
           "layer": "",
+          "locked": true,
           "name": "PawnApplicationTxt",
           "persistentUuid": "24d2ef14-5574-42a3-92e2-a151f076a96c",
           "width": 0,
@@ -3000,14 +3204,30 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 45,
+          "height": 40,
           "layer": "",
-          "name": "NewSprite",
-          "persistentUuid": "eb3a2700-949f-469a-a8e2-607af3184b58",
-          "width": 60,
-          "x": 400,
-          "y": 20,
+          "locked": true,
+          "name": "PawnIcon",
+          "persistentUuid": "e6842f18-366e-46dd-b276-708144aba177",
+          "width": 53,
+          "x": 406,
+          "y": 22,
           "zOrder": 19,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 410,
+          "layer": "",
+          "name": "PawnBackdrop",
+          "persistentUuid": "453f406a-8680-41ba-a113-db7ecb716b22",
+          "width": 410,
+          "x": 854,
+          "y": 11,
+          "zOrder": 20,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -3600,6 +3820,47 @@
         },
         {
           "assetStoreId": "",
+          "name": "PawnIcon",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "PawnSymbo2l.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
           "bold": false,
           "italic": false,
           "name": "ChatText",
@@ -3828,7 +4089,7 @@
         },
         {
           "assetStoreId": "",
-          "name": "PawnIcon",
+          "name": "PawnBackdrop",
           "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
@@ -3837,7 +4098,37 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "",
+              "name": "PawnShopBackdrop-Nopeople",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "PawnShopBackdrop2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "PawnShopBackdrop-NormalPeople",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -3846,7 +4137,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "PawnSymbo2l.png",
+                      "image": "assets\\PawnShopBackdrop3.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -3882,6 +4173,14 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "OfferSection"
+              ]
+            },
             {
               "type": {
                 "value": "TextObject::String"
@@ -4503,6 +4802,15 @@
                 },
                 {
                   "type": {
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "PawnBackdrop",
+                    "\"PawnShopBackdrop-NormalPeople\""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "TextObject::String"
                   },
                   "parameters": [
@@ -4654,6 +4962,15 @@
                 },
                 {
                   "type": {
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "PawnBackdrop",
+                    "\"PawnShopBackdrop-NormalPeople\""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "TextObject::String"
                   },
                   "parameters": [
@@ -4691,7 +5008,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Chat Function",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -4910,7 +5226,7 @@
                     "value": "GlobalVariableChildCount"
                   },
                   "parameters": [
-                    "ClientDatabaseV2[1].ChatAccept",
+                    "ClientDatabaseV2[Variable(SelectedClientID)].ChatAccept",
                     ">",
                     "Variable(CurrentChatPosition)"
                   ]
@@ -5090,7 +5406,7 @@
                     "value": "GlobalVariableChildCount"
                   },
                   "parameters": [
-                    "ClientDatabaseV2[1].ChatDecline",
+                    "ClientDatabaseV2[Variable(SelectedClientID)].ChatDecline",
                     ">",
                     "Variable(CurrentChatPosition)"
                   ]
@@ -5238,6 +5554,99 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Update Image once character Left",
+              "comment2": ""
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Or"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::And"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "GlobalVariableChildCount"
+                          },
+                          "parameters": [
+                            "ClientDatabaseV2[Variable(SelectedClientID)].ChatDecline",
+                            "=",
+                            "Variable(CurrentChatPosition) - 1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "VarScene"
+                          },
+                          "parameters": [
+                            "ClientStatus",
+                            "=",
+                            "2"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::And"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "VarScene"
+                          },
+                          "parameters": [
+                            "ClientStatus",
+                            "=",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "GlobalVariableChildCount"
+                          },
+                          "parameters": [
+                            "ClientDatabaseV2[Variable(SelectedClientID)].ChatAccept",
+                            "=",
+                            "Variable(CurrentChatPosition) -1 "
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "PawnBackdrop",
+                    "\"PawnShopBackdrop-Nopeople\""
+                  ]
+                }
+              ]
             }
           ],
           "parameters": []
@@ -5247,7 +5656,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Special Chat Function",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -5284,7 +5692,7 @@
                   },
                   "parameters": [
                     "ClientDatabaseV2[Variable(SelectedClientID)].Chat",
-                    ">",
+                    "=",
                     "Variable(CurrentChatPosition)"
                   ]
                 },
@@ -5466,7 +5874,7 @@
                     "value": "GlobalVariableChildCount"
                   },
                   "parameters": [
-                    "ClientDatabaseV2[1].ChatAccept",
+                    "SpecialClientDatabase[Variable(SelectedClientID)].ChatAccept",
                     ">",
                     "Variable(CurrentChatPosition)"
                   ]
@@ -5646,7 +6054,7 @@
                     "value": "GlobalVariableChildCount"
                   },
                   "parameters": [
-                    "ClientDatabaseV2[1].ChatDecline",
+                    "SpecialClientDatabase[Variable(SelectedClientID)].ChatDecline",
                     ">",
                     "Variable(CurrentChatPosition)"
                   ]
@@ -5791,6 +6199,123 @@
                         "False"
                       ]
                     }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Or"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::And"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "GlobalVariableChildCount"
+                          },
+                          "parameters": [
+                            "SpecialClientDatabase[Variable(SelectedClientID)].ChatDecline",
+                            "=",
+                            "Variable(CurrentChatPosition) -1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "VarScene"
+                          },
+                          "parameters": [
+                            "ClientStatus",
+                            "=",
+                            "2"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::And"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "VarScene"
+                          },
+                          "parameters": [
+                            "ClientStatus",
+                            "=",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "GlobalVariableChildCount"
+                          },
+                          "parameters": [
+                            "SpecialClientDatabase[Variable(SelectedClientID)].ChatAccept",
+                            "=",
+                            "Variable(CurrentChatPosition) -1"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "PawnBackdrop",
+                    "\"PawnShopBackdrop-Nopeople\""
+                  ]
+                }
+              ]
+            },
+            {
+              "disabled": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "ClientStatus",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "GlobalVariableChildCount"
+                  },
+                  "parameters": [
+                    "SpecialClientDatabase[Variable(SelectedClientID)].ChatAccept",
+                    "=",
+                    "Variable(CurrentChatPosition)"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "PawnBackdrop",
+                    "\"PawnShopBackdrop-Nopeople\""
                   ]
                 }
               ]
@@ -6153,7 +6678,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Special Agreements Function (Accept and Decline)",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
