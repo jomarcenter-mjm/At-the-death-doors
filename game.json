@@ -23,7 +23,7 @@
     "author": "MJM Creative Works and Ideas",
     "windowWidth": 1280,
     "windowHeight": 720,
-    "latestCompilationDirectory": "C:\\Users\\jomarcenter-mjm\\Documents\\GDevelop projects\\Build\\TimeGame",
+    "latestCompilationDirectory": "D:\\newGithubRepo\\Build\\AttheDeathDoors",
     "maxFPS": 60,
     "minFPS": 20,
     "verticalSync": false,
@@ -8070,6 +8070,30 @@
           "conditions": [
             {
               "type": {
+                "value": "DialogueTree::IsCommandCalled"
+              },
+              "parameters": [
+                "\"changeImage\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetAnimationName"
+              },
+              "parameters": [
+                "EndingImage",
+                "DialogueTree::CommandParameter(0)"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
                 "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
               },
               "parameters": [
@@ -8087,6 +8111,66 @@
                 "",
                 "\"Score Result\"",
                 ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "MouseButtonReleased"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::And"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+                  },
+                  "parameters": [
+                    "SkipButton",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AutoTyping::Text_AutoTyping::TypingFinished"
+                  },
+                  "parameters": [
+                    "EndingDialogue",
+                    "Text_AutoTyping",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "DialogueTree::GoToNextLine"
+              },
+              "parameters": []
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "EndingDialogue",
+                "=",
+                "DialogueTree::LineText()"
               ]
             }
           ]
