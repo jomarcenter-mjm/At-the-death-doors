@@ -1722,7 +1722,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.6455105703311483,
+        "zoomFactor": 0.7130377630690402,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -2788,7 +2788,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.7370816317994044,
+        "zoomFactor": 0.5843784410740942,
         "windowMask": false
       },
       "objectsGroups": [
@@ -4241,6 +4241,26 @@
                 "",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::SetLabelText"
+              },
+              "parameters": [
+                "AcceptBtn",
+                "\"INACTIVE\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::SetLabelText"
+              },
+              "parameters": [
+                "DeclineBtn",
+                "\"INACTIVE\"",
+                ""
+              ]
             }
           ]
         },
@@ -5264,6 +5284,26 @@
                     },
                     {
                       "type": {
+                        "value": "PanelSpriteButton::PanelSpriteButton::SetLabelText"
+                      },
+                      "parameters": [
+                        "AcceptBtn",
+                        "\"Accept\"",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PanelSpriteButton::PanelSpriteButton::SetLabelText"
+                      },
+                      "parameters": [
+                        "DeclineBtn",
+                        "\"Decline\"",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
                         "value": "SetSceneVariableAsBoolean"
                       },
                       "parameters": [
@@ -5934,6 +5974,26 @@
                     },
                     {
                       "type": {
+                        "value": "PanelSpriteButton::PanelSpriteButton::SetLabelText"
+                      },
+                      "parameters": [
+                        "AcceptBtn",
+                        "\"Accept\"",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PanelSpriteButton::PanelSpriteButton::SetLabelText"
+                      },
+                      "parameters": [
+                        "DeclineBtn",
+                        "\"Decline\"",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
                         "value": "SetSceneVariableAsBoolean"
                       },
                       "parameters": [
@@ -6576,6 +6636,26 @@
                 },
                 {
                   "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::SetLabelText"
+                  },
+                  "parameters": [
+                    "DeclineBtn",
+                    "\"INACTIVE\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::SetLabelText"
+                  },
+                  "parameters": [
+                    "AcceptBtn",
+                    "\"INACTIVE\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "SetSceneVariableAsBoolean"
                   },
                   "parameters": [
@@ -6743,6 +6823,26 @@
                   "parameters": [
                     "AcceptBtn",
                     "no",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::SetLabelText"
+                  },
+                  "parameters": [
+                    "DeclineBtn",
+                    "\"INACTIVE\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::SetLabelText"
+                  },
+                  "parameters": [
+                    "AcceptBtn",
+                    "\"INACTIVE\"",
                     ""
                   ]
                 },
@@ -6983,6 +7083,26 @@
                 },
                 {
                   "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::SetLabelText"
+                  },
+                  "parameters": [
+                    "DeclineBtn",
+                    "\"INACTIVE\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::SetLabelText"
+                  },
+                  "parameters": [
+                    "AcceptBtn",
+                    "\"INACTIVE\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "SetSceneVariableAsBoolean"
                   },
                   "parameters": [
@@ -7177,6 +7297,26 @@
                   "parameters": [
                     "AcceptBtn",
                     "no",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::SetLabelText"
+                  },
+                  "parameters": [
+                    "DeclineBtn",
+                    "\"INACTIVE\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::SetLabelText"
+                  },
+                  "parameters": [
+                    "AcceptBtn",
+                    "\"INACTIVE\"",
                     ""
                   ]
                 },
