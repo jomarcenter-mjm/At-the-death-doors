@@ -17,7 +17,7 @@
     "sizeOnStartupMode": "adaptWidth",
     "templateSlug": "",
     "useExternalSourceFiles": false,
-    "version": "1.0.0",
+    "version": "0.2.0",
     "name": "Waiting at death doors",
     "description": "",
     "author": "MJM Creative Works and Ideas",
@@ -423,6 +423,71 @@
         "name": "assets\\PawnShopBackdrop3.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "file": "assets/stamp.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\stamp.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/APPROVEDSTAMP.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\APPROVEDSTAMP.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/DeclinedSTAMP.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\DeclinedSTAMP.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/PawnShopBackdrop-DeadPeople.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "PawnShopBackdrop-DeadPeople",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/body-fall.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\body-fall.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "CommunicationWindow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "CommunicationWindow.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Darkbluebg.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Darkbluebg.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -545,7 +610,7 @@
               "folded": true,
               "name": "Message",
               "type": "string",
-              "value": "Testy"
+              "value": "I just needed some extra time to do some stuff."
             },
             {
               "name": "Name",
@@ -587,7 +652,7 @@
                   "folded": true,
                   "name": "Time",
                   "type": "number",
-                  "value": 100000
+                  "value": 1000
                 }
               ]
             },
@@ -695,7 +760,7 @@
               "folded": true,
               "name": "Message",
               "type": "string",
-              "value": "Hello"
+              "value": "I just need to pay off some loans. "
             },
             {
               "name": "Name",
@@ -849,7 +914,7 @@
               "folded": true,
               "name": "Message",
               "type": "string",
-              "value": "Hello"
+              "value": "I am very rich. I can buy all the time in the world."
             },
             {
               "name": "Name",
@@ -901,11 +966,537 @@
               "value": 0
             }
           ]
+        },
+        {
+          "type": "structure",
+          "children": [
+            {
+              "name": "Chat",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "So this is a time pawn, Well on this nation that is."
+                },
+                {
+                  "type": "string",
+                  "value": "Well I don't need anything."
+                },
+                {
+                  "type": "string",
+                  "value": "I just taking a look around here."
+                },
+                {
+                  "type": "string",
+                  "value": "Here some cash as a thanks for letting me look around here. Feel quite weird."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "<<endofchat>>"
+                }
+              ]
+            },
+            {
+              "name": "ChatAccept",
+              "type": "array",
+              "children": [
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "Of course, Hehe you managed who live and who don't"
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "If you think about it."
+                },
+                {
+                  "type": "string",
+                  "value": "Have a nice day."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "<<endofchat>>"
+                }
+              ]
+            },
+            {
+              "name": "ChatDecline",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "I see you don't usually need money."
+                },
+                {
+                  "type": "string",
+                  "value": "You people just need to live."
+                },
+                {
+                  "type": "string",
+                  "value": "Well I be off."
+                },
+                {
+                  "type": "string",
+                  "value": "Bye!"
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "<<endofchat>>"
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "ChatHaggle",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "0"
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "HaggleLimit",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "ItemOffer",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "folded": true,
+              "name": "Message",
+              "type": "string",
+              "value": "(No Message - You may accept a tip.)\n(Person is from another nation that follows a different life than immortals, Where they die without knowing when they will die.\nThis is all a fabrication of that nation.\nDo not believed in anything they say.\nTime is everything. You die when time reaches zero)"
+            },
+            {
+              "name": "Name",
+              "type": "string",
+              "value": "Petta"
+            },
+            {
+              "name": "Offer",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "ItemName",
+                  "type": "string",
+                  "value": "0"
+                },
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 500
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "name": "Request",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "name": "SpecialID",
+              "type": "number",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "folded": true,
+          "type": "structure",
+          "children": [
+            {
+              "folded": true,
+              "name": "Chat",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "Hello, I know It look like begging but I will pay back."
+                },
+                {
+                  "type": "string",
+                  "value": "I don't have much time. Please accept my offer."
+                },
+                {
+                  "type": "string",
+                  "value": "Please, I promise I can pay back."
+                },
+                {
+                  "type": "string",
+                  "value": "I want to see my lover one last time."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "<<endofchat>>"
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "ChatAccept",
+              "type": "array",
+              "children": [
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "Thank you. I promise I will return someday."
+                },
+                {
+                  "type": "string",
+                  "value": "Have a nice day."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "<<endofchat>>"
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "ChatDecline",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "Why are you doing this to me."
+                },
+                {
+                  "type": "string",
+                  "value": "Your just like all of the other."
+                },
+                {
+                  "type": "string",
+                  "value": "A sick bastard."
+                },
+                {
+                  "type": "string",
+                  "value": "Who just want money and immortality all to themselves."
+                },
+                {
+                  "type": "string",
+                  "value": "You should rot in -."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "<<IMAGECollapse>>"
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "(Attention, A deceased person has been detected)"
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "(Clean up in progress)"
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "<<IMAGEEmpty>>"
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "Clean up complete"
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "<<endofchat>>"
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "ChatHaggle",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "0"
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "HaggleLimit",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "ItemOffer",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "folded": true,
+              "name": "Message",
+              "type": "string",
+              "value": "(OVERRIDE) It is considered unsafe to accept application without a proper offers."
+            },
+            {
+              "name": "Name",
+              "type": "string",
+              "value": "Samatha"
+            },
+            {
+              "name": "Offer",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "ItemName",
+                  "type": "string",
+                  "value": "0"
+                },
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "name": "Request",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 1000
+                }
+              ]
+            },
+            {
+              "name": "SpecialID",
+              "type": "number",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "folded": true,
+          "type": "structure",
+          "children": [
+            {
+              "name": "Chat",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "Hey, is it illegal to use time pawn service to pay a bet?"
+                },
+                {
+                  "type": "string",
+                  "value": "Well if not approved it."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "<<endofchat>>"
+                }
+              ]
+            },
+            {
+              "name": "ChatAccept",
+              "type": "array",
+              "children": [
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "Alright, thank you very much."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "<<endofchat>>"
+                }
+              ]
+            },
+            {
+              "name": "ChatDecline",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "Wait really?"
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "I guess I have to find another way to pay my bet,."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "<<endofchat>>"
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "ChatHaggle",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "0"
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "HaggleLimit",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "ItemOffer",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "folded": true,
+              "name": "Message",
+              "type": "string",
+              "value": "I lose the bet need to pay off some people.\n(Notice: User have a pending debt of 2100 Gold. But can still pawn)"
+            },
+            {
+              "name": "Name",
+              "type": "string",
+              "value": "Eric"
+            },
+            {
+              "name": "Offer",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "ItemName",
+                  "type": "string",
+                  "value": "0"
+                },
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 1000
+                }
+              ]
+            },
+            {
+              "name": "Request",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 2600
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "name": "SpecialID",
+              "type": "number",
+              "value": 0
+            }
+          ]
         }
       ]
     },
     {
-      "folded": true,
       "name": "SpecialClientDatabase",
       "type": "array",
       "children": [
@@ -1084,12 +1675,12 @@
               "folded": true,
               "name": "Message",
               "type": "string",
-              "value": "Accept your fate and lets death rules again."
+              "value": "(Override) WARNING: YOU ARE DEALING WITH A HOSTILE BEING. DECLINE OFFER AND DO NOT ENGAGED! DO NOT ENGAGED!\n(Error) (Error)\nAccept your fate and lets death rules again.\n(Error) (Error)"
             },
             {
               "name": "Name",
               "type": "string",
-              "value": "Death"
+              "value": "(ERROR)"
             },
             {
               "name": "Offer",
@@ -1138,6 +1729,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "structure",
           "children": [
             {
@@ -1311,12 +1903,240 @@
               "folded": true,
               "name": "Message",
               "type": "string",
-              "value": "Accept your fate and lets death rules again."
+              "value": "(Override) WARNING: YOU ARE DEALING WITH A HOSTILE BEING. DECLINE OFFER AND DO NOT ENGAGED! DO NOT ENGAGED!\n(Error) (Error)\nAccept your fate and lets death rules again.\n(Error) (Error)"
             },
             {
               "name": "Name",
               "type": "string",
-              "value": "Death"
+              "value": "(ERROR)"
+            },
+            {
+              "name": "Offer",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "ItemName",
+                  "type": "string",
+                  "value": "Mortality"
+                },
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "name": "Request",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "name": "SpecialID",
+              "type": "number",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "folded": true,
+          "type": "structure",
+          "children": [
+            {
+              "folded": true,
+              "name": "Chat",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "*Whistles*"
+                },
+                {
+                  "type": "string",
+                  "value": "Being immortal."
+                },
+                {
+                  "type": "string",
+                  "value": "Laughting at the face of death."
+                },
+                {
+                  "type": "string",
+                  "value": "Do you really think you can get away from me. haha"
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "I know you can hear me."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "Let's be honest, They told you to ignore me and Decline my request."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "Such fools."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "I will give you once last chance human."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "Don't be a coward."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "Accept your faith in the face of death."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "<<endofchat>>"
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "ChatAccept",
+              "type": "array",
+              "children": [
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "I know you had it in ya."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "Your the first person who will die in the face of me."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "Now the world will see what death truely is."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "See you in the afterlife."
+                },
+                {
+                  "type": "string",
+                  "value": "<<endofchat>>"
+                }
+              ]
+            },
+            {
+              "name": "ChatDecline",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "*Laughting*"
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "Haha.. Letting yourself immortal for the sake of what?"
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "You can't answer that either."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "Let's be honest, Who is death now?"
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "It is you? hahaha."
+                },
+                {
+                  "type": "string",
+                  "value": "You will never hear me again. But mark my words."
+                },
+                {
+                  "type": "string",
+                  "value": "Even in immortalty, everyone will suffer."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "<<endofchat>>"
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "ChatHaggle",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "0"
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "HaggleLimit",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "ItemOffer",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "folded": true,
+              "name": "Message",
+              "type": "string",
+              "value": "(Override) WARNING: YOU ARE DEALING WITH A HOSTILE BEING. DECLINE OFFER AND DO NOT ENGAGED! DO NOT ENGAGED!\n(Error) (Error)\nAccept your fate and lets death rules again.\n(Error) (Error)"
+            },
+            {
+              "name": "Name",
+              "type": "string",
+              "value": "(ERROR)"
             },
             {
               "name": "Offer",
@@ -1486,6 +2306,7 @@
       ]
     },
     {
+      "folded": true,
       "name": "RandomName",
       "type": "array",
       "children": [
@@ -1699,6 +2520,12 @@
       "name": "MaxmumWaitingTime",
       "type": "number",
       "value": 10
+    },
+    {
+      "folded": true,
+      "name": "ShiftStartTime",
+      "type": "number",
+      "value": 60
     }
   ],
   "layouts": [
@@ -1722,7 +2549,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.7130377630690402,
+        "zoomFactor": 0.8700232859857296,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -1791,13 +2618,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 104,
+          "height": 89,
           "layer": "",
           "name": "DeathDoorTxtLogo",
           "persistentUuid": "957d4746-f3ba-4619-bc74-1c3fb5bb6ffc",
           "width": 610,
-          "x": 327,
-          "y": 153,
+          "x": 358,
+          "y": 210,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -1844,6 +2671,21 @@
           "x": 1073,
           "y": 644,
           "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Versiontxt",
+          "persistentUuid": "674d5da4-bb89-4422-ba98-42d66ec8ed95",
+          "width": 0,
+          "x": 141,
+          "y": 624,
+          "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -2026,7 +2868,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Where the death comes knocking",
+          "string": "Waiting at death doors",
           "font": "490034af0b44b2d8e88911e4b30bf82a51e9fd67c1688a44a9c36e10ea360cd8_Kenney Pixel.ttf",
           "textAlignment": "center",
           "characterSize": 80,
@@ -2162,6 +3004,28 @@
               "width": 192
             }
           }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "Versiontxt",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Version 0.0.0",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
         }
       ],
       "events": [
@@ -2238,6 +3102,31 @@
                 "",
                 "\"Credits\"",
                 ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "Versiontxt",
+                "=",
+                "\"Version \" + GetPropertiesData::ReturnGameVersion()"
               ]
             }
           ]
@@ -2779,16 +3668,16 @@
       "title": "",
       "v": 209,
       "uiSettings": {
-        "grid": false,
+        "grid": true,
         "gridType": "rectangular",
-        "gridWidth": 32,
-        "gridHeight": 32,
+        "gridWidth": 16,
+        "gridHeight": 16,
         "gridOffsetX": 0,
         "gridOffsetY": 0,
         "gridColor": 10401023,
         "gridAlpha": 0.8,
-        "snap": false,
-        "zoomFactor": 0.5843784410740942,
+        "snap": true,
+        "zoomFactor": 0.9296875000000014,
         "windowMask": false
       },
       "objectsGroups": [
@@ -2797,9 +3686,6 @@
           "objects": [
             {
               "name": "ClientNameTxt"
-            },
-            {
-              "name": "ClientTimeLeftTxt"
             },
             {
               "name": "Offertxt"
@@ -2824,13 +3710,13 @@
           "folded": true,
           "name": "Timer",
           "type": "number",
-          "value": 300
+          "value": 3600
         },
         {
           "folded": true,
           "name": "Money",
           "type": "number",
-          "value": 3600
+          "value": 1000
         },
         {
           "folded": true,
@@ -2965,6 +3851,18 @@
           "name": "NameRNG",
           "type": "number",
           "value": 0
+        },
+        {
+          "folded": true,
+          "name": "DayStart",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "folded": true,
+          "name": "ShiftStartTimer",
+          "type": "number",
+          "value": 60
         }
       ],
       "instances": [
@@ -2976,8 +3874,8 @@
           "name": "TimerText",
           "persistentUuid": "71f27e90-b4c2-43ea-b269-9115c68219b1",
           "width": 0,
-          "x": 50,
-          "y": 9,
+          "x": 80,
+          "y": 20,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -2991,8 +3889,8 @@
           "name": "MoneyText",
           "persistentUuid": "ea8af795-a9a2-4f2c-9b16-37df68414d60",
           "width": 0,
-          "x": 50,
-          "y": 66,
+          "x": 80,
+          "y": 73,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -3006,8 +3904,8 @@
           "name": "AcceptBtn",
           "persistentUuid": "49d7e437-78d0-406a-bf51-492475a4ff2a",
           "width": 0,
-          "x": 390,
-          "y": 643,
+          "x": 400,
+          "y": 640,
           "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
@@ -3021,8 +3919,8 @@
           "name": "DeclineBtn",
           "persistentUuid": "4b9342d0-1e4d-41b6-8733-9176ef1fb1c7",
           "width": 0,
-          "x": 632,
-          "y": 643,
+          "x": 624,
+          "y": 640,
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
@@ -3033,12 +3931,11 @@
           "customSize": false,
           "height": 0,
           "layer": "",
-          "locked": true,
           "name": "ClientNameTxt",
           "persistentUuid": "8eb5b227-061d-41ac-b26b-fb6a74147136",
           "width": 0,
           "x": 580,
-          "y": 74,
+          "y": -566,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -3049,12 +3946,11 @@
           "customSize": true,
           "height": 51,
           "layer": "",
-          "locked": true,
           "name": "Offertxt",
           "persistentUuid": "4c8d852a-5b9d-471b-a054-8a3207d444ff",
           "width": 406,
           "x": 407,
-          "y": 555,
+          "y": -85,
           "zOrder": 7,
           "numberProperties": [],
           "stringProperties": [],
@@ -3062,15 +3958,14 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 307,
           "layer": "",
-          "locked": true,
           "name": "Messagetxt",
           "persistentUuid": "bce2f286-a3a4-4cfb-ac00-900423034429",
-          "width": 0,
+          "width": 415,
           "x": 401,
-          "y": 240,
+          "y": -400,
           "zOrder": 8,
           "numberProperties": [],
           "stringProperties": [],
@@ -3094,13 +3989,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 453,
+          "height": 432,
           "layer": "",
           "name": "ChatText",
           "persistentUuid": "5c2e13ab-d3fd-447b-888b-e1d2c3d182e1",
-          "width": 366,
-          "x": 7,
-          "y": 180,
+          "width": 352,
+          "x": 16,
+          "y": 192,
           "zOrder": 11,
           "numberProperties": [],
           "stringProperties": [],
@@ -3109,14 +4004,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 625,
+          "height": 608,
           "layer": "Background",
-          "locked": true,
           "name": "InformationBG",
           "persistentUuid": "051be741-7341-4a30-9972-36683e8c57a1",
-          "width": 462,
-          "x": 378,
-          "y": 9,
+          "width": 464,
+          "x": 384,
+          "y": -624,
           "zOrder": 12,
           "numberProperties": [],
           "stringProperties": [],
@@ -3130,8 +4024,8 @@
           "name": "CollectionInfoText",
           "persistentUuid": "e8c4e40a-d5fe-400c-9c57-ac75727417df",
           "width": 0,
-          "x": 847,
-          "y": 424,
+          "x": 864,
+          "y": 432,
           "zOrder": 13,
           "numberProperties": [],
           "stringProperties": [],
@@ -3145,8 +4039,8 @@
           "name": "DeathTimer",
           "persistentUuid": "1981b832-6dbf-49e4-87b7-e2c5ee85fba8",
           "width": 34,
-          "x": 7,
-          "y": 14,
+          "x": 27,
+          "y": 22,
           "zOrder": 14,
           "numberProperties": [],
           "stringProperties": [],
@@ -3160,24 +4054,9 @@
           "name": "CreditIcon",
           "persistentUuid": "75edeaf8-8597-43e3-a5cd-ba44bec1d1ba",
           "width": 0,
-          "x": 12,
-          "y": 62,
+          "x": 33,
+          "y": 73,
           "zOrder": 15,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 42,
-          "layer": "",
-          "name": "Microphone",
-          "persistentUuid": "8a693f48-c1d5-479f-8670-0febd5e06da3",
-          "width": 24,
-          "x": 10,
-          "y": 123,
-          "zOrder": 16,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -3190,8 +4069,8 @@
           "name": "ChatInfoTxt",
           "persistentUuid": "2eef4c12-8de6-4a7a-9e3a-1cb2dbdcbdc6",
           "width": 0,
-          "x": 41,
-          "y": 142,
+          "x": 65,
+          "y": 135,
           "zOrder": 17,
           "numberProperties": [],
           "stringProperties": [],
@@ -3202,12 +4081,11 @@
           "customSize": false,
           "height": 0,
           "layer": "",
-          "locked": true,
           "name": "PawnApplicationTxt",
           "persistentUuid": "24d2ef14-5574-42a3-92e2-a151f076a96c",
           "width": 0,
-          "x": 482,
-          "y": 25,
+          "x": 480,
+          "y": -613,
           "zOrder": 18,
           "numberProperties": [],
           "stringProperties": [],
@@ -3218,12 +4096,11 @@
           "customSize": true,
           "height": 40,
           "layer": "",
-          "locked": true,
           "name": "PawnIcon",
           "persistentUuid": "e6842f18-366e-46dd-b276-708144aba177",
           "width": 53,
-          "x": 406,
-          "y": 22,
+          "x": 411,
+          "y": -616,
           "zOrder": 19,
           "numberProperties": [],
           "stringProperties": [],
@@ -3232,14 +4109,104 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 410,
+          "height": 400,
           "layer": "",
           "name": "PawnBackdrop",
           "persistentUuid": "453f406a-8680-41ba-a113-db7ecb716b22",
-          "width": 410,
-          "x": 854,
-          "y": 11,
+          "width": 400,
+          "x": 864,
+          "y": 15,
           "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 310,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Stamp",
+          "persistentUuid": "30220da1-4ddf-4d09-97ed-31ef7454cce2",
+          "width": 0,
+          "x": 424,
+          "y": -334,
+          "zOrder": 21,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 496,
+          "layer": "",
+          "name": "NewPanelSprite",
+          "persistentUuid": "efc4e2bd-1d36-4a12-877e-6df33db171ba",
+          "width": 352,
+          "x": 16,
+          "y": 128,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 96,
+          "layer": "",
+          "name": "TimeandCashUI",
+          "persistentUuid": "88265925-329b-40d5-9974-20fb50f07aa8",
+          "width": 352,
+          "x": 16,
+          "y": 16,
+          "zOrder": -1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Background",
+          "name": "HayseePawnInc",
+          "persistentUuid": "7a4c3abb-834e-429a-a4b0-c47347761bdc",
+          "width": 0,
+          "x": 463,
+          "y": 400,
+          "zOrder": -2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 80,
+          "layer": "Background",
+          "name": "PawnIcon2",
+          "persistentUuid": "f712933e-0f7b-4bba-8e89-3a37aaf4a317",
+          "width": 105,
+          "x": 560,
+          "y": 304,
+          "zOrder": -3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 64,
+          "layer": "",
+          "name": "GameStartBtn",
+          "persistentUuid": "c0261dd8-2d21-45de-90db-f24c3325f07f",
+          "width": 352,
+          "x": 16,
+          "y": 640,
+          "zOrder": 22,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -3689,7 +4656,12 @@
           "underlined": false,
           "variables": [],
           "effects": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
           "string": "Name: [name]",
           "font": "",
           "textAlignment": "left",
@@ -3733,7 +4705,12 @@
           "underlined": false,
           "variables": [],
           "effects": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
           "string": "Offer: [Offer text]",
           "font": "",
           "textAlignment": "left",
@@ -3755,7 +4732,12 @@
           "underlined": false,
           "variables": [],
           "effects": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
           "string": "Message: [Text]",
           "font": "",
           "textAlignment": "left",
@@ -3838,6 +4820,52 @@
           "updateIfNotVisible": false,
           "variables": [],
           "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "PawnSymbo2l.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "PawnIcon2",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
           "behaviors": [],
           "animations": [
             {
@@ -3907,8 +4935,26 @@
           "type": "PanelSpriteObject::PanelSprite",
           "width": 48,
           "variables": [],
-          "effects": [],
-          "behaviors": []
+          "effects": [
+            {
+              "effectType": "Outline",
+              "name": "Effect",
+              "doubleParameters": {
+                "padding": 2,
+                "thickness": 2
+              },
+              "stringParameters": {
+                "color": "0;0;0"
+              },
+              "booleanParameters": {}
+            }
+          ],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ]
         },
         {
           "assetStoreId": "",
@@ -4070,7 +5116,7 @@
           "string": "Communication",
           "font": "",
           "textAlignment": "left",
-          "characterSize": 20,
+          "characterSize": 30,
           "color": {
             "b": 0,
             "g": 0,
@@ -4088,7 +5134,12 @@
           "underlined": false,
           "variables": [],
           "effects": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
           "string": "PAWN APPLICATION",
           "font": "mononoki-Regular.ttf",
           "textAlignment": "left",
@@ -4106,7 +5157,20 @@
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
-          "effects": [],
+          "effects": [
+            {
+              "effectType": "Outline",
+              "name": "Effect",
+              "doubleParameters": {
+                "padding": 2,
+                "thickness": 2
+              },
+              "stringParameters": {
+                "color": "0;0;0"
+              },
+              "booleanParameters": {}
+            }
+          ],
           "behaviors": [],
           "animations": [
             {
@@ -4125,7 +5189,7 @@
                       "originPoint": {
                         "name": "origine",
                         "x": 0,
-                        "y": 0
+                        "y": -0.5
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -4154,6 +5218,111 @@
                       "originPoint": {
                         "name": "origine",
                         "x": 0,
+                        "y": -0.5
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "PawnShopBackdrop-DeadPeople",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "PawnShopBackdrop-DeadPeople",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": -0.5
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "Stamp",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "Approved",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\APPROVEDSTAMP.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Deny",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\DeclinedSTAMP.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
                         "y": 0
                       },
                       "centerPoint": {
@@ -4169,6 +5338,157 @@
               ]
             }
           ]
+        },
+        {
+          "assetStoreId": "",
+          "bottomMargin": 0,
+          "height": 32,
+          "leftMargin": 61,
+          "name": "NewPanelSprite",
+          "rightMargin": 0,
+          "tags": "",
+          "texture": "CommunicationWindow.png",
+          "tiled": false,
+          "topMargin": 61,
+          "type": "PanelSpriteObject::PanelSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [
+            {
+              "effectType": "Outline",
+              "name": "Effect",
+              "doubleParameters": {
+                "padding": 2,
+                "thickness": 2
+              },
+              "stringParameters": {
+                "color": "0;0;0"
+              },
+              "booleanParameters": {}
+            }
+          ],
+          "behaviors": []
+        },
+        {
+          "assetStoreId": "",
+          "bottomMargin": 0,
+          "height": 32,
+          "leftMargin": 0,
+          "name": "TimeandCashUI",
+          "rightMargin": 0,
+          "tags": "",
+          "texture": "Darkbluebg.png",
+          "tiled": true,
+          "topMargin": 0,
+          "type": "PanelSpriteObject::PanelSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [
+            {
+              "effectType": "Outline",
+              "name": "Effect",
+              "doubleParameters": {
+                "padding": 2,
+                "thickness": 2
+              },
+              "stringParameters": {
+                "color": "0;0;0"
+              },
+              "booleanParameters": {}
+            }
+          ],
+          "behaviors": []
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "HayseePawnInc",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Humanity Immortality Pawn Group",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "assetStoreId": "f23eb31ad33dd63f1937c8745105316ca530c28513c64b68a665975503c852a6",
+          "name": "GameStartBtn",
+          "tags": "",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 6,
+            "BottomPadding": 24,
+            "TopPadding": 20,
+            "HoveredFadeOutDuration": 0.25
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 22,
+              "height": 64,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "White Square Decorated Button_Hovered.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            },
+            "Idle": {
+              "bottomMargin": 22,
+              "height": 64,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "White Square Decorated Button_Idle.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "START SHIFT",
+              "font": "mononoki-Regular.ttf",
+              "textAlignment": "center",
+              "characterSize": 20,
+              "color": {
+                "b": 0,
+                "g": 0,
+                "r": 0
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 16,
+              "height": 64,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "White Square Decorated Button_Pressed.png",
+              "tiled": true,
+              "topMargin": 22,
+              "width": 192
+            }
+          }
         }
       ],
       "events": [
@@ -4190,7 +5510,7 @@
                 "value": "Cache"
               },
               "parameters": [
-                "OfferSection"
+                "Stamp"
               ]
             },
             {
@@ -4211,15 +5531,6 @@
                 "MoneyText",
                 "=",
                 "VariableString(Money)"
-              ]
-            },
-            {
-              "type": {
-                "value": "ResetTimer"
-              },
-              "parameters": [
-                "",
-                "\"CountDownTimer\""
               ]
             },
             {
@@ -4261,6 +5572,216 @@
                 "\"INACTIVE\"",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "Tween::AddObjectPositionYTween"
+              },
+              "parameters": [
+                "InformationBG",
+                "Tween",
+                "\"PaperBackground\"",
+                "-624",
+                "\"linear\"",
+                "500",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::AddObjectPositionYTween"
+              },
+              "parameters": [
+                "PawnIcon",
+                "Tween",
+                "\"PawnIconTween\"",
+                "-616",
+                "\"linear\"",
+                "500",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::AddObjectPositionYTween"
+              },
+              "parameters": [
+                "PawnApplicationTxt",
+                "Tween",
+                "\"PATxtTween\"",
+                "-613",
+                "\"linear\"",
+                "500",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::AddObjectPositionYTween"
+              },
+              "parameters": [
+                "ClientNameTxt",
+                "Tween",
+                "\"ClientNameTxt\"",
+                "-556",
+                "\"linear\"",
+                "500",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::AddObjectPositionYTween"
+              },
+              "parameters": [
+                "Messagetxt",
+                "Tween",
+                "\"MessageTxtTween\"",
+                "-400",
+                "\"linear\"",
+                "500",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::AddObjectPositionYTween"
+              },
+              "parameters": [
+                "Offertxt",
+                "Tween",
+                "\"OfferTxtTween\"",
+                "-85",
+                "\"linear\"",
+                "500",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::AddObjectPositionYTween"
+              },
+              "parameters": [
+                "Stamp",
+                "Tween",
+                "\"StampTween\"",
+                "-334",
+                "\"linear\"",
+                "500",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "ChatText",
+                "=",
+                "\"\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SceneVariableAsBoolean"
+              },
+              "parameters": [
+                "DayStart",
+                "False"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+                  },
+                  "parameters": [
+                    "GameStartBtn",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "CompareTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"ShiftStartTimer\"",
+                    ">=",
+                    "GlobalVariable(ShiftStartTime)"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"CountDownTimer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "DayStart",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::AddObjectPositionXTween"
+              },
+              "parameters": [
+                "GameStartBtn",
+                "Tween",
+                "\"StartGame\"",
+                "-368",
+                "\"linear\"",
+                "500",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::SetLabelText"
+              },
+              "parameters": [
+                "GameStartBtn",
+                "\"INACTIVE\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::Activate"
+              },
+              "parameters": [
+                "GameStartBtn",
+                "no",
+                ""
+              ]
             }
           ]
         },
@@ -4289,14 +5810,6 @@
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Always"
-                  },
-                  "parameters": [
-                    ""
-                  ]
-                },
                 {
                   "type": {
                     "inverted": true,
@@ -4372,6 +5885,7 @@
               "comment2": ""
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -4435,6 +5949,12 @@
                           ]
                         }
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
                     }
                   ],
                   "actions": [
@@ -4484,6 +6004,12 @@
                         "\"PlayerInventory\"",
                         "GlobalVariableString(ItemDatabase[0].ItemName)"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
                     }
                   ],
                   "actions": [
@@ -4520,6 +6046,12 @@
                         "\"PlayerInventory\"",
                         "GlobalVariableString(ItemDatabase[1].ItemName)"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
                     }
                   ],
                   "actions": [
@@ -4649,6 +6181,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Special character RNG",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -4696,6 +6229,12 @@
                     ">=",
                     "10"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ],
               "actions": [
@@ -4723,6 +6262,12 @@
                         ">=",
                         "80"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
                     }
                   ],
                   "actions": [
@@ -4787,6 +6332,15 @@
                 },
                 {
                   "type": {
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "DayStart",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "BuiltinCommonInstructions::Once"
                   },
                   "parameters": []
@@ -4795,11 +6349,10 @@
               "actions": [
                 {
                   "type": {
-                    "value": "Montre"
+                    "value": "Cache"
                   },
                   "parameters": [
-                    "OfferSection",
-                    ""
+                    "Stamp"
                   ]
                 },
                 {
@@ -4897,7 +6450,7 @@
                   "parameters": [
                     "Offertxt",
                     "=",
-                    "\"Offer: \" + TimeFormatter::SecondsToHHMMSS(GlobalVariable(ClientDatabaseV2[Variable(SelectedClientID)].Offer.Time)) + \" and \" + ToString(GlobalVariable(ClientDatabaseV2[Variable(SelectedClientID)].Offer.Money)) + \" Gold. For your: \" + TimeFormatter::SecondsToHHMMSS(GlobalVariable(ClientDatabaseV2[Variable(SelectedClientID)].Request.Time)) + \" and \" + ToString(GlobalVariable(ClientDatabaseV2[Variable(SelectedClientID)].Request.Money)) + \"Gold\""
+                    "\"Offer: \" + TimeFormatter::SecondsToHHMMSS(GlobalVariable(ClientDatabaseV2[Variable(SelectedClientID)].Offer.Time)) + \" and \" + ToString(GlobalVariable(ClientDatabaseV2[Variable(SelectedClientID)].Offer.Money)) + \" Gold. For your: \" + TimeFormatter::SecondsToHHMMSS(GlobalVariable(ClientDatabaseV2[Variable(SelectedClientID)].Request.Time)) + \" and \" + ToString(GlobalVariable(ClientDatabaseV2[Variable(SelectedClientID)].Request.Money)) + \" Gold\""
                   ]
                 },
                 {
@@ -4908,6 +6461,104 @@
                     "Messagetxt",
                     "=",
                     "\"Message: \" + GlobalVariableString(ClientDatabaseV2[Variable(SelectedClientID)].Message)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::AddObjectPositionYTween"
+                  },
+                  "parameters": [
+                    "Stamp",
+                    "Tween",
+                    "\"StampTween\"",
+                    "306",
+                    "\"linear\"",
+                    "500",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::AddObjectPositionYTween"
+                  },
+                  "parameters": [
+                    "PawnApplicationTxt",
+                    "Tween",
+                    "\"PATxtTween\"",
+                    "27",
+                    "\"linear\"",
+                    "500",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::AddObjectPositionYTween"
+                  },
+                  "parameters": [
+                    "Offertxt",
+                    "Tween",
+                    "\"OfferTxtTween\"",
+                    "555",
+                    "\"linear\"",
+                    "500",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::AddObjectPositionYTween"
+                  },
+                  "parameters": [
+                    "ClientNameTxt",
+                    "Tween",
+                    "\"ClientNameTxt\"",
+                    "74",
+                    "\"linear\"",
+                    "500",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::AddObjectPositionYTween"
+                  },
+                  "parameters": [
+                    "Messagetxt",
+                    "Tween",
+                    "\"MessageTxtTween\"",
+                    "240",
+                    "\"linear\"",
+                    "500",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::AddObjectPositionYTween"
+                  },
+                  "parameters": [
+                    "PawnIcon",
+                    "Tween",
+                    "\"PawnIconTween\"",
+                    "24",
+                    "\"linear\"",
+                    "500",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::AddObjectPositionYTween"
+                  },
+                  "parameters": [
+                    "InformationBG",
+                    "Tween",
+                    "\"PaperBackground\"",
+                    "16",
+                    "\"linear\"",
+                    "500",
+                    ""
                   ]
                 },
                 {
@@ -4967,6 +6618,15 @@
                 },
                 {
                   "type": {
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "DayStart",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "BuiltinCommonInstructions::Once"
                   },
                   "parameters": []
@@ -4975,11 +6635,10 @@
               "actions": [
                 {
                   "type": {
-                    "value": "Montre"
+                    "value": "Cache"
                   },
                   "parameters": [
-                    "OfferSection",
-                    ""
+                    "Stamp"
                   ]
                 },
                 {
@@ -5067,7 +6726,7 @@
                   "parameters": [
                     "Offertxt",
                     "=",
-                    "\"Offer: \" + TimeFormatter::SecondsToHHMMSS(GlobalVariable(SpecialClientDatabase[Variable(SelectedClientID)].Offer.Time)) + \" and \" + ToString(GlobalVariable(SpecialClientDatabase[Variable(SelectedClientID)].Offer.Money)) + \" Gold. For your: \" + TimeFormatter::SecondsToHHMMSS(GlobalVariable(SpecialClientDatabase[Variable(SelectedClientID)].Request.Time)) + \" and \" + ToString(GlobalVariable(SpecialClientDatabase[Variable(SelectedClientID)].Request.Money)) + \"Gold\""
+                    "\"Offer: \" + TimeFormatter::SecondsToHHMMSS(GlobalVariable(SpecialClientDatabase[Variable(SelectedClientID)].Offer.Time)) + \" and \" + ToString(GlobalVariable(SpecialClientDatabase[Variable(SelectedClientID)].Offer.Money)) + \" Gold. For your: \" + TimeFormatter::SecondsToHHMMSS(GlobalVariable(SpecialClientDatabase[Variable(SelectedClientID)].Request.Time)) + \" and \" + ToString(GlobalVariable(SpecialClientDatabase[Variable(SelectedClientID)].Request.Money)) + \" Gold\""
                   ]
                 },
                 {
@@ -5078,6 +6737,104 @@
                     "Messagetxt",
                     "=",
                     "\"Message: \" + GlobalVariableString(SpecialClientDatabase[Variable(SelectedClientID)].Message)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::AddObjectPositionYTween"
+                  },
+                  "parameters": [
+                    "Stamp",
+                    "Tween",
+                    "\"StampTween\"",
+                    "306",
+                    "\"linear\"",
+                    "500",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::AddObjectPositionYTween"
+                  },
+                  "parameters": [
+                    "PawnApplicationTxt",
+                    "Tween",
+                    "\"PATxtTween\"",
+                    "27",
+                    "\"linear\"",
+                    "500",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::AddObjectPositionYTween"
+                  },
+                  "parameters": [
+                    "Offertxt",
+                    "Tween",
+                    "\"OfferTxtTween\"",
+                    "555",
+                    "\"linear\"",
+                    "500",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::AddObjectPositionYTween"
+                  },
+                  "parameters": [
+                    "ClientNameTxt",
+                    "Tween",
+                    "\"ClientNameTxt\"",
+                    "74",
+                    "\"linear\"",
+                    "500",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::AddObjectPositionYTween"
+                  },
+                  "parameters": [
+                    "Messagetxt",
+                    "Tween",
+                    "\"MessageTxtTween\"",
+                    "240",
+                    "\"linear\"",
+                    "500",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::AddObjectPositionYTween"
+                  },
+                  "parameters": [
+                    "PawnIcon",
+                    "Tween",
+                    "\"PawnIconTween\"",
+                    "24",
+                    "\"linear\"",
+                    "500",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::AddObjectPositionYTween"
+                  },
+                  "parameters": [
+                    "InformationBG",
+                    "Tween",
+                    "\"PaperBackground\"",
+                    "16",
+                    "\"linear\"",
+                    "500",
+                    ""
                   ]
                 },
                 {
@@ -5109,6 +6866,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Chat Function",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -5484,6 +7242,104 @@
                     },
                     {
                       "type": {
+                        "value": "Tween::AddObjectPositionYTween"
+                      },
+                      "parameters": [
+                        "PawnIcon",
+                        "Tween",
+                        "\"PawnIconTween\"",
+                        "-616",
+                        "\"linear\"",
+                        "500",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::AddObjectPositionYTween"
+                      },
+                      "parameters": [
+                        "PawnApplicationTxt",
+                        "Tween",
+                        "\"PATxtTween\"",
+                        "-613",
+                        "\"linear\"",
+                        "500",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::AddObjectPositionYTween"
+                      },
+                      "parameters": [
+                        "Offertxt",
+                        "Tween",
+                        "\"OfferTxtTween\"",
+                        "-85",
+                        "\"linear\"",
+                        "500",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::AddObjectPositionYTween"
+                      },
+                      "parameters": [
+                        "ClientNameTxt",
+                        "Tween",
+                        "\"ClientNameTxt\"",
+                        "-556",
+                        "\"linear\"",
+                        "500",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::AddObjectPositionYTween"
+                      },
+                      "parameters": [
+                        "Stamp",
+                        "Tween",
+                        "\"StampTween\"",
+                        "-334",
+                        "\"linear\"",
+                        "500",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::AddObjectPositionYTween"
+                      },
+                      "parameters": [
+                        "Messagetxt",
+                        "Tween",
+                        "\"MessageTxtTween\"",
+                        "-400",
+                        "\"linear\"",
+                        "500",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::AddObjectPositionYTween"
+                      },
+                      "parameters": [
+                        "InformationBG",
+                        "Tween",
+                        "\"PaperBackground\"",
+                        "-624",
+                        "\"linear\"",
+                        "500",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
                         "value": "Wait"
                       },
                       "parameters": [
@@ -5497,6 +7353,82 @@
                       "parameters": [
                         "ClientInteracting",
                         "False"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarGlobalTxt"
+                      },
+                      "parameters": [
+                        "SpecialClientDatabase[Variable(SelectedClientID)].ChatAccept[Variable(CurrentChatPosition)]",
+                        "=",
+                        "\"<<IMAGEEmpty>>\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetAnimationName"
+                      },
+                      "parameters": [
+                        "PawnBackdrop",
+                        "\"PawnShopBackdrop-Nopeople\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarGlobalTxt"
+                      },
+                      "parameters": [
+                        "ClientDatabaseV2[Variable(SelectedClientID)].ChatAccept[Variable(CurrentChatPosition)]",
+                        "=",
+                        "\"<<IMAGECollapse>>\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetAnimationName"
+                      },
+                      "parameters": [
+                        "PawnBackdrop",
+                        "\"PawnShopBackdrop-DeadPeople\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "assets\\body-fall.ogg",
+                        "",
+                        "100",
+                        "1"
                       ]
                     }
                   ]
@@ -5672,6 +7604,104 @@
                     },
                     {
                       "type": {
+                        "value": "Tween::AddObjectPositionYTween"
+                      },
+                      "parameters": [
+                        "Messagetxt",
+                        "Tween",
+                        "\"MessageTxtTween\"",
+                        "-400",
+                        "\"linear\"",
+                        "500",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::AddObjectPositionYTween"
+                      },
+                      "parameters": [
+                        "InformationBG",
+                        "Tween",
+                        "\"PaperBackground\"",
+                        "-624",
+                        "\"linear\"",
+                        "500",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::AddObjectPositionYTween"
+                      },
+                      "parameters": [
+                        "Stamp",
+                        "Tween",
+                        "\"StampTween\"",
+                        "-334",
+                        "\"linear\"",
+                        "500",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::AddObjectPositionYTween"
+                      },
+                      "parameters": [
+                        "Offertxt",
+                        "Tween",
+                        "\"OfferTxtTween\"",
+                        "-85",
+                        "\"linear\"",
+                        "500",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::AddObjectPositionYTween"
+                      },
+                      "parameters": [
+                        "ClientNameTxt",
+                        "Tween",
+                        "\"ClientNameTxt\"",
+                        "-556",
+                        "\"linear\"",
+                        "500",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::AddObjectPositionYTween"
+                      },
+                      "parameters": [
+                        "PawnApplicationTxt",
+                        "Tween",
+                        "\"PATxtTween\"",
+                        "-613",
+                        "\"linear\"",
+                        "500",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::AddObjectPositionYTween"
+                      },
+                      "parameters": [
+                        "PawnIcon",
+                        "Tween",
+                        "\"PawnIconTween\"",
+                        "-616",
+                        "\"linear\"",
+                        "500",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
                         "value": "Wait"
                       },
                       "parameters": [
@@ -5688,105 +7718,81 @@
                       ]
                     }
                   ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Comment",
-              "color": {
-                "b": 109,
-                "g": 230,
-                "r": 255,
-                "textB": 0,
-                "textG": 0,
-                "textR": 0
-              },
-              "comment": "Update Image once character Left",
-              "comment2": ""
-            },
-            {
-              "disabled": true,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
+                },
                 {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Or"
-                  },
-                  "parameters": [],
-                  "subInstructions": [
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
                     {
                       "type": {
-                        "value": "BuiltinCommonInstructions::And"
+                        "value": "VarGlobalTxt"
                       },
-                      "parameters": [],
-                      "subInstructions": [
-                        {
-                          "type": {
-                            "value": "GlobalVariableChildCount"
-                          },
-                          "parameters": [
-                            "ClientDatabaseV2[Variable(SelectedClientID)].ChatDecline",
-                            "=",
-                            "Variable(CurrentChatPosition) - 1"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "VarScene"
-                          },
-                          "parameters": [
-                            "ClientStatus",
-                            "=",
-                            "2"
-                          ]
-                        }
+                      "parameters": [
+                        "ClientDatabaseV2[Variable(SelectedClientID)].ChatDecline[Variable(CurrentChatPosition)]",
+                        "=",
+                        "\"<<IMAGEEmpty>>\""
                       ]
                     },
                     {
                       "type": {
-                        "value": "BuiltinCommonInstructions::And"
+                        "value": "BuiltinCommonInstructions::Once"
                       },
-                      "parameters": [],
-                      "subInstructions": [
-                        {
-                          "type": {
-                            "value": "VarScene"
-                          },
-                          "parameters": [
-                            "ClientStatus",
-                            "=",
-                            "1"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "GlobalVariableChildCount"
-                          },
-                          "parameters": [
-                            "ClientDatabaseV2[Variable(SelectedClientID)].ChatAccept",
-                            "=",
-                            "Variable(CurrentChatPosition) -1 "
-                          ]
-                        }
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetAnimationName"
+                      },
+                      "parameters": [
+                        "PawnBackdrop",
+                        "\"PawnShopBackdrop-Nopeople\""
                       ]
                     }
                   ]
                 },
                 {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetAnimationName"
-                  },
-                  "parameters": [
-                    "PawnBackdrop",
-                    "\"PawnShopBackdrop-Nopeople\""
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarGlobalTxt"
+                      },
+                      "parameters": [
+                        "ClientDatabaseV2[Variable(SelectedClientID)].ChatDecline[Variable(CurrentChatPosition)]",
+                        "=",
+                        "\"<<IMAGECollapse>>\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetAnimationName"
+                      },
+                      "parameters": [
+                        "PawnBackdrop",
+                        "\"PawnShopBackdrop-DeadPeople\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "assets\\body-fall.ogg",
+                        "",
+                        "100",
+                        "1"
+                      ]
+                    }
                   ]
                 }
               ]
@@ -5799,6 +7805,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Special Chat Function",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -6165,10 +8172,126 @@
                     },
                     {
                       "type": {
+                        "value": "SetAnimationName"
+                      },
+                      "parameters": [
+                        "PawnBackdrop",
+                        "\"PawnShopBackdrop-Nopeople\""
+                      ]
+                    },
+                    {
+                      "type": {
                         "value": "Wait"
                       },
                       "parameters": [
                         "Random(GlobalVariable(MaxmumWaitingTime))"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::AddObjectPositionYTween"
+                      },
+                      "parameters": [
+                        "PawnIcon",
+                        "Tween",
+                        "\"PawnIconTween\"",
+                        "-616",
+                        "\"linear\"",
+                        "500",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::AddObjectPositionYTween"
+                      },
+                      "parameters": [
+                        "PawnApplicationTxt",
+                        "Tween",
+                        "\"PATxtTween\"",
+                        "-613",
+                        "\"linear\"",
+                        "500",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::AddObjectPositionYTween"
+                      },
+                      "parameters": [
+                        "ClientNameTxt",
+                        "Tween",
+                        "\"ClientNameTxt\"",
+                        "-556",
+                        "\"linear\"",
+                        "500",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::AddObjectPositionYTween"
+                      },
+                      "parameters": [
+                        "Offertxt",
+                        "Tween",
+                        "\"OfferTxtTween\"",
+                        "-85",
+                        "\"linear\"",
+                        "500",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::AddObjectPositionYTween"
+                      },
+                      "parameters": [
+                        "Stamp",
+                        "Tween",
+                        "\"StampTween\"",
+                        "-334",
+                        "\"linear\"",
+                        "500",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::AddObjectPositionYTween"
+                      },
+                      "parameters": [
+                        "InformationBG",
+                        "Tween",
+                        "\"PaperBackground\"",
+                        "-624",
+                        "\"linear\"",
+                        "500",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::AddObjectPositionYTween"
+                      },
+                      "parameters": [
+                        "Messagetxt",
+                        "Tween",
+                        "\"MessageTxtTween\"",
+                        "-400",
+                        "\"linear\"",
+                        "500",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetSceneVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "SpecialCharacterMode",
+                        "False"
                       ]
                     },
                     {
@@ -6179,7 +8302,30 @@
                         "ClientInteracting",
                         "False"
                       ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarGlobalTxt"
+                      },
+                      "parameters": [
+                        "SpecialClientDatabase[Variable(SelectedClientID)].ChatAccept[Variable(CurrentChatPosition)]",
+                        "=",
+                        "\"<<IMAGEEmpty>>\""
+                      ]
                     },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
                     {
                       "type": {
                         "value": "SetAnimationName"
@@ -6187,6 +8333,50 @@
                       "parameters": [
                         "PawnBackdrop",
                         "\"PawnShopBackdrop-Nopeople\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarGlobalTxt"
+                      },
+                      "parameters": [
+                        "SpecialClientDatabase[Variable(SelectedClientID)].ChatAccept[Variable(CurrentChatPosition)]",
+                        "=",
+                        "\"<<IMAGECollapse>>\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetAnimationName"
+                      },
+                      "parameters": [
+                        "PawnBackdrop",
+                        "\"PawnShopBackdrop-DeadPeople\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "assets\\body-fall.ogg",
+                        "",
+                        "100",
+                        "1"
                       ]
                     }
                   ]
@@ -6353,6 +8543,113 @@
                     },
                     {
                       "type": {
+                        "value": "SetAnimationName"
+                      },
+                      "parameters": [
+                        "PawnBackdrop",
+                        "\"PawnShopBackdrop-Nopeople\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::AddObjectPositionYTween"
+                      },
+                      "parameters": [
+                        "PawnIcon",
+                        "Tween",
+                        "\"PawnIconTween\"",
+                        "-616",
+                        "\"linear\"",
+                        "500",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::AddObjectPositionYTween"
+                      },
+                      "parameters": [
+                        "PawnApplicationTxt",
+                        "Tween",
+                        "\"PATxtTween\"",
+                        "-613",
+                        "\"linear\"",
+                        "500",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::AddObjectPositionYTween"
+                      },
+                      "parameters": [
+                        "ClientNameTxt",
+                        "Tween",
+                        "\"ClientNameTxt\"",
+                        "-556",
+                        "\"linear\"",
+                        "500",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::AddObjectPositionYTween"
+                      },
+                      "parameters": [
+                        "Offertxt",
+                        "Tween",
+                        "\"OfferTxtTween\"",
+                        "-85",
+                        "\"linear\"",
+                        "500",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::AddObjectPositionYTween"
+                      },
+                      "parameters": [
+                        "Stamp",
+                        "Tween",
+                        "\"StampTween\"",
+                        "-334",
+                        "\"linear\"",
+                        "500",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::AddObjectPositionYTween"
+                      },
+                      "parameters": [
+                        "InformationBG",
+                        "Tween",
+                        "\"PaperBackground\"",
+                        "-624",
+                        "\"linear\"",
+                        "500",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::AddObjectPositionYTween"
+                      },
+                      "parameters": [
+                        "Messagetxt",
+                        "Tween",
+                        "\"MessageTxtTween\"",
+                        "-400",
+                        "\"linear\"",
+                        "500",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
                         "value": "Wait"
                       },
                       "parameters": [
@@ -6364,10 +8661,42 @@
                         "value": "SetSceneVariableAsBoolean"
                       },
                       "parameters": [
-                        "ClientInteracting",
+                        "SpecialCharacterMode",
                         "False"
                       ]
                     },
+                    {
+                      "type": {
+                        "value": "SetSceneVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "ClientInteracting",
+                        "False"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    },
+                    {
+                      "type": {
+                        "value": "VarGlobalTxt"
+                      },
+                      "parameters": [
+                        "SpecialClientDatabase[Variable(SelectedClientID)].ChatDecline[Variable(CurrentChatPosition)]",
+                        "=",
+                        "\"<<IMAGEEmpty>>\""
+                      ]
+                    }
+                  ],
+                  "actions": [
                     {
                       "type": {
                         "value": "SetAnimationName"
@@ -6375,6 +8704,50 @@
                       "parameters": [
                         "PawnBackdrop",
                         "\"PawnShopBackdrop-Nopeople\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    },
+                    {
+                      "type": {
+                        "value": "VarGlobalTxt"
+                      },
+                      "parameters": [
+                        "SpecialClientDatabase[Variable(SelectedClientID)].ChatDecline[Variable(CurrentChatPosition)]",
+                        "=",
+                        "\"<<IMAGECollapse>>\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetAnimationName"
+                      },
+                      "parameters": [
+                        "PawnBackdrop",
+                        "\"PawnShopBackdrop-DeadPeople\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "assets\\body-fall.ogg",
+                        "",
+                        "100",
+                        "1"
                       ]
                     }
                   ]
@@ -6426,6 +8799,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Agreements Function (Accept and Decline)",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -6486,14 +8860,6 @@
                 }
               ],
               "actions": [
-                {
-                  "type": {
-                    "value": "Cache"
-                  },
-                  "parameters": [
-                    "OfferSection"
-                  ]
-                },
                 {
                   "type": {
                     "value": "ModVarScene"
@@ -6612,6 +8978,46 @@
                     "MoneyText",
                     "=",
                     "ToString(Variable(Money))"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\stamp.ogg",
+                    "no",
+                    "100",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "Stamp",
+                    "\"Approved\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetAngle"
+                  },
+                  "parameters": [
+                    "Stamp",
+                    "=",
+                    "RandomInRange(-60,60)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Stamp",
+                    ""
                   ]
                 },
                 {
@@ -6780,14 +9186,6 @@
               "actions": [
                 {
                   "type": {
-                    "value": "Cache"
-                  },
-                  "parameters": [
-                    "OfferSection"
-                  ]
-                },
-                {
-                  "type": {
                     "value": "ModVarScene"
                   },
                   "parameters": [
@@ -6804,6 +9202,46 @@
                     "CurrentChatPosition",
                     "=",
                     "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\stamp.ogg",
+                    "no",
+                    "100",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetAngle"
+                  },
+                  "parameters": [
+                    "Stamp",
+                    "=",
+                    "RandomInRange(-60,60)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "Stamp",
+                    "\"Deny\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Stamp",
+                    ""
                   ]
                 },
                 {
@@ -6865,6 +9303,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Special Agreements Function (Accept and Decline)",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -6935,14 +9374,6 @@
               "actions": [
                 {
                   "type": {
-                    "value": "Cache"
-                  },
-                  "parameters": [
-                    "OfferSection"
-                  ]
-                },
-                {
-                  "type": {
                     "value": "ModVarScene"
                   },
                   "parameters": [
@@ -7059,6 +9490,46 @@
                     "PlayerStatics.TotalClientHandled",
                     "+",
                     "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\stamp.ogg",
+                    "no",
+                    "100",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "Stamp",
+                    "\"Approved\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetAngle"
+                  },
+                  "parameters": [
+                    "Stamp",
+                    "=",
+                    "RandomInRange(-60,60)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Stamp",
+                    ""
                   ]
                 },
                 {
@@ -7254,14 +9725,6 @@
               "actions": [
                 {
                   "type": {
-                    "value": "Cache"
-                  },
-                  "parameters": [
-                    "OfferSection"
-                  ]
-                },
-                {
-                  "type": {
                     "value": "ModVarScene"
                   },
                   "parameters": [
@@ -7278,6 +9741,46 @@
                     "CurrentChatPosition",
                     "=",
                     "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\stamp.ogg",
+                    "no",
+                    "100",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetAngle"
+                  },
+                  "parameters": [
+                    "Stamp",
+                    "=",
+                    "RandomInRange(-60,60)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "Stamp",
+                    "\"Deny\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Stamp",
+                    ""
                   ]
                 },
                 {
@@ -7528,7 +10031,12 @@
           "effects": []
         }
       ],
-      "behaviorsSharedData": []
+      "behaviorsSharedData": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ]
     },
     {
       "b": 209,
@@ -7550,7 +10058,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.6244537826599987,
+        "zoomFactor": 0.6672773998329973,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -7589,14 +10097,29 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 59,
+          "height": 63,
           "layer": "",
           "name": "CopyrightTxt",
           "persistentUuid": "48e8cafc-4d7f-41d4-9cea-bd26e77c6441",
-          "width": 452,
-          "x": 389,
-          "y": 546,
+          "width": 479,
+          "x": 377,
+          "y": 547,
           "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 401,
+          "layer": "",
+          "name": "WADDCredit",
+          "persistentUuid": "74040ef7-20c3-4628-addc-a743ef099472",
+          "width": 367,
+          "x": 429,
+          "y": 43,
+          "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -7705,7 +10228,7 @@
           "effects": [],
           "behaviors": [],
           "content": {
-            "text": "[b]Copyright 2023 [/b] [i]Jomarcenter-mjm[/i]\n[outline=lightblue]For Gamedev.js Jam[/outline] [outline=lightgreen]Open Source[/outline] ",
+            "text": "[b]Copyright 2023 [/b] [i]Jomarcenter-mjm[/i][outline=lightblue]For Gamedev.js Jam[/outline] [outline=lightgreen]Open Source[/outline] ",
             "opacity": 255,
             "fontSize": 20,
             "visible": true,
@@ -7713,6 +10236,25 @@
             "fontFamily": "Arial",
             "align": "center",
             "wordWrap": true
+          }
+        },
+        {
+          "assetStoreId": "",
+          "name": "WADDCredit",
+          "tags": "",
+          "type": "BBText::BBText",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "text": "Waiting at death doors\n\nCreator:\nJomarcenter-MJM @jomarcenter_MJM\n\nGraphics:\nJomarcenter-MJM @jomarcenter_MJM\n\nAudio:\nKermite607 (Freesound)\nDylanTheFish (Freesound)\n\nExtensions makers:\nH0ndred\n\npowered by Gdevelop",
+            "opacity": 255,
+            "fontSize": 20,
+            "visible": true,
+            "color": "0;0;0",
+            "fontFamily": "Arial",
+            "align": "center",
+            "wordWrap": false
           }
         }
       ],
