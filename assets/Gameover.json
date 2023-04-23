@@ -2,7 +2,7 @@
 	{
 		"title": "DeathEnding",
 		"tags": "",
-		"body": "In the end you decided to accept death.\nAnd in return every devices have slowly glitch out.\neven those who were immortal.\nPanic and chaos ensure as everyone cannot tell when they will die.\nIn the end death return to the mortal and immortal plane.\nThe End\nEnding: Death returns.",
+		"body": "<<changeImage Death>>\nIn the end you decided to accept death.\n<<changeImage ErrorDevice>> \nAnd in return every devices have slowly glitch out.\neven those who were immortal.\n<< changeImage BurningCity>> \nPanic and chaos ensure as everyone cannot tell when they will die.\nIn the end death return to the mortal and immortal plane.\nThe End\nEnding: Death returns.",
 		"position": {
 			"x": 394,
 			"y": 63
@@ -12,7 +12,7 @@
 	{
 		"title": "FakeImmortality",
 		"tags": "",
-		"body": "A few client later.\nThe secret police arrived and questions you.\n\"Have you seen this guy\"\nYou seen his face from the request form. But you decided to stay quiet.\n\"We know you had a deal with him\"\nThe police is aware and immediately took your decide.\n\"That what I tough, Your hear by under arrest for purchasing and holding illegal life extension device\"\nThe police handcuff you and put you in prison.\nDays later the trials begin. You pleaded not Guilty.\nBut that doest matter as you were found Guilty.\nAnd sentence to death.\nThe end\nEnding: False Immortality",
+		"body": "A few client later.\nThe secret police arrived and questions you.\n<<changeImage ArrestBadge>> \n\"Have you seen this guy\"\nYou seen his face from the request form. But you decided to stay quiet.\n\"We know you had a deal with him\"\nThe police is aware and immediately took your device.\n\"That what I tough, Your hear by under arrest for purchasing and holding illegal life extension device\"\nThe police handcuff you and put you in prison.\n<<changeImage TrialCourt>> \nDays later the trials begin. You pleaded not Guilty.\nBut that doest matter as you were found Guilty.\nAnd sentence to death.\nThe end\nEnding: False Immortality",
 		"position": {
 			"x": 155,
 			"y": -94

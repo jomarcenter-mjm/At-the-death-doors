@@ -488,6 +488,35 @@
         "name": "Darkbluebg.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "file": "assets/typewriterSingle.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\typewriterSingle.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/typewriterFull.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\typewriterFull.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "BurningCity2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "BurningCity2.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -968,6 +997,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "structure",
           "children": [
             {
@@ -1195,7 +1225,6 @@
               ]
             },
             {
-              "folded": true,
               "name": "ChatDecline",
               "type": "array",
               "children": [
@@ -1563,7 +1592,6 @@
               ]
             },
             {
-              "folded": true,
               "name": "ChatAccept",
               "type": "array",
               "children": [
@@ -1589,11 +1617,16 @@
                 },
                 {
                   "type": "string",
+                  "value": "<<deathending>>"
+                },
+                {
+                  "type": "string",
                   "value": "<<endofchat>>"
                 }
               ]
             },
             {
+              "folded": true,
               "name": "ChatDecline",
               "type": "array",
               "children": [
@@ -1669,7 +1702,7 @@
               "folded": true,
               "name": "ItemOffer",
               "type": "boolean",
-              "value": false
+              "value": true
             },
             {
               "folded": true,
@@ -1689,7 +1722,7 @@
                 {
                   "name": "ItemName",
                   "type": "string",
-                  "value": "Mortality"
+                  "value": "Death"
                 },
                 {
                   "name": "Money",
@@ -1791,7 +1824,6 @@
               ]
             },
             {
-              "folded": true,
               "name": "ChatAccept",
               "type": "array",
               "children": [
@@ -1814,6 +1846,10 @@
                   "folded": true,
                   "type": "string",
                   "value": "See you in the afterlife."
+                },
+                {
+                  "type": "string",
+                  "value": "<<deathending>>"
                 },
                 {
                   "type": "string",
@@ -1897,7 +1933,7 @@
               "folded": true,
               "name": "ItemOffer",
               "type": "boolean",
-              "value": false
+              "value": true
             },
             {
               "folded": true,
@@ -1917,7 +1953,7 @@
                 {
                   "name": "ItemName",
                   "type": "string",
-                  "value": "Mortality"
+                  "value": "Death"
                 },
                 {
                   "name": "Money",
@@ -1957,25 +1993,23 @@
           ]
         },
         {
-          "folded": true,
           "type": "structure",
           "children": [
             {
-              "folded": true,
               "name": "Chat",
               "type": "array",
               "children": [
                 {
                   "type": "string",
-                  "value": "*Whistles*"
+                  "value": "Good day my good sir."
                 },
                 {
                   "type": "string",
-                  "value": "Being immortal."
+                  "value": "Skip those pesky work and be immortal today."
                 },
                 {
                   "type": "string",
-                  "value": "Laughting at the face of death."
+                  "value": "For just 1500 gold you can be immortal and get out of here."
                 },
                 {
                   "type": "string",
@@ -1984,32 +2018,7 @@
                 {
                   "folded": true,
                   "type": "string",
-                  "value": "I know you can hear me."
-                },
-                {
-                  "folded": true,
-                  "type": "string",
-                  "value": "Let's be honest, They told you to ignore me and Decline my request."
-                },
-                {
-                  "folded": true,
-                  "type": "string",
-                  "value": "Such fools."
-                },
-                {
-                  "folded": true,
-                  "type": "string",
-                  "value": "I will give you once last chance human."
-                },
-                {
-                  "folded": true,
-                  "type": "string",
-                  "value": "Don't be a coward."
-                },
-                {
-                  "folded": true,
-                  "type": "string",
-                  "value": "Accept your faith in the face of death."
+                  "value": "And trust me this is completely legitimate."
                 },
                 {
                   "folded": true,
@@ -2019,29 +2028,18 @@
               ]
             },
             {
-              "folded": true,
               "name": "ChatAccept",
               "type": "array",
               "children": [
                 {
                   "folded": true,
                   "type": "string",
-                  "value": "I know you had it in ya."
+                  "value": "Ahh good good."
                 },
                 {
                   "folded": true,
                   "type": "string",
-                  "value": "Your the first person who will die in the face of me."
-                },
-                {
-                  "folded": true,
-                  "type": "string",
-                  "value": "Now the world will see what death truely is."
-                },
-                {
-                  "folded": true,
-                  "type": "string",
-                  "value": "See you in the afterlife."
+                  "value": "Thank you for purchasing my wares."
                 },
                 {
                   "type": "string",
@@ -2055,35 +2053,27 @@
               "children": [
                 {
                   "type": "string",
-                  "value": "*Laughting*"
-                },
-                {
-                  "folded": true,
-                  "type": "string",
-                  "value": "Haha.. Letting yourself immortal for the sake of what?"
-                },
-                {
-                  "folded": true,
-                  "type": "string",
-                  "value": "You can't answer that either."
-                },
-                {
-                  "folded": true,
-                  "type": "string",
-                  "value": "Let's be honest, Who is death now?"
-                },
-                {
-                  "folded": true,
-                  "type": "string",
-                  "value": "It is you? hahaha."
+                  "value": "<<ALARM>>"
                 },
                 {
                   "type": "string",
-                  "value": "You will never hear me again. But mark my words."
+                  "value": "(A Illegal immortalizer has been detected.)"
                 },
                 {
                   "type": "string",
-                  "value": "Even in immortalty, everyone will suffer."
+                  "value": "(Police force is on their way.)"
+                },
+                {
+                  "type": "string",
+                  "value": "SHIT"
+                },
+                {
+                  "type": "string",
+                  "value": "<<IMAGEEmpty>>"
+                },
+                {
+                  "type": "string",
+                  "value": "(Suspect is running away, Please don't leave and continue your job)"
                 },
                 {
                   "folded": true,
@@ -2125,18 +2115,18 @@
               "folded": true,
               "name": "ItemOffer",
               "type": "boolean",
-              "value": false
+              "value": true
             },
             {
               "folded": true,
               "name": "Message",
               "type": "string",
-              "value": "(Override) WARNING: YOU ARE DEALING WITH A HOSTILE BEING. DECLINE OFFER AND DO NOT ENGAGED! DO NOT ENGAGED!\n(Error) (Error)\nAccept your fate and lets death rules again.\n(Error) (Error)"
+              "value": "(Error cannot monitor communication)"
             },
             {
               "name": "Name",
               "type": "string",
-              "value": "(ERROR)"
+              "value": "Titano Victris"
             },
             {
               "name": "Offer",
@@ -2145,7 +2135,7 @@
                 {
                   "name": "ItemName",
                   "type": "string",
-                  "value": "Mortality"
+                  "value": "Immortalizer"
                 },
                 {
                   "name": "Money",
@@ -2167,7 +2157,7 @@
                 {
                   "name": "Money",
                   "type": "number",
-                  "value": 0
+                  "value": 1500
                 },
                 {
                   "folded": true,
@@ -2187,7 +2177,6 @@
       ]
     },
     {
-      "folded": true,
       "name": "ItemDatabase",
       "type": "array",
       "children": [
@@ -2513,7 +2502,7 @@
       "folded": true,
       "name": "GameOverID",
       "type": "number",
-      "value": 0
+      "value": 3
     },
     {
       "folded": true,
@@ -3310,7 +3299,7 @@
             {
               "name": "Text_AutoTyping",
               "type": "AutoTyping::Text_AutoTyping",
-              "Interval": 0.05,
+              "Interval": 0.08,
               "CharacterJustAdded": false,
               "CurrentCharacter": ""
             }
@@ -3624,6 +3613,35 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "AutoTyping::Text_AutoTyping::IsCharacterJustAdded"
+              },
+              "parameters": [
+                "DialogueTxt",
+                "Text_AutoTyping",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\typewriterSingle.ogg",
+                "",
+                "60",
+                "1"
+              ]
+            }
+          ]
         }
       ],
       "layers": [
@@ -3677,7 +3695,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.9296875000000014,
+        "zoomFactor": 0.5468750000000014,
         "windowMask": false
       },
       "objectsGroups": [
@@ -3747,29 +3765,6 @@
           "name": "StartNewChatline",
           "type": "boolean",
           "value": true
-        },
-        {
-          "folded": true,
-          "name": "PlayerInventory",
-          "type": "array",
-          "children": [
-            {
-              "type": "structure",
-              "children": [
-                {
-                  "folded": true,
-                  "name": "AmountOwned",
-                  "type": "number",
-                  "value": 0
-                },
-                {
-                  "name": "ItemID",
-                  "type": "number",
-                  "value": 0
-                }
-              ]
-            }
-          ]
         },
         {
           "folded": true,
@@ -3863,6 +3858,30 @@
           "name": "ShiftStartTimer",
           "type": "number",
           "value": 60
+        },
+        {
+          "folded": true,
+          "name": "TotalRegularCustomer",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "folded": true,
+          "name": "TotalSpecialCustomer",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "folded": true,
+          "name": "Debugging",
+          "type": "string",
+          "value": ""
+        },
+        {
+          "folded": true,
+          "name": "LastSpecialCounter",
+          "type": "number",
+          "value": 0
         }
       ],
       "instances": [
@@ -4025,7 +4044,7 @@
           "persistentUuid": "e8c4e40a-d5fe-400c-9c57-ac75727417df",
           "width": 0,
           "x": 864,
-          "y": 432,
+          "y": 441,
           "zOrder": 13,
           "numberProperties": [],
           "stringProperties": [],
@@ -4207,6 +4226,21 @@
           "x": 16,
           "y": 640,
           "zOrder": 22,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "CollectionList",
+          "persistentUuid": "dfd4d5bb-3bae-432a-b3c7-b4ed5adc00eb",
+          "width": 0,
+          "x": 864,
+          "y": 489,
+          "zOrder": 23,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -4980,6 +5014,28 @@
         },
         {
           "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "CollectionList",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "[Item]",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "assetStoreId": "",
           "name": "DeathTimer",
           "tags": "",
           "type": "Sprite",
@@ -5680,6 +5736,36 @@
                 "=",
                 "\"\""
               ]
+            },
+            {
+              "type": {
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "CollectionList",
+                "=",
+                "\"\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "TotalRegularCustomer",
+                "=",
+                "GlobalVariableChildCount(ClientDatabaseV2) - 1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "TotalSpecialCustomer",
+                "=",
+                "GlobalVariableChildCount(SpecialClientDatabase) - 1"
+              ]
             }
           ]
         },
@@ -5790,6 +5876,188 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "name": "Item Handling",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Fake Immortality Recieved",
+              "comment2": ""
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Inventory::Has"
+                  },
+                  "parameters": [
+                    "",
+                    "\"PlayerInventory\"",
+                    "GlobalVariableString(ItemDatabase[0].ItemName)"
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Inventory::IsEquipped"
+                  },
+                  "parameters": [
+                    "",
+                    "\"PlayerInventory\"",
+                    "GlobalVariableString(ItemDatabase[0].ItemName)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "CustomerCounter",
+                    ">=",
+                    "30"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "ClientInteracting",
+                    "False"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Inventory::Equip"
+                  },
+                  "parameters": [
+                    "",
+                    "\"PlayerInventory\"",
+                    "GlobalVariableString(ItemDatabase[0].ItemName)",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "TimerText",
+                    "=",
+                    "\"YOU ARE IMMORTAL\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetSceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "StartGameOver",
+                    "True"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Death Recieved",
+              "comment2": ""
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Inventory::Has"
+                  },
+                  "parameters": [
+                    "",
+                    "\"PlayerInventory\"",
+                    "GlobalVariableString(ItemDatabase[1].ItemName)"
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Inventory::IsEquipped"
+                  },
+                  "parameters": [
+                    "",
+                    "\"PlayerInventory\"",
+                    "GlobalVariableString(ItemDatabase[1].ItemName)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "ClientInteracting",
+                    "False"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Inventory::Equip"
+                  },
+                  "parameters": [
+                    "",
+                    "\"PlayerInventory\"",
+                    "GlobalVariableString(ItemDatabase[1].ItemName)",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "TimerText",
+                    "=",
+                    "\"Everyone will die by DEATH!\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetSceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "StartGameOver",
+                    "True"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
           "name": "Timer Handling",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -5821,28 +6089,6 @@
                     ">=",
                     "Variable(Timer)"
                   ]
-                },
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "Inventory::IsEquipped"
-                  },
-                  "parameters": [
-                    "",
-                    "\"PlayerInventory\"",
-                    "GlobalVariableString(ItemDatabase[0].ItemName)"
-                  ]
-                },
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "Inventory::IsEquipped"
-                  },
-                  "parameters": [
-                    "",
-                    "\"PlayerInventory\"",
-                    "GlobalVariableString(ItemDatabase[1].ItemName)"
-                  ]
                 }
               ],
               "actions": [
@@ -5857,6 +6103,91 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CompareTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"CountDownTimer\"",
+                    ">=",
+                    "Variable(Timer)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "CustomerCounter",
+                    "<=",
+                    "29"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "GameOverID",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetSceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "StartGameOver",
+                    "True"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "CompareTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"CountDownTimer\"",
+                    ">=",
+                    "Variable(Timer)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "CustomerCounter",
+                    ">=",
+                    "30"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetSceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "StartGameOver",
+                    "True"
+                  ]
+                }
+              ]
             }
           ],
           "parameters": []
@@ -5866,7 +6197,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Game Over Handling",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -5885,7 +6215,7 @@
               "comment2": ""
             },
             {
-              "folded": true,
+              "disabled": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -5895,7 +6225,7 @@
                   "parameters": [
                     "",
                     "\"CountDownTimer\"",
-                    ">=",
+                    "<=",
                     "Variable(Timer)"
                   ]
                 },
@@ -5907,78 +6237,20 @@
                     "StartGameOver",
                     "False"
                   ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
                 }
               ],
-              "actions": [],
-              "events": [
+              "actions": [
                 {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::And"
-                      },
-                      "parameters": [],
-                      "subInstructions": [
-                        {
-                          "type": {
-                            "inverted": true,
-                            "value": "Inventory::Has"
-                          },
-                          "parameters": [
-                            "",
-                            "\"PlayerInventory\"",
-                            "GlobalVariableString(ItemDatabase[0].ItemName)"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "inverted": true,
-                            "value": "Inventory::Has"
-                          },
-                          "parameters": [
-                            "",
-                            "\"PlayerInventory\"",
-                            "GlobalVariableString(ItemDatabase[1].ItemName)"
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::Once"
-                      },
-                      "parameters": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "ModVarGlobal"
-                      },
-                      "parameters": [
-                        "GameOverID",
-                        "=",
-                        "1"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetSceneVariableAsBoolean"
-                      },
-                      "parameters": [
-                        "StartGameOver",
-                        "True"
-                      ]
-                    }
+                  "type": {
+                    "value": "SetSceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "StartGameOver",
+                    "True"
                   ]
-                },
+                }
+              ],
+              "events": [
                 {
                   "type": "BuiltinCommonInstructions::Comment",
                   "color": {
@@ -6102,12 +6374,6 @@
                     "StartGameOver",
                     "True"
                   ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
                 }
               ],
               "actions": [
@@ -6160,15 +6426,129 @@
                     "=",
                     "Variable(PlayerStatics.TotalTimerecieved)"
                   ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "Inventory::IsEquipped"
+                      },
+                      "parameters": [
+                        "",
+                        "\"PlayerInventory\"",
+                        "\"Death\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarGlobal"
+                      },
+                      "parameters": [
+                        "GameOverID",
+                        "=",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Scene"
+                      },
+                      "parameters": [
+                        "",
+                        "\"GameOver\"",
+                        "yes"
+                      ]
+                    }
+                  ]
                 },
                 {
-                  "type": {
-                    "value": "Scene"
-                  },
-                  "parameters": [
-                    "",
-                    "\"GameOver\"",
-                    "yes"
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "Inventory::IsEquipped"
+                      },
+                      "parameters": [
+                        "",
+                        "\"PlayerInventory\"",
+                        "\"Immortalizer\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarGlobal"
+                      },
+                      "parameters": [
+                        "GameOverID",
+                        "=",
+                        "3"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Scene"
+                      },
+                      "parameters": [
+                        "",
+                        "\"GameOver\"",
+                        "yes"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "CustomerCounter",
+                        ">=",
+                        "30"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "Inventory::IsEquipped"
+                      },
+                      "parameters": [
+                        "",
+                        "\"PlayerInventory\"",
+                        "\"Immortalizer\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarGlobal"
+                      },
+                      "parameters": [
+                        "GameOverID",
+                        "=",
+                        "2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Scene"
+                      },
+                      "parameters": [
+                        "",
+                        "\"GameOver\"",
+                        "yes"
+                      ]
+                    }
                   ]
                 }
               ]
@@ -6181,7 +6561,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Special character RNG",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -6232,6 +6611,27 @@
                 },
                 {
                   "type": {
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "LastSpecialCounter",
+                    ">=",
+                    "5"
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Inventory::IsEquipped"
+                  },
+                  "parameters": [
+                    "",
+                    "\"PlayerInventory\"",
+                    "\"Immortalizer\""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "BuiltinCommonInstructions::Once"
                   },
                   "parameters": []
@@ -6248,38 +6648,65 @@
                     "RandomInRange(0,100)"
                   ]
                 }
-              ],
-              "events": [
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
                 {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "VarScene"
-                      },
-                      "parameters": [
-                        "SpecialCharacterRNG",
-                        ">=",
-                        "80"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::Once"
-                      },
-                      "parameters": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "SetSceneVariableAsBoolean"
-                      },
-                      "parameters": [
-                        "SpecialCharacterMode",
-                        "True"
-                      ]
-                    }
+                  "type": {
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "SpecialCharacterRNG",
+                    ">=",
+                    "10"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "SpecialCharacterMode",
+                    "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "ClientInteracting",
+                    "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Inventory::IsEquipped"
+                  },
+                  "parameters": [
+                    "",
+                    "\"PlayerInventory\"",
+                    "\"Immortalizer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetSceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "SpecialCharacterMode",
+                    "True"
                   ]
                 }
               ]
@@ -6296,6 +6723,282 @@
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "This handles special Characters",
+              "comment2": ""
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "ClientInteracting",
+                    "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "SpecialCharacterMode",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "DayStart",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "Stamp"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "SelectedClientID",
+                    "=",
+                    "RandomInRange(0, Variable(TotalSpecialCustomer))"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "ClientNameTxt",
+                    "=",
+                    "\"Name: \" + GlobalVariableString(SpecialClientDatabase[Variable(SelectedClientID)].Name)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "ChatText",
+                    "=",
+                    "\"\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "ClientStatus",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "CurrentChatPosition",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetSceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "EndofChat",
+                    "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetAnimationName"
+                  },
+                  "parameters": [
+                    "PawnBackdrop",
+                    "\"PawnShopBackdrop-NormalPeople\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "Offertxt",
+                    "=",
+                    "\"Offer: \" + TimeFormatter::SecondsToHHMMSS(GlobalVariable(SpecialClientDatabase[Variable(SelectedClientID)].Offer.Time)) + \" and \" + ToString(GlobalVariable(SpecialClientDatabase[Variable(SelectedClientID)].Offer.Money)) + \" Gold. For your: \" + TimeFormatter::SecondsToHHMMSS(GlobalVariable(SpecialClientDatabase[Variable(SelectedClientID)].Request.Time)) + \" and \" + ToString(GlobalVariable(SpecialClientDatabase[Variable(SelectedClientID)].Request.Money)) + \" Gold\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "Messagetxt",
+                    "=",
+                    "\"Message: \" + GlobalVariableString(SpecialClientDatabase[Variable(SelectedClientID)].Message)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::AddObjectPositionYTween"
+                  },
+                  "parameters": [
+                    "Stamp",
+                    "Tween",
+                    "\"StampTween\"",
+                    "306",
+                    "\"linear\"",
+                    "500",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::AddObjectPositionYTween"
+                  },
+                  "parameters": [
+                    "PawnApplicationTxt",
+                    "Tween",
+                    "\"PATxtTween\"",
+                    "27",
+                    "\"linear\"",
+                    "500",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::AddObjectPositionYTween"
+                  },
+                  "parameters": [
+                    "Offertxt",
+                    "Tween",
+                    "\"OfferTxtTween\"",
+                    "555",
+                    "\"linear\"",
+                    "500",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::AddObjectPositionYTween"
+                  },
+                  "parameters": [
+                    "ClientNameTxt",
+                    "Tween",
+                    "\"ClientNameTxt\"",
+                    "74",
+                    "\"linear\"",
+                    "500",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::AddObjectPositionYTween"
+                  },
+                  "parameters": [
+                    "Messagetxt",
+                    "Tween",
+                    "\"MessageTxtTween\"",
+                    "240",
+                    "\"linear\"",
+                    "500",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::AddObjectPositionYTween"
+                  },
+                  "parameters": [
+                    "PawnIcon",
+                    "Tween",
+                    "\"PawnIconTween\"",
+                    "24",
+                    "\"linear\"",
+                    "500",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::AddObjectPositionYTween"
+                  },
+                  "parameters": [
+                    "InformationBG",
+                    "Tween",
+                    "\"PaperBackground\"",
+                    "16",
+                    "\"linear\"",
+                    "500",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "CustomerCounter",
+                    "+",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetSceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "ClientInteracting",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "LastSpecialCounter",
+                    "=",
+                    "0"
+                  ]
+                }
+              ]
+            },
             {
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
@@ -6362,7 +7065,7 @@
                   "parameters": [
                     "SelectedClientID",
                     "=",
-                    "RandomInRange(0, GlobalVariableChildCount(ClientDatabaseV2) - 1)"
+                    "RandomInRange(0, Variable(TotalRegularCustomer))"
                   ]
                 },
                 {
@@ -6372,7 +7075,7 @@
                   "parameters": [
                     "NameRNG",
                     "=",
-                    "RandomFloatInRange(1,GlobalVariableChildCount(RandomName) - 1)"
+                    "RandomFloatInRange(0,(GlobalVariableChildCount(RandomName) - 1))"
                   ]
                 },
                 {
@@ -6563,15 +7266,6 @@
                 },
                 {
                   "type": {
-                    "value": "SetSceneVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "ClientInteracting",
-                    "True"
-                  ]
-                },
-                {
-                  "type": {
                     "value": "ModVarScene"
                   },
                   "parameters": [
@@ -6579,124 +7273,13 @@
                     "+",
                     "1"
                   ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Comment",
-              "color": {
-                "b": 109,
-                "g": 230,
-                "r": 255,
-                "textB": 0,
-                "textG": 0,
-                "textR": 0
-              },
-              "comment": "This handles special Characters",
-              "comment2": ""
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "SceneVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "ClientInteracting",
-                    "False"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SceneVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "SpecialCharacterMode",
-                    "True"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SceneVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "DayStart",
-                    "True"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Cache"
-                  },
-                  "parameters": [
-                    "Stamp"
-                  ]
                 },
                 {
                   "type": {
                     "value": "ModVarScene"
                   },
                   "parameters": [
-                    "SelectedClientID",
-                    "=",
-                    "RandomInRange(0, GlobalVariableChildCount(SpecialClientDatabase) - 1)"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "ClientNameTxt",
-                    "=",
-                    "\"Name: \" + GlobalVariableString(SpecialClientDatabase[Variable(SelectedClientID)].Name)"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "ChatText",
-                    "=",
-                    "\"\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ModVarScene"
-                  },
-                  "parameters": [
-                    "ClientStatus",
-                    "=",
-                    "0"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ModVarScene"
-                  },
-                  "parameters": [
-                    "CurrentChatPosition",
-                    "=",
-                    "0"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ModVarScene"
-                  },
-                  "parameters": [
-                    "TotalClientHandling",
+                    "LastSpecialCounter",
                     "+",
                     "1"
                   ]
@@ -6706,154 +7289,8 @@
                     "value": "SetSceneVariableAsBoolean"
                   },
                   "parameters": [
-                    "EndofChat",
-                    "False"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetAnimationName"
-                  },
-                  "parameters": [
-                    "PawnBackdrop",
-                    "\"PawnShopBackdrop-NormalPeople\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "Offertxt",
-                    "=",
-                    "\"Offer: \" + TimeFormatter::SecondsToHHMMSS(GlobalVariable(SpecialClientDatabase[Variable(SelectedClientID)].Offer.Time)) + \" and \" + ToString(GlobalVariable(SpecialClientDatabase[Variable(SelectedClientID)].Offer.Money)) + \" Gold. For your: \" + TimeFormatter::SecondsToHHMMSS(GlobalVariable(SpecialClientDatabase[Variable(SelectedClientID)].Request.Time)) + \" and \" + ToString(GlobalVariable(SpecialClientDatabase[Variable(SelectedClientID)].Request.Money)) + \" Gold\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "Messagetxt",
-                    "=",
-                    "\"Message: \" + GlobalVariableString(SpecialClientDatabase[Variable(SelectedClientID)].Message)"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Tween::AddObjectPositionYTween"
-                  },
-                  "parameters": [
-                    "Stamp",
-                    "Tween",
-                    "\"StampTween\"",
-                    "306",
-                    "\"linear\"",
-                    "500",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Tween::AddObjectPositionYTween"
-                  },
-                  "parameters": [
-                    "PawnApplicationTxt",
-                    "Tween",
-                    "\"PATxtTween\"",
-                    "27",
-                    "\"linear\"",
-                    "500",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Tween::AddObjectPositionYTween"
-                  },
-                  "parameters": [
-                    "Offertxt",
-                    "Tween",
-                    "\"OfferTxtTween\"",
-                    "555",
-                    "\"linear\"",
-                    "500",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Tween::AddObjectPositionYTween"
-                  },
-                  "parameters": [
-                    "ClientNameTxt",
-                    "Tween",
-                    "\"ClientNameTxt\"",
-                    "74",
-                    "\"linear\"",
-                    "500",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Tween::AddObjectPositionYTween"
-                  },
-                  "parameters": [
-                    "Messagetxt",
-                    "Tween",
-                    "\"MessageTxtTween\"",
-                    "240",
-                    "\"linear\"",
-                    "500",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Tween::AddObjectPositionYTween"
-                  },
-                  "parameters": [
-                    "PawnIcon",
-                    "Tween",
-                    "\"PawnIconTween\"",
-                    "24",
-                    "\"linear\"",
-                    "500",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Tween::AddObjectPositionYTween"
-                  },
-                  "parameters": [
-                    "InformationBG",
-                    "Tween",
-                    "\"PaperBackground\"",
-                    "16",
-                    "\"linear\"",
-                    "500",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetSceneVariableAsBoolean"
-                  },
-                  "parameters": [
                     "ClientInteracting",
                     "True"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ModVarScene"
-                  },
-                  "parameters": [
-                    "CustomerCounter",
-                    "+",
-                    "1"
                   ]
                 }
               ]
@@ -6866,7 +7303,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Chat Function",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -6958,6 +7394,18 @@
                   "parameters": [
                     "StartNewChatline",
                     "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\typewriterFull.ogg",
+                    "",
+                    "100",
+                    "1.3"
                   ]
                 },
                 {
@@ -7160,6 +7608,18 @@
                   "parameters": [
                     "StartNewChatline",
                     "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\typewriterFull.ogg",
+                    "",
+                    "100",
+                    "1.3"
                   ]
                 },
                 {
@@ -7526,6 +7986,18 @@
                 },
                 {
                   "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\typewriterFull.ogg",
+                    "",
+                    "100",
+                    "1.3"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "TextObject::String"
                   },
                   "parameters": [
@@ -7805,7 +8277,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Special Chat Function",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -7897,6 +8368,18 @@
                   "parameters": [
                     "StartNewChatline",
                     "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\typewriterFull.ogg",
+                    "",
+                    "100",
+                    "0.7"
                   ]
                 },
                 {
@@ -8103,6 +8586,18 @@
                 },
                 {
                   "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\typewriterFull.ogg",
+                    "",
+                    "100",
+                    "0.7"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "TextObject::String"
                   },
                   "parameters": [
@@ -8177,14 +8672,6 @@
                       "parameters": [
                         "PawnBackdrop",
                         "\"PawnShopBackdrop-Nopeople\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Wait"
-                      },
-                      "parameters": [
-                        "Random(GlobalVariable(MaxmumWaitingTime))"
                       ]
                     },
                     {
@@ -8287,6 +8774,14 @@
                     },
                     {
                       "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "Random(GlobalVariable(MaxmumWaitingTime))"
+                      ]
+                    },
+                    {
+                      "type": {
                         "value": "SetSceneVariableAsBoolean"
                       },
                       "parameters": [
@@ -8380,6 +8875,43 @@
                       ]
                     }
                   ]
+                },
+                {
+                  "disabled": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarGlobalTxt"
+                      },
+                      "parameters": [
+                        "SpecialClientDatabase[Variable(SelectedClientID)].ChatAccept[Variable(CurrentChatPosition)]",
+                        "=",
+                        "\"<<deathending>>\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarGlobal"
+                      },
+                      "parameters": [
+                        "GameOverID",
+                        "=",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetSceneVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "StartGameOver",
+                        "True"
+                      ]
+                    }
+                  ]
                 }
               ]
             },
@@ -8470,6 +9002,18 @@
                   "parameters": [
                     "StartNewChatline",
                     "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\typewriterFull.ogg",
+                    "",
+                    "100",
+                    "0.7"
                   ]
                 },
                 {
@@ -8799,7 +9343,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Agreements Function (Accept and Decline)",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -8856,6 +9399,15 @@
                         "GlobalVariable(ClientDatabaseV2[Variable(SelectedClientID)].Request.Time)"
                       ]
                     }
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "SpecialCharacterMode",
+                    "False"
                   ]
                 }
               ],
@@ -9155,6 +9707,15 @@
                       ]
                     }
                   ]
+                },
+                {
+                  "type": {
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "SpecialCharacterMode",
+                    "False"
+                  ]
                 }
               ],
               "actions": [
@@ -9180,6 +9741,15 @@
                   "parameters": [
                     "DeclineBtn",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "SpecialCharacterMode",
+                    "False"
                   ]
                 }
               ],
@@ -9303,7 +9873,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Special Agreements Function (Accept and Decline)",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -9577,15 +10146,6 @@
                     "value": "SetSceneVariableAsBoolean"
                   },
                   "parameters": [
-                    "SpecialCharacterMode",
-                    "False"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetSceneVariableAsBoolean"
-                  },
-                  "parameters": [
                     "EndofChat",
                     "False"
                   ]
@@ -9597,28 +10157,11 @@
                   "conditions": [
                     {
                       "type": {
-                        "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+                        "value": "GlobalVariableAsBoolean"
                       },
                       "parameters": [
-                        "AcceptBtn",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::And"
-                      },
-                      "parameters": [],
-                      "subInstructions": [
-                        {
-                          "type": {
-                            "value": "GlobalVariableAsBoolean"
-                          },
-                          "parameters": [
-                            "ClientDatabaseV2[Variable(SelectedClientID)].ItemOffer",
-                            "True"
-                          ]
-                        }
+                        "SpecialClientDatabase[Variable(SelectedClientID)].ItemOffer",
+                        "True"
                       ]
                     }
                   ],
@@ -9630,7 +10173,17 @@
                       "parameters": [
                         "",
                         "\"PlayerInventory\"",
-                        "GlobalVariableString(ClientDatabaseV2[0].Offer.ItemName)"
+                        "GlobalVariableString(SpecialClientDatabase[Variable(SelectedClientID)].Offer.ItemName)"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextObject::String"
+                      },
+                      "parameters": [
+                        "CollectionList",
+                        "+",
+                        "GlobalVariableString(SpecialClientDatabase[Variable(SelectedClientID)].Offer.ItemName) + NewLine()"
                       ]
                     }
                   ]
@@ -9828,166 +10381,8 @@
                     "value": "SetSceneVariableAsBoolean"
                   },
                   "parameters": [
-                    "SpecialCharacterMode",
-                    "False"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetSceneVariableAsBoolean"
-                  },
-                  "parameters": [
                     "EndofChat",
                     "False"
-                  ]
-                }
-              ]
-            }
-          ],
-          "parameters": []
-        },
-        {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
-          "folded": true,
-          "name": "Item Handling",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Comment",
-              "color": {
-                "b": 109,
-                "g": 230,
-                "r": 255,
-                "textB": 0,
-                "textG": 0,
-                "textR": 0
-              },
-              "comment": "Fake Immortality Recieved",
-              "comment2": ""
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "Inventory::Has"
-                  },
-                  "parameters": [
-                    "",
-                    "\"PlayerInventory\"",
-                    "GlobalVariableString(ItemDatabase[0].ItemName)"
-                  ]
-                },
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "Inventory::IsEquipped"
-                  },
-                  "parameters": [
-                    "",
-                    "\"PlayerInventory\"",
-                    "GlobalVariableString(ItemDatabase[0].ItemName)"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Inventory::Equip"
-                  },
-                  "parameters": [
-                    "",
-                    "\"PlayerInventory\"",
-                    "GlobalVariableString(ItemDatabase[0].ItemName)",
-                    "yes"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "TimerText",
-                    "=",
-                    "\"YOU ARE IMMORTAL\""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Comment",
-              "color": {
-                "b": 109,
-                "g": 230,
-                "r": 255,
-                "textB": 0,
-                "textG": 0,
-                "textR": 0
-              },
-              "comment": "Death Recieved",
-              "comment2": ""
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "Inventory::Has"
-                  },
-                  "parameters": [
-                    "",
-                    "\"PlayerInventory\"",
-                    "GlobalVariableString(ItemDatabase[1].ItemName)"
-                  ]
-                },
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "Inventory::IsEquipped"
-                  },
-                  "parameters": [
-                    "",
-                    "\"PlayerInventory\"",
-                    "GlobalVariableString(ItemDatabase[1].ItemName)"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Inventory::Equip"
-                  },
-                  "parameters": [
-                    "",
-                    "\"PlayerInventory\"",
-                    "GlobalVariableString(ItemDatabase[1].ItemName)",
-                    "yes"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "TimerText",
-                    "=",
-                    "\"Everyone will die by DEATH!\""
                   ]
                 }
               ]
@@ -10072,7 +10467,7 @@
           "name": "BackTotitleBtn",
           "persistentUuid": "a67f347a-17fa-4e36-8b42-4e71d5352b83",
           "width": 0,
-          "x": 518,
+          "x": 503,
           "y": 617,
           "zOrder": 1,
           "numberProperties": [],
@@ -10112,7 +10507,7 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 401,
+          "height": 462,
           "layer": "",
           "name": "WADDCredit",
           "persistentUuid": "74040ef7-20c3-4628-addc-a743ef099472",
@@ -10247,7 +10642,7 @@
           "effects": [],
           "behaviors": [],
           "content": {
-            "text": "Waiting at death doors\n\nCreator:\nJomarcenter-MJM @jomarcenter_MJM\n\nGraphics:\nJomarcenter-MJM @jomarcenter_MJM\n\nAudio:\nKermite607 (Freesound)\nDylanTheFish (Freesound)\n\nExtensions makers:\nH0ndred\n\npowered by Gdevelop",
+            "text": "Waiting at death doors\n\nCreator:\nJomarcenter-MJM @jomarcenter_MJM\n\nGraphics:\nJomarcenter-MJM @jomarcenter_MJM\n\nAudio:\nKermite607 (Freesound)\nDylanTheFish (Freesound)\nzebragrrl (Freesound)\nNicknameLarry (Freesound)\n\nExtensions makers:\nH0ndred\n\npowered by Gdevelop",
             "opacity": 255,
             "fontSize": 20,
             "visible": true,
@@ -10370,14 +10765,14 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 126,
           "layer": "",
           "name": "EndingDialogue",
           "persistentUuid": "6dae69e9-7183-40ed-a2c1-62e29be347df",
-          "width": 0,
-          "x": 543,
-          "y": 428,
+          "width": 767,
+          "x": 232,
+          "y": 354,
           "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
@@ -10597,6 +10992,35 @@
                   ]
                 }
               ]
+            },
+            {
+              "name": "BurningCity",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "BurningCity2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -10620,9 +11044,9 @@
               "CurrentCharacter": ""
             }
           ],
-          "string": "[Dialogue]",
+          "string": "",
           "font": "",
-          "textAlignment": "left",
+          "textAlignment": "center",
           "characterSize": 30,
           "color": {
             "b": 0,
@@ -10718,10 +11142,183 @@
                 "Gameover"
               ]
             }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarGlobal"
+                  },
+                  "parameters": [
+                    "GameOverID",
+                    "=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "DialogueTree::StartDialogueFromBranch"
+                  },
+                  "parameters": [
+                    "\"TimeUpEnding\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "EndingDialogue",
+                    "=",
+                    "DialogueTree::LineText()"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarGlobal"
+                  },
+                  "parameters": [
+                    "GameOverID",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "DialogueTree::StartDialogueFromBranch"
+                  },
+                  "parameters": [
+                    "\"DeathEnding\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "EndingDialogue",
+                    "=",
+                    "DialogueTree::LineText()"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarGlobal"
+                  },
+                  "parameters": [
+                    "GameOverID",
+                    "=",
+                    "2"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "DialogueTree::StartDialogueFromBranch"
+                  },
+                  "parameters": [
+                    "\"Immortal\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "EndingDialogue",
+                    "=",
+                    "DialogueTree::LineText()"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarGlobal"
+                  },
+                  "parameters": [
+                    "GameOverID",
+                    "=",
+                    "3"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "DialogueTree::StartDialogueFromBranch"
+                  },
+                  "parameters": [
+                    "\"FakeImmortality\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "EndingDialogue",
+                    "=",
+                    "DialogueTree::LineText()"
+                  ]
+                }
+              ]
+            }
           ]
         },
         {
-          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -10856,6 +11453,40 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "AutoTyping::Text_AutoTyping::IsCharacterJustAdded"
+              },
+              "parameters": [
+                "EndingDialogue",
+                "Text_AutoTyping",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\typewriterSingle.ogg",
+                "",
+                "60",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         }
       ],
       "layers": [
@@ -10962,13 +11593,13 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 35,
           "layer": "",
           "name": "StatisticsInformation",
           "persistentUuid": "f00138ab-6e7f-4a0e-9888-c9919fe1b7ae",
-          "width": 0,
-          "x": 500,
+          "width": 369,
+          "x": 455,
           "y": 175,
           "zOrder": 4,
           "numberProperties": [],
@@ -11142,12 +11773,69 @@
             "visible": true,
             "color": "0;0;0",
             "fontFamily": "Arial",
-            "align": "left",
+            "align": "center",
             "wordWrap": true
           }
         }
       ],
-      "events": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "BBText::SetBBText"
+              },
+              "parameters": [
+                "StatisticsInformation",
+                "=",
+                "\"Description | \" + \" Recieved | Given \" + NewLine() +\n\"Total Client handled  \" + \"    \" + ToString(GlobalVariable(HighScore.TotalClientHandled)) + NewLine() + \"Money handled  \" + ToString(GlobalVariable(HighScore.TotalMoneyRecieved)) + \"  |  \" + ToString(GlobalVariable(HighScore.TotalMoneyGiven)) + NewLine() + \"Time handled  \" + ToString(GlobalVariable(HighScore.TotalTimeGiven)) + \"  |  \" + ToString(GlobalVariable(HighScore.TotalTimeGiven)) + \"[/center]\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "ReturnToMenu",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"TitleScreen\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
+        }
+      ],
       "layers": [
         {
           "ambientLightColorB": 3,
