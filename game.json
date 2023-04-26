@@ -17,7 +17,7 @@
     "sizeOnStartupMode": "adaptWidth",
     "templateSlug": "",
     "useExternalSourceFiles": false,
-    "version": "0.2.0",
+    "version": "0.4.3",
     "name": "Waiting at death doors",
     "description": "",
     "author": "MJM Creative Works and Ideas",
@@ -27,7 +27,36 @@
     "maxFPS": 60,
     "minFPS": 20,
     "verticalSync": false,
-    "platformSpecificAssets": {},
+    "platformSpecificAssets": {
+      "android-icon-144": "",
+      "android-icon-192": "",
+      "android-icon-36": "",
+      "android-icon-48": "",
+      "android-icon-72": "",
+      "android-icon-96": "",
+      "android-windowSplashScreenAnimatedIcon": "",
+      "desktop-icon-512": "GameIcon.png",
+      "ios-icon-100": "",
+      "ios-icon-1024": "",
+      "ios-icon-114": "",
+      "ios-icon-120": "",
+      "ios-icon-144": "",
+      "ios-icon-152": "",
+      "ios-icon-167": "",
+      "ios-icon-180": "",
+      "ios-icon-20": "",
+      "ios-icon-29": "",
+      "ios-icon-40": "",
+      "ios-icon-50": "",
+      "ios-icon-57": "",
+      "ios-icon-58": "",
+      "ios-icon-60": "",
+      "ios-icon-72": "",
+      "ios-icon-76": "",
+      "ios-icon-80": "",
+      "ios-icon-87": "",
+      "liluo-thumbnail": ""
+    },
     "loadingScreen": {
       "backgroundColor": 0,
       "backgroundFadeInDuration": 0.2,
@@ -517,6 +546,24 @@
         "name": "BurningCity2.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "GameIcon.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "GameIcon.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/PawnShopBackdrop3_Horror.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\PawnShopBackdrop3_Horror.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -658,7 +705,7 @@
                 {
                   "name": "Money",
                   "type": "number",
-                  "value": 0
+                  "value": 500
                 },
                 {
                   "folded": true,
@@ -682,6 +729,299 @@
                   "name": "Time",
                   "type": "number",
                   "value": 1000
+                }
+              ]
+            },
+            {
+              "name": "SpecialID",
+              "type": "number",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "type": "structure",
+          "children": [
+            {
+              "name": "Chat",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "Hello!"
+                },
+                {
+                  "type": "string",
+                  "value": "I need Extra lives please."
+                },
+                {
+                  "type": "string",
+                  "value": "That is all!"
+                },
+                {
+                  "type": "string",
+                  "value": "<<endofchat>>"
+                }
+              ]
+            },
+            {
+              "name": "ChatAccept",
+              "type": "array",
+              "children": [
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "Thank you very, It been pleasure working with you."
+                },
+                {
+                  "type": "string",
+                  "value": "<<endofchat>>"
+                }
+              ]
+            },
+            {
+              "name": "ChatDecline",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "I understand, Have a nice day."
+                },
+                {
+                  "type": "string",
+                  "value": "<<endofchat>>"
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "ChatHaggle",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "0"
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "HaggleLimit",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "ItemOffer",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "folded": true,
+              "name": "Message",
+              "type": "string",
+              "value": "I just needed some extra time to do some stuff."
+            },
+            {
+              "name": "Name",
+              "type": "string",
+              "value": "Alberty"
+            },
+            {
+              "name": "Offer",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "ItemName",
+                  "type": "string",
+                  "value": "0"
+                },
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 4500
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "name": "Request",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 5000
+                }
+              ]
+            },
+            {
+              "name": "SpecialID",
+              "type": "number",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "folded": true,
+          "type": "structure",
+          "children": [
+            {
+              "name": "Chat",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "Hello!"
+                },
+                {
+                  "type": "string",
+                  "value": "I need Extra money please."
+                },
+                {
+                  "type": "string",
+                  "value": "That is all!"
+                },
+                {
+                  "type": "string",
+                  "value": "<<endofchat>>"
+                }
+              ]
+            },
+            {
+              "name": "ChatAccept",
+              "type": "array",
+              "children": [
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "Thank you very, It been pleasure working with you."
+                },
+                {
+                  "type": "string",
+                  "value": "<<endofchat>>"
+                }
+              ]
+            },
+            {
+              "name": "ChatDecline",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "I understand, Have a nice day."
+                },
+                {
+                  "type": "string",
+                  "value": "<<endofchat>>"
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "ChatHaggle",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "0"
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "HaggleLimit",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "ItemOffer",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "folded": true,
+              "name": "Message",
+              "type": "string",
+              "value": "I just needed some extra time to do some stuff."
+            },
+            {
+              "name": "Name",
+              "type": "string",
+              "value": "Alberty"
+            },
+            {
+              "name": "Offer",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "ItemName",
+                  "type": "string",
+                  "value": "0"
+                },
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 450
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "name": "Request",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 2500
                 }
               ]
             },
@@ -852,6 +1192,307 @@
               "children": [
                 {
                   "type": "string",
+                  "value": "Extra cash please"
+                },
+                {
+                  "type": "string",
+                  "value": "Why are you asking?"
+                },
+                {
+                  "type": "string",
+                  "value": "I need to pay some Loan"
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "<<endofchat>>"
+                }
+              ]
+            },
+            {
+              "name": "ChatAccept",
+              "type": "array",
+              "children": [
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "Thank you very much."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "<<endofchat>>"
+                }
+              ]
+            },
+            {
+              "name": "ChatDecline",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "I see. I will find another shop."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "<<endofchat>>"
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "ChatHaggle",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "0"
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "HaggleLimit",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "ItemOffer",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "folded": true,
+              "name": "Message",
+              "type": "string",
+              "value": "I just need to pay off some loans. "
+            },
+            {
+              "name": "Name",
+              "type": "string",
+              "value": "Petta"
+            },
+            {
+              "name": "Offer",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "ItemName",
+                  "type": "string",
+                  "value": "0"
+                },
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 1000
+                }
+              ]
+            },
+            {
+              "name": "Request",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 1300
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "name": "SpecialID",
+              "type": "number",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "folded": true,
+          "type": "structure",
+          "children": [
+            {
+              "name": "Chat",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "Extra cash please"
+                },
+                {
+                  "type": "string",
+                  "value": "Why are you asking?"
+                },
+                {
+                  "type": "string",
+                  "value": "I need to pay some Loan"
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "<<endofchat>>"
+                }
+              ]
+            },
+            {
+              "name": "ChatAccept",
+              "type": "array",
+              "children": [
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "Thank you very much."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "<<endofchat>>"
+                }
+              ]
+            },
+            {
+              "name": "ChatDecline",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "I see. I will find another shop."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "<<endofchat>>"
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "ChatHaggle",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "0"
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "HaggleLimit",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "ItemOffer",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "folded": true,
+              "name": "Message",
+              "type": "string",
+              "value": "I just need to pay off some loans. "
+            },
+            {
+              "name": "Name",
+              "type": "string",
+              "value": "Petta"
+            },
+            {
+              "name": "Offer",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "ItemName",
+                  "type": "string",
+                  "value": "0"
+                },
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 500
+                }
+              ]
+            },
+            {
+              "name": "Request",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 750
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "name": "SpecialID",
+              "type": "number",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "folded": true,
+          "type": "structure",
+          "children": [
+            {
+              "folded": true,
+              "name": "Chat",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
                   "value": "Hello I have way too many money and little time."
                 },
                 {
@@ -986,6 +1627,316 @@
                   "name": "Time",
                   "type": "number",
                   "value": 200
+                }
+              ]
+            },
+            {
+              "name": "SpecialID",
+              "type": "number",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "folded": true,
+          "type": "structure",
+          "children": [
+            {
+              "folded": true,
+              "name": "Chat",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "Hello I have way too many money and little time."
+                },
+                {
+                  "type": "string",
+                  "value": "I will offer some of my money. In exchange for some of your time. Do you agree?"
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "<<endofchat>>"
+                }
+              ]
+            },
+            {
+              "name": "ChatAccept",
+              "type": "array",
+              "children": [
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "Alright here is my money."
+                },
+                {
+                  "type": "string",
+                  "value": "Have a nice day."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "<<endofchat>>"
+                }
+              ]
+            },
+            {
+              "name": "ChatDecline",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "Is my offer not good for you? "
+                },
+                {
+                  "type": "string",
+                  "value": "That kinda suck."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "<<endofchat>>"
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "ChatHaggle",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "0"
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "HaggleLimit",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "ItemOffer",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "folded": true,
+              "name": "Message",
+              "type": "string",
+              "value": "I am very rich. I can buy all the time in the world."
+            },
+            {
+              "name": "Name",
+              "type": "string",
+              "value": "Petta"
+            },
+            {
+              "name": "Offer",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "ItemName",
+                  "type": "string",
+                  "value": "0"
+                },
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 1500
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "name": "Request",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 3400
+                }
+              ]
+            },
+            {
+              "name": "SpecialID",
+              "type": "number",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "folded": true,
+          "type": "structure",
+          "children": [
+            {
+              "folded": true,
+              "name": "Chat",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "Hello I have way too many money and little time."
+                },
+                {
+                  "type": "string",
+                  "value": "I will offer some of my money. In exchange for some of your time. Do you agree?"
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "<<endofchat>>"
+                }
+              ]
+            },
+            {
+              "name": "ChatAccept",
+              "type": "array",
+              "children": [
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "Alright here is my money."
+                },
+                {
+                  "type": "string",
+                  "value": "Have a nice day."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "<<endofchat>>"
+                }
+              ]
+            },
+            {
+              "name": "ChatDecline",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "Is my offer not good for you? "
+                },
+                {
+                  "type": "string",
+                  "value": "That kinda suck."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "<<endofchat>>"
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "ChatHaggle",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "0"
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "HaggleLimit",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "ItemOffer",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "folded": true,
+              "name": "Message",
+              "type": "string",
+              "value": "I am very rich. I can buy all the time in the world."
+            },
+            {
+              "name": "Name",
+              "type": "string",
+              "value": "Petta"
+            },
+            {
+              "name": "Offer",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "ItemName",
+                  "type": "string",
+                  "value": "0"
+                },
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 3000
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "name": "Request",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 1000
                 }
               ]
             },
@@ -1522,13 +2473,1111 @@
               "value": 0
             }
           ]
-        }
-      ]
-    },
-    {
-      "name": "SpecialClientDatabase",
-      "type": "array",
-      "children": [
+        },
+        {
+          "folded": true,
+          "type": "structure",
+          "children": [
+            {
+              "name": "Chat",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "Good day, I am here to \"spent\" some time with you."
+                },
+                {
+                  "type": "string",
+                  "value": "Get it.. HAHAHAHAHAHA"
+                },
+                {
+                  "type": "string",
+                  "value": "Alright, here my paper."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "<<endofchat>>"
+                }
+              ]
+            },
+            {
+              "name": "ChatAccept",
+              "type": "array",
+              "children": [
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "Hahaha well time is gold. I have to go."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "<<endofchat>>"
+                }
+              ]
+            },
+            {
+              "name": "ChatDecline",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "Tought crowd."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "I guess I have to find another time with you. HAHAHAHA"
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "<<endofchat>>"
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "ChatHaggle",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "0"
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "HaggleLimit",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "ItemOffer",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "folded": true,
+              "name": "Message",
+              "type": "string",
+              "value": "Try spending some time with me."
+            },
+            {
+              "name": "Name",
+              "type": "string",
+              "value": "joksters"
+            },
+            {
+              "name": "Offer",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "ItemName",
+                  "type": "string",
+                  "value": "0"
+                },
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 3400
+                }
+              ]
+            },
+            {
+              "name": "Request",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 600
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "name": "SpecialID",
+              "type": "number",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "folded": true,
+          "type": "structure",
+          "children": [
+            {
+              "name": "Chat",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "Hello there"
+                },
+                {
+                  "type": "string",
+                  "value": "I need enought time to leave this dump."
+                },
+                {
+                  "type": "string",
+                  "value": "yup selling all of my gold to you for some extra time fore me to leave this place"
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "And start a new life where time isn't always a thing."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "Please accept my offer."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "<<endofchat>>"
+                }
+              ]
+            },
+            {
+              "name": "ChatAccept",
+              "type": "array",
+              "children": [
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "Thank you thank you."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "I will send you a postcard."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "<<endofchat>>"
+                }
+              ]
+            },
+            {
+              "name": "ChatDecline",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "Tought crowd."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "I guess I have to find another time with you. HAHAHAHA"
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "<<endofchat>>"
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "ChatHaggle",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "0"
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "HaggleLimit",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "ItemOffer",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "folded": true,
+              "name": "Message",
+              "type": "string",
+              "value": "Wanting to sell some old coins since I am moving. (WARNING: client have no idea what would happened beyond the nation. as a percautionary measure please do not accept his offer)"
+            },
+            {
+              "name": "Name",
+              "type": "string",
+              "value": "Lilno"
+            },
+            {
+              "name": "Offer",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "ItemName",
+                  "type": "string",
+                  "value": "0"
+                },
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 2000
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "name": "Request",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 2500
+                }
+              ]
+            },
+            {
+              "name": "SpecialID",
+              "type": "number",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "folded": true,
+          "type": "structure",
+          "children": [
+            {
+              "name": "Chat",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "Good day."
+                },
+                {
+                  "type": "string",
+                  "value": "Congratulation you just won"
+                },
+                {
+                  "type": "string",
+                  "value": "additional minute of your time."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "Please accept my offer."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "<<endofchat>>"
+                }
+              ]
+            },
+            {
+              "name": "ChatAccept",
+              "type": "array",
+              "children": [
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "Thank you thank you."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "I will send you a postcard."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "<<endofchat>>"
+                }
+              ]
+            },
+            {
+              "name": "ChatDecline",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "Alright."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "We will be finding another winner."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "<<endofchat>>"
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "ChatHaggle",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "0"
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "HaggleLimit",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "ItemOffer",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "folded": true,
+              "name": "Message",
+              "type": "string",
+              "value": "(This client is authorized to give out free time)"
+            },
+            {
+              "name": "Name",
+              "type": "string",
+              "value": "free money"
+            },
+            {
+              "name": "Offer",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "ItemName",
+                  "type": "string",
+                  "value": "0"
+                },
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 3500
+                }
+              ]
+            },
+            {
+              "name": "Request",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "name": "SpecialID",
+              "type": "number",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "folded": true,
+          "type": "structure",
+          "children": [
+            {
+              "name": "Chat",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "Hello I am a artist who use time to make "
+                },
+                {
+                  "type": "string",
+                  "value": "tough provoking art."
+                },
+                {
+                  "type": "string",
+                  "value": "But I need a lot of time for me to create a brand new art"
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "\"limited immortality\""
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "So I need some time. Will give you money for it."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "<<endofchat>>"
+                }
+              ]
+            },
+            {
+              "name": "ChatAccept",
+              "type": "array",
+              "children": [
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "Thank you very much"
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "I will credit your name. and your pawn ID."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "<<endofchat>>"
+                }
+              ]
+            },
+            {
+              "name": "ChatDecline",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "I see. maybe I should make something different."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "umm.. \"the time offer\""
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "Yeah.. I can work with that."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "<<endofchat>>"
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "ChatHaggle",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "0"
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "HaggleLimit",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "ItemOffer",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "folded": true,
+              "name": "Message",
+              "type": "string",
+              "value": "I am making a art project called \"Limited Immortality\" so I need some money."
+            },
+            {
+              "name": "Name",
+              "type": "string",
+              "value": "Artist"
+            },
+            {
+              "name": "Offer",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "ItemName",
+                  "type": "string",
+                  "value": "0"
+                },
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 5000
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "name": "Request",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 3000
+                }
+              ]
+            },
+            {
+              "name": "SpecialID",
+              "type": "number",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "folded": true,
+          "type": "structure",
+          "children": [
+            {
+              "name": "Chat",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "Hello there, I am a gambler, Who need some extra money if I win big I could make more time for myself."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "<<endofchat>>"
+                }
+              ]
+            },
+            {
+              "name": "ChatAccept",
+              "type": "array",
+              "children": [
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "Alrighty. I will going to have a roll."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "<<endofchat>>"
+                }
+              ]
+            },
+            {
+              "name": "ChatDecline",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "Probably this is the time to stop"
+                },
+                {
+                  "type": "string",
+                  "value": "Thanks you very much."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "<<endofchat>>"
+                }
+              ]
+            },
+            {
+              "name": "ChatHaggle",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "0"
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "HaggleLimit",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "ItemOffer",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "folded": true,
+              "name": "Message",
+              "type": "string",
+              "value": "I need money to support my gambling plans."
+            },
+            {
+              "name": "Name",
+              "type": "string",
+              "value": "Gambler"
+            },
+            {
+              "name": "Offer",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "ItemName",
+                  "type": "string",
+                  "value": "0"
+                },
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 2500
+                }
+              ]
+            },
+            {
+              "name": "Request",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 1000
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "name": "SpecialID",
+              "type": "number",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "folded": true,
+          "type": "structure",
+          "children": [
+            {
+              "name": "Chat",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "Good day, As by law we need additional time for our prisoner"
+                },
+                {
+                  "type": "string",
+                  "value": "They all have committed various crimes and need to be punished dearly before they would be sentence to death."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "<<endofchat>>"
+                }
+              ]
+            },
+            {
+              "name": "ChatAccept",
+              "type": "array",
+              "children": [
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "Thank you for your service."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "<<endofchat>>"
+                }
+              ]
+            },
+            {
+              "name": "ChatDecline",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "I see, You also need time to keep yourself surviving."
+                },
+                {
+                  "type": "string",
+                  "value": "I will return once you have enought time to handle this request."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "<<endofchat>>"
+                }
+              ]
+            },
+            {
+              "name": "ChatHaggle",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "0"
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "HaggleLimit",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "ItemOffer",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "folded": true,
+              "name": "Message",
+              "type": "string",
+              "value": "We ran out of time and need some replenishment. The government will compenstate you. Authorization ID 24601 (Verified)\n\n(It is considered optional to approved or decline this request)"
+            },
+            {
+              "name": "Name",
+              "type": "string",
+              "value": "Prisoner Warden"
+            },
+            {
+              "name": "Offer",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "ItemName",
+                  "type": "string",
+                  "value": "0"
+                },
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 1500
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "name": "Request",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 1800
+                }
+              ]
+            },
+            {
+              "name": "SpecialID",
+              "type": "number",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "folded": true,
+          "type": "structure",
+          "children": [
+            {
+              "name": "Chat",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "Hello there."
+                },
+                {
+                  "type": "string",
+                  "value": "I am from the government that will give you extra time for your good work. Please accept our offer."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "<<endofchat>>"
+                }
+              ]
+            },
+            {
+              "name": "ChatAccept",
+              "type": "array",
+              "children": [
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "Thank you, and be the time controls our faith."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "<<endofchat>>"
+                }
+              ]
+            },
+            {
+              "name": "ChatDecline",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "Alright you will be getting your very own immortality soon so don't forget that the time controls our faith."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "<<endofchat>>"
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "ChatHaggle",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "0"
+                }
+              ]
+            },
+            {
+              "name": "HaggleLimit",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "ItemOffer",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "folded": true,
+              "name": "Message",
+              "type": "string",
+              "value": "Gift from the government\n(verified paperworks, you may accept without consequences)"
+            },
+            {
+              "name": "Name",
+              "type": "string",
+              "value": "Prisoner Warden"
+            },
+            {
+              "name": "Offer",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "ItemName",
+                  "type": "string",
+                  "value": "0"
+                },
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 2500
+                }
+              ]
+            },
+            {
+              "name": "Request",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "name": "SpecialID",
+              "type": "number",
+              "value": 0
+            }
+          ]
+        },
         {
           "folded": true,
           "type": "structure",
@@ -1540,11 +3589,320 @@
               "children": [
                 {
                   "type": "string",
-                  "value": "*Whistles*"
+                  "value": "Hello there."
+                },
+                {
+                  "type": "string",
+                  "value": "I am a tourist from (Censored)"
+                },
+                {
+                  "type": "string",
+                  "value": "And I like to buy a few minute as a soveneir."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "<<endofchat>>"
+                }
+              ]
+            },
+            {
+              "name": "ChatAccept",
+              "type": "array",
+              "children": [
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "Alright, this will really be a memorial moment."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "<<endofchat>>"
+                }
+              ]
+            },
+            {
+              "name": "ChatDecline",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "I can tell that time is sacred here. Oh well Best to find a different soveneir somewhere."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "<<endofchat>>"
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "ChatHaggle",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "0"
+                }
+              ]
+            },
+            {
+              "name": "HaggleLimit",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "ItemOffer",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "folded": true,
+              "name": "Message",
+              "type": "string",
+              "value": "Tourist from out of the country."
+            },
+            {
+              "name": "Name",
+              "type": "string",
+              "value": "Tourist"
+            },
+            {
+              "name": "Offer",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "ItemName",
+                  "type": "string",
+                  "value": "0"
+                },
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 250
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "name": "Request",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 600
+                }
+              ]
+            },
+            {
+              "name": "SpecialID",
+              "type": "number",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "folded": true,
+          "type": "structure",
+          "children": [
+            {
+              "folded": true,
+              "name": "Chat",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "Hello there."
+                },
+                {
+                  "type": "string",
+                  "value": "I am a tourist from (Censored)"
+                },
+                {
+                  "type": "string",
+                  "value": "And I like to buy a few minute as a soveneir."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "<<endofchat>>"
+                }
+              ]
+            },
+            {
+              "name": "ChatAccept",
+              "type": "array",
+              "children": [
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "Alright, this will really be a memorial moment."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "<<endofchat>>"
+                }
+              ]
+            },
+            {
+              "name": "ChatDecline",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "I can tell that time is sacred here. Oh well Best to find a different soveneir somewhere."
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "<<endofchat>>"
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "ChatHaggle",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "0"
+                }
+              ]
+            },
+            {
+              "name": "HaggleLimit",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "ItemOffer",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "folded": true,
+              "name": "Message",
+              "type": "string",
+              "value": "Tourist from out of the country."
+            },
+            {
+              "name": "Name",
+              "type": "string",
+              "value": "Tourist"
+            },
+            {
+              "name": "Offer",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "ItemName",
+                  "type": "string",
+                  "value": "0"
+                },
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 500
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 0
+                }
+              ]
+            },
+            {
+              "name": "Request",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Money",
+                  "type": "number",
+                  "value": 0
+                },
+                {
+                  "folded": true,
+                  "name": "Time",
+                  "type": "number",
+                  "value": 1200
+                }
+              ]
+            },
+            {
+              "name": "SpecialID",
+              "type": "number",
+              "value": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "folded": true,
+      "name": "SpecialClientDatabase",
+      "type": "array",
+      "children": [
+        {
+          "type": "structure",
+          "children": [
+            {
+              "name": "Chat",
+              "type": "array",
+              "children": [
+                {
+                  "type": "string",
+                  "value": "<<whistles>>"
                 },
                 {
                   "type": "string",
                   "value": "Being immortal."
+                },
+                {
+                  "type": "string",
+                  "value": "<<whistles>>"
                 },
                 {
                   "type": "string",
@@ -1592,6 +3950,7 @@
               ]
             },
             {
+              "folded": true,
               "name": "ChatAccept",
               "type": "array",
               "children": [
@@ -1766,17 +4125,20 @@
           "type": "structure",
           "children": [
             {
-              "folded": true,
               "name": "Chat",
               "type": "array",
               "children": [
                 {
                   "type": "string",
-                  "value": "*Whistles*"
+                  "value": "<<whistles>>"
                 },
                 {
                   "type": "string",
                   "value": "Being immortal."
+                },
+                {
+                  "type": "string",
+                  "value": "<<whistles>>"
                 },
                 {
                   "type": "string",
@@ -2012,10 +4374,6 @@
                   "value": "For just 1500 gold you can be immortal and get out of here."
                 },
                 {
-                  "type": "string",
-                  "value": "Do you really think you can get away from me. haha"
-                },
-                {
                   "folded": true,
                   "type": "string",
                   "value": "And trust me this is completely legitimate."
@@ -2177,6 +4535,7 @@
       ]
     },
     {
+      "folded": true,
       "name": "ItemDatabase",
       "type": "array",
       "children": [
@@ -2538,7 +4897,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.8700232859857296,
+        "zoomFactor": 0.787629010167376,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -2675,6 +5034,21 @@
           "x": 141,
           "y": 624,
           "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "ExitGameBtn",
+          "persistentUuid": "f322dec4-b86e-4148-b358-b2bad1825b81",
+          "width": 0,
+          "x": 529,
+          "y": 578,
+          "zOrder": 10,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -3015,6 +5389,70 @@
             "g": 0,
             "r": 0
           }
+        },
+        {
+          "assetStoreId": "f23eb31ad33dd63f1937c8745105316ca530c28513c64b68a665975503c852a6",
+          "name": "ExitGameBtn",
+          "tags": "",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 6,
+            "BottomPadding": 24,
+            "TopPadding": 20,
+            "HoveredFadeOutDuration": 0.25
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 22,
+              "height": 64,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "White Square Decorated Button_Hovered.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            },
+            "Idle": {
+              "bottomMargin": 22,
+              "height": 64,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "White Square Decorated Button_Idle.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 192
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "Exit Game",
+              "font": "mononoki-Regular.ttf",
+              "textAlignment": "center",
+              "characterSize": 20,
+              "color": {
+                "b": 0,
+                "g": 0,
+                "r": 0
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 16,
+              "height": 64,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "White Square Decorated Button_Pressed.png",
+              "tiled": true,
+              "topMargin": 22,
+              "width": 192
+            }
+          }
         }
       ],
       "events": [
@@ -3100,6 +5538,30 @@
           "conditions": [
             {
               "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "ExitGameBtn",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Quit"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
                 "value": "DepartScene"
               },
               "parameters": [
@@ -3116,6 +5578,38 @@
                 "Versiontxt",
                 "=",
                 "\"Version \" + GetPropertiesData::ReturnGameVersion()"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "SystemInfo::IsNativeDesktopApp"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "ExitGameBtn"
               ]
             }
           ]
@@ -3734,7 +6228,7 @@
           "folded": true,
           "name": "Money",
           "type": "number",
-          "value": 1000
+          "value": 6000
         },
         {
           "folded": true,
@@ -5317,6 +7811,35 @@
                   ]
                 }
               ]
+            },
+            {
+              "name": "PawnShopBackdrop-Horror",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\PawnShopBackdrop3_Horror.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -6550,6 +9073,54 @@
                       ]
                     }
                   ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarScene"
+                      },
+                      "parameters": [
+                        "CustomerCounter",
+                        "<=",
+                        "29"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "Inventory::IsEquipped"
+                      },
+                      "parameters": [
+                        "",
+                        "\"PlayerInventory\"",
+                        "\"Immortalizer\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarGlobal"
+                      },
+                      "parameters": [
+                        "GameOverID",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Scene"
+                      },
+                      "parameters": [
+                        "",
+                        "\"GameOver\"",
+                        "yes"
+                      ]
+                    }
+                  ]
                 }
               ]
             }
@@ -6622,12 +9193,12 @@
                 {
                   "type": {
                     "inverted": true,
-                    "value": "Inventory::IsEquipped"
+                    "value": "Inventory::Has"
                   },
                   "parameters": [
                     "",
                     "\"PlayerInventory\"",
-                    "\"Immortalizer\""
+                    "GlobalVariableString(ItemDatabase[0].ItemName)"
                   ]
                 },
                 {
@@ -6660,7 +9231,7 @@
                   "parameters": [
                     "SpecialCharacterRNG",
                     ">=",
-                    "10"
+                    "80"
                   ]
                 },
                 {
@@ -6684,12 +9255,12 @@
                 {
                   "type": {
                     "inverted": true,
-                    "value": "Inventory::IsEquipped"
+                    "value": "Inventory::Has"
                   },
                   "parameters": [
                     "",
                     "\"PlayerInventory\"",
-                    "\"Immortalizer\""
+                    "GlobalVariableString(ItemDatabase[0].ItemName)"
                   ]
                 },
                 {
@@ -6764,6 +9335,17 @@
                   "parameters": [
                     "DayStart",
                     "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Inventory::Has"
+                  },
+                  "parameters": [
+                    "",
+                    "\"PlayerInventory\"",
+                    "GlobalVariableString(ItemDatabase[0].ItemName)"
                   ]
                 },
                 {
@@ -8421,6 +11003,38 @@
                 }
               ],
               "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarGlobalTxt"
+                      },
+                      "parameters": [
+                        "SpecialClientDatabase[Variable(SelectedClientID)].Chat[Variable(CurrentChatPosition)]",
+                        "=",
+                        "\"<<whistles>>\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetAnimationName"
+                      },
+                      "parameters": [
+                        "PawnBackdrop",
+                        "\"PawnShopBackdrop-Horror\""
+                      ]
+                    }
+                  ]
+                },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
@@ -11799,7 +14413,7 @@
               "parameters": [
                 "StatisticsInformation",
                 "=",
-                "\"Description | \" + \" Recieved | Given \" + NewLine() +\n\"Total Client handled  \" + \"    \" + ToString(GlobalVariable(HighScore.TotalClientHandled)) + NewLine() + \"Money handled  \" + ToString(GlobalVariable(HighScore.TotalMoneyRecieved)) + \"  |  \" + ToString(GlobalVariable(HighScore.TotalMoneyGiven)) + NewLine() + \"Time handled  \" + ToString(GlobalVariable(HighScore.TotalTimeGiven)) + \"  |  \" + ToString(GlobalVariable(HighScore.TotalTimeGiven)) + \"[/center]\""
+                "\"Description | \" + \" Recieved | Given \" + NewLine() +\n\"Total Client handled  \" + \"    \" + ToString(GlobalVariable(HighScore.TotalClientHandled)) + NewLine() + \"Money handled  \" + ToString(GlobalVariable(HighScore.TotalMoneyRecieved)) + \"  |  \" + ToString(GlobalVariable(HighScore.TotalMoneyGiven)) + NewLine() + \"Time handled  \" + TimeFormatter::SecondsToHHMMSS(GlobalVariable(HighScore.TotalTimeRecieved)) + \"  |  \" + TimeFormatter::SecondsToHHMMSS(GlobalVariable(HighScore.TotalTimeGiven)) + \"[/center]\""
               ]
             }
           ]
